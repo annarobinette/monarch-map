@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     const map = L.map('map').setView([54.5, -2.0], 6);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    const params = new URLSearchParams(window.location.search);
 
     const houseColors = { 'Wessex': '#ff7800', 'Denmark': '#006400', 'Normandy': '#e5e500', 'Blois': '#4682b4', 'Anjou': '#ff0000', 'Plantagenet': '#dc143c', 'Lancaster': '#8b0000', 'York': '#ffffff', 'Tudor': '#008080', 'Stuart': '#800080', 'Hanover': '#d2b48c', 'Saxe-Coburg-Gotha': '#f0e68c', 'Saxe-Coburg and Gotha': '#f0e68c', 'Windsor': '#0000ff', 'Commonwealth': '#A9A9A9', 'Mercia': '#9370db', 'Dinefwr': '#228b22', 'Aberffraw': '#3cb371', 'Mathrafal': '#8fbc8f', 'Deheubarth': '#6b8e23', 'Alpin': '#b8860b', 'Dunkeld': '#daa520', 'Balliol': '#bdb76b', 'Bruce': '#cd853f', 'Stewart': '#800080', 'Gwynedd': '#4B0082', 'Powys': '#800000', 'Default': '#777777' };
 
@@ -12,14 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/monarchs_data.json')
         .then(response => response.json())
         .then(data => {
-            allData = data;
-            console.log("Data loaded:", allData);
+            // FILTER THE DATA before drawing pins
+            let filteredMonarchs = Object.values(data.monarchs).filter(m => {
+                const houseMatch = !params.has('house') || m.House === params.get('house');
+                const countryMatch = !params.has('country') || m.Country === params.get('country');
+                let centuryMatch = true;
+                if (params.has('century')) {
+                    if (!m.Reign_1_Start) return false;
+                    const year = parseInt(m.Reign_1_Start.match(/\d{3,4}/));
+                    const century = Math.floor(year / 100) + 1;
+                    centuryMatch = century.toString() === params.get('century');
+                }
+                return houseMatch && countryMatch && centuryMatch;
+            });
 
-            // Populate monarch markers on the main map
-            for (const monarchCode in allData.monarchs) {
-                const monarch = allData.monarchs[monarchCode];
-                
-                // Ensure the monarch has valid burial coordinates
+            // Now loop over the FILTERED monarchs
+            filteredMonarchs.forEach(monarch => {
                 if (monarch.Burial_Latitude && monarch.Burial_Longitude && !isNaN(parseFloat(monarch.Burial_Latitude))) {
                     
                     const house = monarch.House || 'Default';
