@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/monarchs_data.json')
         .then(response => response.json())
         .then(data => {
-            // This is the block that runs after the data has loaded
             allData = data;
 
             // Filter monarchs based on URL parameters
@@ -54,143 +53,34 @@ document.addEventListener('DOMContentLoaded', () => {
                         icon: icon, riseOnHover: true
                     }).addTo(map);
 
-                    // ***** FIX 1: Use monarch.Monarch_Code instead of monarchCode *****
                     marker.monarchCode = monarch.Monarch_Code;
 
                     marker.on('mouseover', function(e) {
-                        this.bindPopup(createMonarchPopup(monarch)).openPopup();
+                         this.bindPopup(`<h3>${monarch.Name}</h3><p><strong>House:</strong> ${monarch.House || 'N/A'}</p>`).openPopup();
                     });
                 }
             });
-            
-            // ***** CODE REMOVED: The location list panel logic is no longer needed on the map page *****
 
-            // ***** FIX 2: The zoom-to-location logic has been MOVED here, inside the .then() block *****
+            // Check for location parameter in URL to zoom in
             if (params.has('location')) {
                 const locationId = params.get('location');
-                const zoomLevel = parseInt(params.get('zoom')) || 17;
+                const zoomLevel = parseInt(params.get('zoom')) || 17; // Default to 17 if zoom isn't specified
                 const location = data.locations[locationId];
+
+                // Add console logs for debugging
+                console.log("Found location parameter in URL:", locationId);
+                console.log("Attempting to zoom to level:", zoomLevel);
+                
                 if (location && location.Map_Latitude && location.Map_Longitude) {
+                    console.log("Found location data:", location);
                     map.flyTo([location.Map_Latitude, location.Map_Longitude], zoomLevel);
-                    // You could optionally open the sidebar here too if you wanted
-                    // showLocation(locationId); 
+                } else {
+                    console.error("Could not find location data for ID:", locationId);
                 }
             }
         })
         .catch(error => console.error('Error loading data:', error));
-    
-    // --- GLOBAL FUNCTIONS ---
-    // These functions create the HTML content for popups and the sidebar
 
-    function createMonarchPopup(monarch) {
-        return `
-            <div class="popup-info">
-                <h3>${monarch.Name}</h3>
-                <p><strong>House:</strong> ${monarch.House || 'N/A'}</p>
-                <a href="#" class="more-info-link" onclick="openSidebarForMonarch('${monarch.Monarch_Code}')">More Information</a>
-            </div>
-        `;
-    }
+    // Your other functions like showSidebar, etc., can go here if needed on the map page.
 
-    function createMonarchSidebar(monarch) {
-       let spousesHtml = monarch.spouses && monarch.spouses.length > 0
-           ? '<ul>' + monarch.spouses.map(s => `<li>${s.Name}</li>`).join('') + '</ul>'
-           : '<p>None listed.</p>';
-
-       let issueHtml = monarch.issue && monarch.issue.length > 0
-           ? '<ul>' + monarch.issue.map(i => `<li><a href="#" class="person-link" onclick="showMonarch('${i.code}')">${i.name}</a></li>`).join('') + '</ul>'
-           : '<p>None listed.</p>';
-       
-       return `
-           <h2>${monarch.Name}</h2>
-           <p><em>${monarch.Title}</em></p>
-           <p><strong>House:</strong> ${monarch.House}</p>
-           <p><strong>Reign:</strong> ${monarch.Reign_1_Start} - ${monarch.Reign_1_End}</p>
-           <p><strong>Burial Place:</strong> ${monarch.Place_of_Burial}</p>
-           
-           <h4>Spouses</h4>
-           ${spousesHtml}
-
-           <h4>Issue</h4>
-           ${issueHtml}
-       `;
-    }
-
-    function switchSidebarView(view) {
-        document.getElementById('sidebar-monarch-content').style.display = (view === 'monarch') ? 'block' : 'none';
-        document.getElementById('sidebar-location-content').style.display = (view === 'location') ? 'block' : 'none';
-    }
-
-    window.openSidebarForMonarch = (monarchCode) => {
-        const monarch = allData.monarchs[monarchCode];
-        if (!monarch) return;
-        
-        switchSidebarView('monarch');
-        const contentDiv = document.getElementById('sidebar-monarch-content');
-        contentDiv.innerHTML = createMonarchSidebar(monarch);
-        
-        document.getElementById('sidebar').style.width = '400px';
-    };
-
-    window.showLocation = (locationId) => {
-        const location = allData.locations[locationId];
-        if (!location) return;
-
-        if (location.Map_Latitude && location.Map_Longitude) {
-            map.flyTo([location.Map_Latitude, location.Map_Longitude], 17);
-        }
-
-        switchSidebarView('location');
-        document.getElementById('location-title').textContent = location.Location_Name;
-        document.getElementById('floorplan-image').src = location.Floorplan_Image_Path;
-        
-        const monarchList = document.getElementById('location-monarch-list');
-        monarchList.innerHTML = '';
-        if (location.burials) {
-            location.burials.forEach(burial => {
-                const li = document.createElement('li');
-                li.textContent = burial.Monarch_Name;
-                monarchList.appendChild(li);
-            });
-        }
-
-        const planContainer = document.getElementById('floorplan-container');
-        planContainer.querySelectorAll('.floorplan-pin').forEach(pin => pin.remove());
-        
-        if (location.burials) {
-            location.burials.forEach(burial => {
-                if (burial.Floorplan_X && burial.Floorplan_Y) {
-                    const pin = document.createElement('div');
-                    pin.className = 'floorplan-pin';
-                    pin.style.left = `${burial.Floorplan_X}px`;
-                    pin.style.top = `${burial.Floorplan_Y}px`;
-                    pin.title = `${burial.Monarch_Name} - ${burial.Sub_Location_Name || ''}`;
-                    planContainer.appendChild(pin);
-                }
-            });
-        }
-        
-        document.getElementById('sidebar').style.width = '450px';
-    };
-    
-    window.showMonarch = (monarchCode) => {
-        const monarch = allData.monarchs[monarchCode];
-        if (monarch && monarch.Burial_Latitude && monarch.Burial_Longitude) {
-            map.closePopup();
-            closeSidebar();
-            map.flyTo([monarch.Burial_Latitude, monarch.Burial_Longitude], 12); 
-            
-            map.eachLayer(function(layer) {
-                if(layer instanceof L.Marker && layer.monarchCode === monarchCode) {
-                    layer.bindPopup(createMonarchPopup(monarch)).openPopup();
-                }
-            });
-        } else {
-            alert('Details for this person are not available on the map.');
-        }
-    };
-
-    window.closeSidebar = () => {
-        document.getElementById('sidebar').style.width = '0';
-    };
 });
