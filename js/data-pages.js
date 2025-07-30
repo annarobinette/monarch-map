@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <h4>Primary Burial Location</h4>
             <p>${burialHtml}</p>
 
-            ${locationIdForMap ? `<a href="index.html?location=${locationIdForMap}&zoom=17" class="modal-map-link">View on Map</a>` : ''}
-        `;
+            ${locationIdForMap ? `<a href="index.html?location=${locationIdForMap}&zoom=19" class="modal-map-link">View on Map</a>` : ''}
+        `; // ▲▲▲ CHANGED: zoom=17 is now zoom=19 ▲▲▲
         modal.style.display = 'flex';
     };
 
@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <h4>Monarchs Buried Here</h4>
             ${monarchsHtml}
 
-            <a href="index.html?location=${locationId}&zoom=17" class="modal-map-link">View on Map</a>
-        `;
+            <a href="index.html?location=${locationId}&zoom=19" class="modal-map-link">View on Map</a>
+        `; // ▲▲▲ CHANGED: zoom=17 is now zoom=19 ▲▲▲
         modal.style.display = 'flex';
     };
 
@@ -108,16 +108,27 @@ document.addEventListener('DOMContentLoaded', () => {
         modalBody.innerHTML = '';
     };
 
-    // --- CARD RENDERING FUNCTIONS --- (Slightly updated)
-
+    // --- CARD RENDERING FUNCTIONS --- 
     function renderMonarchs(monarchs) {
-        // ... (The filtering logic from the previous response remains the same) ...
-        let filteredMonarchs = Object.values(monarchs).filter(/* ... */);
+        let filteredMonarchs = Object.values(monarchs).filter(m => {
+            const houseMatch = !params.has('house') || m.House === params.get('house');
+            const countryMatch = !params.has('country') || m.Country === params.get('country');
+            let centuryMatch = true;
+            if (params.has('century')) {
+                if (!m.Reign_1_Start) return false;
+                const yearMatch = m.Reign_1_Start.match(/\d{3,4}/);
+                if (!yearMatch) return false;
+                const year = parseInt(yearMatch[0]);
+                const century = Math.floor(year / 100) + 1;
+                centuryMatch = century.toString() === params.get('century');
+            }
+            return houseMatch && countryMatch && centuryMatch;
+        });
+        
         grid.innerHTML = ''; // Clear grid
         filteredMonarchs.forEach(monarch => {
             const card = document.createElement('div');
             card.className = 'card';
-            // Add data-monarch-id attribute for the click listener
             card.dataset.monarchId = monarch.Monarch_Code;
             card.innerHTML = `
                 <h3>${monarch.Name}</h3>
@@ -129,11 +140,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderLocations(locations) {
-        grid.innerHTML = ''; // Clear grid
-        Object.values(locations).forEach(location => {
+         let filteredLocations = Object.values(locations).filter(l => {
+             // Example: Add country filter for locations if data available
+             const countryMatch = !params.has('country') || l.Country === params.get('country');
+             return countryMatch;
+         });
+
+         grid.innerHTML = '';
+         filteredLocations.forEach(location => {
             const card = document.createElement('div');
             card.className = 'card';
-            // Add data-location-id attribute for the click listener
             card.dataset.locationId = location.Location_ID;
             card.innerHTML = `
                 <h3>${location.Location_Name}</h3>
