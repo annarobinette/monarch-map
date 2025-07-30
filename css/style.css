@@ -1,0 +1,115 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body, #map {
+    height: 100%;
+    width: 100%;
+}
+
+/* --- Leaflet Popup Styling --- */
+.leaflet-popup-content-wrapper {
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.leaflet-popup-content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.popup-info p {
+    margin: 4px 0;
+}
+
+.popup-info strong {
+    color: #555;
+}
+
+.more-info-link {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white !important;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.more-info-link:hover {
+    background-color: #0056b3;
+}
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001; /* Above map but below modals if any */
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+}
+
+#sidebar-content {
+    padding: 20px;
+    color: #333;
+}
+
+#sidebar-content h2 {
+    margin-top: 0;
+    color: #000;
+}
+#sidebar-content h4 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+#sidebar-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+#sidebar-content li {
+    padding: 5px 0;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    text-decoration: none;
+    color: #818181;
+    transition: color 0.3s;
+}
+
+.sidebar .close-btn:hover {
+    color: #000;
+}
+
+/* --- Hyperlinks for people --- */
+.person-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.person-link:hover {
+    text-decoration: underline;
+}

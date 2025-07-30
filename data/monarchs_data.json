@@ -1,0 +1,5933 @@
+{
+    "ALFRED_849": {
+        "Monarch_Code": "ALFRED_849",
+        "Country": "England",
+        "Name": "Alfred the Great",
+        "Title": "King of Wessex",
+        "House": "Wessex",
+        "Birth_Date": "849-00-00",
+        "Death_Date": "899-10-26",
+        "Country_of_Birth": "England (Wantage)",
+        "Reign_1_Start": "871-00-00",
+        "Reign_1_End": "899-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "50",
+        "Reign_Length_Years": "28",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "EDWARD_874",
+                "name": "Edward the Elder",
+                "is_monarch": true
+            },
+            {
+                "code": " ÆLFTHRYTH_877",
+                "name": " Ælfthryth 877",
+                "is_monarch": false
+            },
+            {
+                "code": " ÆTHELGIFU_880",
+                "name": " Æthelgifu 880",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_874": {
+        "Monarch_Code": "EDWARD_874",
+        "Country": "England",
+        "Name": "Edward the Elder",
+        "Title": "King of Anglo-Saxons",
+        "House": "Wessex",
+        "Birth_Date": "c.874-00-00",
+        "Death_Date": "924-07-17",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "899-00-00",
+        "Reign_1_End": "924-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "50",
+        "Reign_Length_Years": "25",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ECGWYNN_870",
+                "MONARCH_CODE": "EDWARD_874",
+                "Spouse Number": 1,
+                "Name": "Ecgwynn",
+                "Birth Date": "c.870",
+                "Death Date": "c.920",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Edward the Elder"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ÆTHELSTAN_894",
+                "name": "Æthelstan",
+                "is_monarch": true
+            },
+            {
+                "code": " EDMUND_921",
+                "name": " Edmund 921",
+                "is_monarch": false
+            },
+            {
+                "code": " EADRED_923",
+                "name": " Eadred 923",
+                "is_monarch": false
+            },
+            {
+                "code": " EADGIFU_902",
+                "name": " Eadgifu 902",
+                "is_monarch": false
+            }
+        ]
+    },
+    "ÆTHELSTAN_894": {
+        "Monarch_Code": "ÆTHELSTAN_894",
+        "Country": "England",
+        "Name": "Æthelstan",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "c.894-00-00",
+        "Death_Date": "939-10-27",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "924-00-00",
+        "Reign_1_End": "939-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Malmesbury Abbey",
+        "Burial_Latitude": "51.5847",
+        "Burial_Longitude": "-2.0934",
+        "Age_at_Death": "45",
+        "Reign_Length_Years": "15",
+        "spouses": [],
+        "issue": []
+    },
+    "EDMUND_921": {
+        "Monarch_Code": "EDMUND_921",
+        "Country": "England",
+        "Name": "Edmund I",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "921-00-00",
+        "Death_Date": "946-05-26",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "939-00-00",
+        "Reign_1_End": "946-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Glastonbury Abbey",
+        "Burial_Latitude": "51.1496",
+        "Burial_Longitude": "-2.7139",
+        "Age_at_Death": "25",
+        "Reign_Length_Years": "7",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ÆLFGIFU_922",
+                "MONARCH_CODE": "EDMUND_921",
+                "Spouse Number": 1,
+                "Name": "Ælfgifu",
+                "Birth Date": "c.922",
+                "Death Date": "c.944",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Edmund I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EADWIG_940",
+                "name": "Eadwig",
+                "is_monarch": true
+            },
+            {
+                "code": " EDGAR_943",
+                "name": " Edgar 943",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EADRED_923": {
+        "Monarch_Code": "EADRED_923",
+        "Country": "England",
+        "Name": "Eadred",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "c.923-00-00",
+        "Death_Date": "955-11-23",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "946-00-00",
+        "Reign_1_End": "955-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "32",
+        "Reign_Length_Years": "9",
+        "spouses": [],
+        "issue": []
+    },
+    "EADWIG_940": {
+        "Monarch_Code": "EADWIG_940",
+        "Country": "England",
+        "Name": "Eadwig",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "c.940-00-00",
+        "Death_Date": "959-10-01",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "955-00-00",
+        "Reign_1_End": "959-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "19",
+        "Reign_Length_Years": "4",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ÆLFGIFU_940",
+                "MONARCH_CODE": "EADWIG_940",
+                "Spouse Number": 1,
+                "Name": "Ælfgifu",
+                "Birth Date": "c.940",
+                "Death Date": "c.959",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Eadwig"
+            }
+        ],
+        "issue": []
+    },
+    "EDGAR_943": {
+        "Monarch_Code": "EDGAR_943",
+        "Country": "England",
+        "Name": "Edgar the Peaceful",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "943-00-00",
+        "Death_Date": "975-07-08",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "959-00-00",
+        "Reign_1_End": "975-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Glastonbury Abbey",
+        "Burial_Latitude": "51.1496",
+        "Burial_Longitude": "-2.7139",
+        "Age_at_Death": "32",
+        "Reign_Length_Years": "16",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ÆTHELFLAED_945",
+                "MONARCH_CODE": "EDGAR_943",
+                "Spouse Number": 1,
+                "Name": "Æthelflaed",
+                "Birth Date": "c.945",
+                "Death Date": "c.963",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Edgar"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_962",
+                "name": "Edward the Martyr",
+                "is_monarch": true
+            },
+            {
+                "code": " ÆTHELRED_966",
+                "name": " Æthelred 966",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_962": {
+        "Monarch_Code": "EDWARD_962",
+        "Country": "England",
+        "Name": "Edward the Martyr",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "c.962-00-00",
+        "Death_Date": "978-03-18",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "975-00-00",
+        "Reign_1_End": "978-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Shaftesbury Abbey",
+        "Burial_Latitude": "50.998",
+        "Burial_Longitude": "-2.2058",
+        "Age_at_Death": "16",
+        "Reign_Length_Years": "3",
+        "spouses": [],
+        "issue": []
+    },
+    "ÆTHELRED_966": {
+        "Monarch_Code": "ÆTHELRED_966",
+        "Country": "England",
+        "Name": "Æthelred the Unready",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "c.966-00-00",
+        "Death_Date": "1016-04-23",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "978-00-00",
+        "Reign_1_End": "1013-00-00",
+        "Reign_2_Start": "1014-00-00",
+        "Reign_2_End": "1016-00-00",
+        "Place_of_Burial": "St Paul's Cathedral",
+        "Burial_Latitude": "51.5138",
+        "Burial_Longitude": "-0.0984",
+        "Age_at_Death": "50",
+        "Reign_Length_Years": "37",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ÆLFGIFU_968",
+                "MONARCH_CODE": "ÆTHELRED_966",
+                "Spouse Number": 1,
+                "Name": "Ælfgifu",
+                "Birth Date": "c.968",
+                "Death Date": "c.1002",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Æthelred"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDMUND_990",
+                "name": "Edmund Ironside",
+                "is_monarch": true
+            },
+            {
+                "code": " EDWARD_1003",
+                "name": " Edward 1003",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDMUND_990": {
+        "Monarch_Code": "EDMUND_990",
+        "Country": "England",
+        "Name": "Edmund Ironside",
+        "Title": "King of English",
+        "House": "Wessex",
+        "Birth_Date": "c.990-00-00",
+        "Death_Date": "1016-11-30",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1016-00-00",
+        "Reign_1_End": "1016-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Glastonbury Abbey",
+        "Burial_Latitude": "51.1496",
+        "Burial_Longitude": "-2.7139",
+        "Age_at_Death": "26",
+        "Reign_Length_Years": "0",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "EALDGYTH_995",
+                "MONARCH_CODE": "EDMUND_990",
+                "Spouse Number": 1,
+                "Name": "Ealdgyth",
+                "Birth Date": "c.995",
+                "Death Date": "c.1016",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edmund Ironside"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1016",
+                "name": "Edward 1016",
+                "is_monarch": false
+            },
+            {
+                "code": " EDMUND_1017",
+                "name": " Edmund 1017",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CNUT_990": {
+        "Monarch_Code": "CNUT_990",
+        "Country": "England",
+        "Name": "Cnut the Great",
+        "Title": "King of England",
+        "House": "Denmark",
+        "Birth_Date": "c.990-00-00",
+        "Death_Date": "1035-11-12",
+        "Country_of_Birth": "Denmark",
+        "Reign_1_Start": "1016-00-00",
+        "Reign_1_End": "1035-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "45",
+        "Reign_Length_Years": "19",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ÆLFGIFU_990",
+                "MONARCH_CODE": "CNUT_990",
+                "Spouse Number": 1,
+                "Name": "Ælfgifu of Northampton",
+                "Birth Date": "c.990",
+                "Death Date": "c.1044",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Cnut"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HAROLD_1015",
+                "name": "Harold Harefoot",
+                "is_monarch": true
+            },
+            {
+                "code": " HARTHACNUT_1018",
+                "name": " Harthacnut 1018",
+                "is_monarch": false
+            },
+            {
+                "code": " GUNHILD_1020",
+                "name": " Gunhild 1020",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HAROLD_1015": {
+        "Monarch_Code": "HAROLD_1015",
+        "Country": "England",
+        "Name": "Harold Harefoot",
+        "Title": "King of England",
+        "House": "Denmark",
+        "Birth_Date": "c.1015-00-00",
+        "Death_Date": "1040-03-17",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1035-00-00",
+        "Reign_1_End": "1040-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "25",
+        "Reign_Length_Years": "5",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ÆLFGIFU_1020",
+                "MONARCH_CODE": "HAROLD_1015",
+                "Spouse Number": 1,
+                "Name": "Ælfgifu",
+                "Birth Date": "c.1020",
+                "Death Date": "c.1040",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Harold Harefoot"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ÆLFWINE_1040",
+                "name": "Ælfwine 1040",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HARTHACNUT_1018": {
+        "Monarch_Code": "HARTHACNUT_1018",
+        "Country": "England",
+        "Name": "Harthacnut",
+        "Title": "King of England",
+        "House": "Denmark",
+        "Birth_Date": "c.1018-00-00",
+        "Death_Date": "1042-06-08",
+        "Country_of_Birth": "Denmark",
+        "Reign_1_Start": "1040-00-00",
+        "Reign_1_End": "1042-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "24",
+        "Reign_Length_Years": "2",
+        "spouses": [],
+        "issue": []
+    },
+    "EDWARD_1003": {
+        "Monarch_Code": "EDWARD_1003",
+        "Country": "England",
+        "Name": "Edward the Confessor",
+        "Title": "King of England",
+        "House": "Wessex",
+        "Birth_Date": "c.1003-00-00",
+        "Death_Date": "1066-01-05",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1042-00-00",
+        "Reign_1_End": "1066-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "63",
+        "Reign_Length_Years": "24",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "EDITH_1020",
+                "MONARCH_CODE": "EDWARD_1003",
+                "Spouse Number": 1,
+                "Name": "Edith of Wessex",
+                "Birth Date": "c.1020",
+                "Death Date": "18 Dec 1075",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edward the Confessor"
+            }
+        ],
+        "issue": []
+    },
+    "HAROLD_1022": {
+        "Monarch_Code": "HAROLD_1022",
+        "Country": "England",
+        "Name": "Harold Godwinson",
+        "Title": "King of England",
+        "House": "Wessex",
+        "Birth_Date": "c.1022-00-00",
+        "Death_Date": "1066-10-14",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1066-01-06",
+        "Reign_1_End": "1066-10-14",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Waltham Abbey",
+        "Burial_Latitude": "51.6857",
+        "Burial_Longitude": "0.0044",
+        "Age_at_Death": "44",
+        "Reign_Length_Years": "0",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "EDITH_1025",
+                "MONARCH_CODE": "HAROLD_1022",
+                "Spouse Number": 1,
+                "Name": "Edith the Fair",
+                "Birth Date": "c.1025",
+                "Death Date": "c.1086",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Harold Godwinson"
+            }
+        ],
+        "issue": [
+            {
+                "code": "GODWIN_1049",
+                "name": "Godwin 1049",
+                "is_monarch": false
+            },
+            {
+                "code": " EDMUND_1050",
+                "name": " Edmund 1050",
+                "is_monarch": false
+            },
+            {
+                "code": " MAGNUS_1051",
+                "name": " Magnus 1051",
+                "is_monarch": false
+            }
+        ]
+    },
+    "WILLIAM_1028": {
+        "Monarch_Code": "WILLIAM_1028",
+        "Country": "England",
+        "Name": "William the Conqueror",
+        "Title": "King of England",
+        "House": "Normandy",
+        "Birth_Date": "c.1028-00-00",
+        "Death_Date": "1087-09-09",
+        "Country_of_Birth": "France (Normandy)",
+        "Reign_1_Start": "1066-10-14",
+        "Reign_1_End": "1087-09-09",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Caen Normandy",
+        "Burial_Latitude": "49.1829",
+        "Burial_Longitude": "-0.3707",
+        "Age_at_Death": "59",
+        "Reign_Length_Years": "21",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MATILDA_1031",
+                "MONARCH_CODE": "WILLIAM_1028",
+                "Spouse Number": 1,
+                "Name": "Matilda of Flanders",
+                "Birth Date": "c.1031",
+                "Death Date": "2 Nov 1083",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of William the Conqueror"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ROBERT_1051",
+                "name": "Robert 1051",
+                "is_monarch": false
+            },
+            {
+                "code": " WILLIAM_1056",
+                "name": " William 1056",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1068",
+                "name": " Henry 1068",
+                "is_monarch": false
+            },
+            {
+                "code": " ADELA_1067",
+                "name": " Adela 1067",
+                "is_monarch": false
+            }
+        ]
+    },
+    "WILLIAM_1056": {
+        "Monarch_Code": "WILLIAM_1056",
+        "Country": "England",
+        "Name": "William II (Rufus)",
+        "Title": "King of England",
+        "House": "Normandy",
+        "Birth_Date": "c.1056-00-00",
+        "Death_Date": "1100-08-02",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1087-09-09",
+        "Reign_1_End": "1100-08-02",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Winchester Cathedral",
+        "Burial_Latitude": "51.0633",
+        "Burial_Longitude": "-1.3131",
+        "Age_at_Death": "44",
+        "Reign_Length_Years": "13",
+        "spouses": [],
+        "issue": []
+    },
+    "HENRY_1068": {
+        "Monarch_Code": "HENRY_1068",
+        "Country": "England",
+        "Name": "Henry I",
+        "Title": "King of England",
+        "House": "Normandy",
+        "Birth_Date": "1068-00-00",
+        "Death_Date": "1135-12-01",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1100-08-02",
+        "Reign_1_End": "1135-12-01",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Reading Abbey",
+        "Burial_Latitude": "51.4543",
+        "Burial_Longitude": "-0.9781",
+        "Age_at_Death": "67",
+        "Reign_Length_Years": "35",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MATILDA_1080",
+                "MONARCH_CODE": "HENRY_1068",
+                "Spouse Number": 1,
+                "Name": "Matilda of Scotland",
+                "Birth Date": "c.1080",
+                "Death Date": "1 May 1118",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Henry I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MATILDA_1102",
+                "name": "Matilda 1102",
+                "is_monarch": false
+            },
+            {
+                "code": " WILLIAM_1103",
+                "name": " William 1103",
+                "is_monarch": false
+            }
+        ]
+    },
+    "STEPHEN_1096": {
+        "Monarch_Code": "STEPHEN_1096",
+        "Country": "England",
+        "Name": "Stephen",
+        "Title": "King of England",
+        "House": "Normandy",
+        "Birth_Date": "c.1096-00-00",
+        "Death_Date": "1154-10-25",
+        "Country_of_Birth": "France (Normandy)",
+        "Reign_1_Start": "1135-12-01",
+        "Reign_1_End": "1154-10-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Faversham Abbey",
+        "Burial_Latitude": "51.3158",
+        "Burial_Longitude": "0.8883",
+        "Age_at_Death": "58",
+        "Reign_Length_Years": "19",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MATILDA_1105",
+                "MONARCH_CODE": "STEPHEN_1096",
+                "Spouse Number": 1,
+                "Name": "Matilda of Boulogne",
+                "Birth Date": "c.1105",
+                "Death Date": "3 May 1152",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Stephen"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EUSTACE_1130",
+                "name": "Eustace 1130",
+                "is_monarch": false
+            },
+            {
+                "code": " WILLIAM_1132",
+                "name": " William 1132",
+                "is_monarch": false
+            },
+            {
+                "code": " MARIE_1136",
+                "name": " Marie 1136",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HENRY_1133": {
+        "Monarch_Code": "HENRY_1133",
+        "Country": "England",
+        "Name": "Henry II",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1133-03-05",
+        "Death_Date": "1189-07-06",
+        "Country_of_Birth": "France (Anjou)",
+        "Reign_1_Start": "1154-10-25",
+        "Reign_1_End": "1189-07-06",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Fontevraud Abbey",
+        "Burial_Latitude": "47.1206",
+        "Burial_Longitude": "0.0506",
+        "Age_at_Death": "56",
+        "Reign_Length_Years": "35",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELEANOR_1122",
+                "MONARCH_CODE": "HENRY_1133",
+                "Spouse Number": 1,
+                "Name": "Eleanor of Aquitaine",
+                "Birth Date": "c.1122",
+                "Death Date": "1 Apr 1204",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Henry II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HENRY_1155",
+                "name": "Henry 1155",
+                "is_monarch": false
+            },
+            {
+                "code": " RICHARD_1157",
+                "name": " Richard 1157",
+                "is_monarch": false
+            },
+            {
+                "code": " GEOFFREY_1158",
+                "name": " Geoffrey 1158",
+                "is_monarch": false
+            },
+            {
+                "code": " JOHN_1166",
+                "name": " John 1166",
+                "is_monarch": false
+            }
+        ]
+    },
+    "RICHARD_1157": {
+        "Monarch_Code": "RICHARD_1157",
+        "Country": "England",
+        "Name": "Richard I (Lionheart)",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1157-09-08",
+        "Death_Date": "1199-04-06",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1189-07-06",
+        "Reign_1_End": "1199-04-06",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Fontevraud Abbey",
+        "Burial_Latitude": "47.1206",
+        "Burial_Longitude": "0.0506",
+        "Age_at_Death": "41",
+        "Reign_Length_Years": "10",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "BERENGARIA_1165",
+                "MONARCH_CODE": "RICHARD_1157",
+                "Spouse Number": 1,
+                "Name": "Berengaria of Navarre",
+                "Birth Date": "c.1165",
+                "Death Date": "23 Dec 1230",
+                "Country of Birth": "Spain",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Richard I"
+            }
+        ],
+        "issue": []
+    },
+    "JOHN_1166": {
+        "Monarch_Code": "JOHN_1166",
+        "Country": "England",
+        "Name": "John (Lackland)",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1166-12-24",
+        "Death_Date": "1216-10-19",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1199-04-06",
+        "Reign_1_End": "1216-10-19",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Worcester Cathedral",
+        "Burial_Latitude": "52.1931",
+        "Burial_Longitude": "-2.2206",
+        "Age_at_Death": "49",
+        "Reign_Length_Years": "17",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ISABELLA_1173",
+                "MONARCH_CODE": "JOHN_1166",
+                "Spouse Number": 1,
+                "Name": "Isabella of Angoulême",
+                "Birth Date": "c.1173",
+                "Death Date": "4 Jun 1246",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of John"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HENRY_1207",
+                "name": "Henry III",
+                "is_monarch": true
+            },
+            {
+                "code": " RICHARD_1209",
+                "name": " Richard 1209",
+                "is_monarch": false
+            },
+            {
+                "code": " JOAN_1210",
+                "name": " Joan 1210",
+                "is_monarch": false
+            },
+            {
+                "code": " ISABELLA_1214",
+                "name": " Isabella 1214",
+                "is_monarch": false
+            },
+            {
+                "code": " ELEANOR_1215",
+                "name": " Eleanor 1215",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HENRY_1207": {
+        "Monarch_Code": "HENRY_1207",
+        "Country": "England",
+        "Name": "Henry III",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1207-10-01",
+        "Death_Date": "1272-11-16",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1216-10-19",
+        "Reign_1_End": "1272-11-16",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "65",
+        "Reign_Length_Years": "56",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELEANOR_1223",
+                "MONARCH_CODE": "HENRY_1207",
+                "Spouse Number": 1,
+                "Name": "Eleanor of Provence",
+                "Birth Date": "c.1223",
+                "Death Date": "24 Jun 1291",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Henry III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1239",
+                "name": "Edward I (Longshanks)",
+                "is_monarch": true
+            },
+            {
+                "code": " MARGARET_1240",
+                "name": " Margaret 1240",
+                "is_monarch": false
+            },
+            {
+                "code": " BEATRICE_1242",
+                "name": " Beatrice 1242",
+                "is_monarch": false
+            },
+            {
+                "code": " EDMUND_1245",
+                "name": " Edmund 1245",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1239": {
+        "Monarch_Code": "EDWARD_1239",
+        "Country": "England",
+        "Name": "Edward I (Longshanks)",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1239-06-17",
+        "Death_Date": "1307-07-07",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1272-11-16",
+        "Reign_1_End": "1307-07-07",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "68",
+        "Reign_Length_Years": "35",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELEANOR_1241",
+                "MONARCH_CODE": "EDWARD_1239",
+                "Spouse Number": 1,
+                "Name": "Eleanor of Castile",
+                "Birth Date": "c.1241",
+                "Death Date": "28 Nov 1290",
+                "Country of Birth": "Spain",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Edward I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ELEANOR_1264",
+                "name": "Eleanor 1264",
+                "is_monarch": false
+            },
+            {
+                "code": " JOAN_1265",
+                "name": " Joan 1265",
+                "is_monarch": false
+            },
+            {
+                "code": " ALPHONSO_1273",
+                "name": " Alphonso 1273",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1275",
+                "name": " Margaret 1275",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1278",
+                "name": " Mary 1278",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1282",
+                "name": " Elizabeth 1282",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWARD_1284",
+                "name": " Edward 1284",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1284": {
+        "Monarch_Code": "EDWARD_1284",
+        "Country": "England",
+        "Name": "Edward II",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1284-04-25",
+        "Death_Date": "1327-09-21",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1307-07-07",
+        "Reign_1_End": "1327-01-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Gloucester Cathedral",
+        "Burial_Latitude": "51.8681",
+        "Burial_Longitude": "-2.2486",
+        "Age_at_Death": "43",
+        "Reign_Length_Years": "20",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ISABELLA_1295",
+                "MONARCH_CODE": "EDWARD_1284",
+                "Spouse Number": 1,
+                "Name": "Isabella of France",
+                "Birth Date": "c.1295",
+                "Death Date": "22 Aug 1358",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edward II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1312",
+                "name": "Edward III",
+                "is_monarch": true
+            },
+            {
+                "code": " JOHN_1316",
+                "name": " John 1316",
+                "is_monarch": false
+            },
+            {
+                "code": " ELEANOR_1318",
+                "name": " Eleanor 1318",
+                "is_monarch": false
+            },
+            {
+                "code": " JOAN_1321",
+                "name": " Joan 1321",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1312": {
+        "Monarch_Code": "EDWARD_1312",
+        "Country": "England",
+        "Name": "Edward III",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1312-11-13",
+        "Death_Date": "1377-06-21",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1327-01-25",
+        "Reign_1_End": "1377-06-21",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "64",
+        "Reign_Length_Years": "50",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "PHILIPPA_1314",
+                "MONARCH_CODE": "EDWARD_1312",
+                "Spouse Number": 1,
+                "Name": "Philippa of Hainault",
+                "Birth Date": "c.1314",
+                "Death Date": "15 Aug 1369",
+                "Country of Birth": "Belgium",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edward III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1330",
+                "name": "Edward 1330",
+                "is_monarch": false
+            },
+            {
+                "code": " LIONEL_1338",
+                "name": " Lionel 1338",
+                "is_monarch": false
+            },
+            {
+                "code": " JOHN_1340",
+                "name": " John 1340",
+                "is_monarch": false
+            },
+            {
+                "code": " EDMUND_1341",
+                "name": " Edmund 1341",
+                "is_monarch": false
+            },
+            {
+                "code": " THOMAS_1355",
+                "name": " Thomas 1355",
+                "is_monarch": false
+            }
+        ]
+    },
+    "RICHARD_1367": {
+        "Monarch_Code": "RICHARD_1367",
+        "Country": "England",
+        "Name": "Richard II",
+        "Title": "King of England",
+        "House": "Plantagenet",
+        "Birth_Date": "1367-01-06",
+        "Death_Date": "1400-02-14",
+        "Country_of_Birth": "France",
+        "Reign_1_Start": "1377-06-21",
+        "Reign_1_End": "1399-09-30",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "33",
+        "Reign_Length_Years": "22",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANNE_1366",
+                "MONARCH_CODE": "RICHARD_1367",
+                "Spouse Number": 1,
+                "Name": "Anne of Bohemia",
+                "Birth Date": "11 May 1366",
+                "Death Date": "7 Jun 1394",
+                "Country of Birth": "Czech Republic",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Richard II"
+            }
+        ],
+        "issue": []
+    },
+    "HENRY_1367": {
+        "Monarch_Code": "HENRY_1367",
+        "Country": "England",
+        "Name": "Henry IV",
+        "Title": "King of England",
+        "House": "Lancaster",
+        "Birth_Date": "1367-04-15",
+        "Death_Date": "1413-03-20",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1399-09-30",
+        "Reign_1_End": "1413-03-20",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Canterbury Cathedral",
+        "Burial_Latitude": "51.2798",
+        "Burial_Longitude": "1.083",
+        "Age_at_Death": "45",
+        "Reign_Length_Years": "14",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARY_1369",
+                "MONARCH_CODE": "HENRY_1367",
+                "Spouse Number": 1,
+                "Name": "Mary de Bohun",
+                "Birth Date": "c.1369",
+                "Death Date": "4 Jun 1394",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Henry IV"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HENRY_1386",
+                "name": "Henry V",
+                "is_monarch": true
+            },
+            {
+                "code": " THOMAS_1387",
+                "name": " Thomas 1387",
+                "is_monarch": false
+            },
+            {
+                "code": " JOHN_1389",
+                "name": " John 1389",
+                "is_monarch": false
+            },
+            {
+                "code": " HUMPHREY_1390",
+                "name": " Humphrey 1390",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HENRY_1386": {
+        "Monarch_Code": "HENRY_1386",
+        "Country": "England",
+        "Name": "Henry V",
+        "Title": "King of England",
+        "House": "Lancaster",
+        "Birth_Date": "1386-09-16",
+        "Death_Date": "1422-08-31",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1413-03-20",
+        "Reign_1_End": "1422-08-31",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "35",
+        "Reign_Length_Years": "9",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "CATHERINE_1401",
+                "MONARCH_CODE": "HENRY_1386",
+                "Spouse Number": 1,
+                "Name": "Catherine of Valois",
+                "Birth Date": "27 Oct 1401",
+                "Death Date": "3 Jan 1437",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Henry V"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HENRY_1421",
+                "name": "Henry VI",
+                "is_monarch": true
+            }
+        ]
+    },
+    "HENRY_1421": {
+        "Monarch_Code": "HENRY_1421",
+        "Country": "England",
+        "Name": "Henry VI",
+        "Title": "King of England",
+        "House": "Lancaster",
+        "Birth_Date": "1421-12-06",
+        "Death_Date": "1471-05-21",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1422-08-31",
+        "Reign_1_End": "1461-03-04",
+        "Reign_2_Start": "1470-10-03",
+        "Reign_2_End": "1471-04-11",
+        "Place_of_Burial": "Chertsey Abbey then Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "49",
+        "Reign_Length_Years": "48",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARGARET_1430",
+                "MONARCH_CODE": "HENRY_1421",
+                "Spouse Number": 1,
+                "Name": "Margaret of Anjou",
+                "Birth Date": "23 Mar 1430",
+                "Death Date": "25 Aug 1482",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Henry VI"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1453",
+                "name": "Edward 1453",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1442": {
+        "Monarch_Code": "EDWARD_1442",
+        "Country": "England",
+        "Name": "Edward IV",
+        "Title": "King of England",
+        "House": "York",
+        "Birth_Date": "1442-04-28",
+        "Death_Date": "1483-04-09",
+        "Country_of_Birth": "France",
+        "Reign_1_Start": "1461-03-04",
+        "Reign_1_End": "1470-10-03",
+        "Reign_2_Start": "1471-04-11",
+        "Reign_2_End": "1483-04-09",
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "40",
+        "Reign_Length_Years": "21",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELIZABETH_1437",
+                "MONARCH_CODE": "EDWARD_1442",
+                "Spouse Number": 1,
+                "Name": "Elizabeth Woodville",
+                "Birth Date": "c.1437",
+                "Death Date": "7 Jun 1492",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edward IV"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ELIZABETH_1466",
+                "name": "Elizabeth 1466",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1467",
+                "name": " Mary 1467",
+                "is_monarch": false
+            },
+            {
+                "code": " CECILY_1469",
+                "name": " Cecily 1469",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWARD_1470",
+                "name": " Edward 1470",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1472",
+                "name": " Margaret 1472",
+                "is_monarch": false
+            },
+            {
+                "code": " RICHARD_1473",
+                "name": " Richard 1473",
+                "is_monarch": false
+            },
+            {
+                "code": " ANNE_1475",
+                "name": " Anne 1475",
+                "is_monarch": false
+            },
+            {
+                "code": " GEORGE_1477",
+                "name": " George 1477",
+                "is_monarch": false
+            },
+            {
+                "code": " CATHERINE_1479",
+                "name": " Catherine 1479",
+                "is_monarch": false
+            },
+            {
+                "code": " BRIDGET_1480",
+                "name": " Bridget 1480",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1470": {
+        "Monarch_Code": "EDWARD_1470",
+        "Country": "England",
+        "Name": "Edward V",
+        "Title": "King of England",
+        "House": "York",
+        "Birth_Date": "1470-11-02",
+        "Death_Date": "c.1483-00-00",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1483-04-09",
+        "Reign_1_End": "1483-06-26",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Unknown",
+        "Burial_Latitude": "Unknown",
+        "Burial_Longitude": "Unknown",
+        "Age_at_Death": "12",
+        "Reign_Length_Years": "0",
+        "spouses": [],
+        "issue": []
+    },
+    "RICHARD_1452": {
+        "Monarch_Code": "RICHARD_1452",
+        "Country": "England",
+        "Name": "Richard III",
+        "Title": "King of England",
+        "House": "York",
+        "Birth_Date": "1452-10-02",
+        "Death_Date": "1485-08-22",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1483-06-26",
+        "Reign_1_End": "1485-08-22",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Leicester Cathedral",
+        "Burial_Latitude": "52.6369",
+        "Burial_Longitude": "-1.1398",
+        "Age_at_Death": "32",
+        "Reign_Length_Years": "2",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANNE_1456",
+                "MONARCH_CODE": "RICHARD_1452",
+                "Spouse Number": 1,
+                "Name": "Anne Neville",
+                "Birth Date": "11 Jun 1456",
+                "Death Date": "16 Mar 1485",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Richard III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1476",
+                "name": "Edward 1476",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HENRY_1457": {
+        "Monarch_Code": "HENRY_1457",
+        "Country": "England",
+        "Name": "Henry VII",
+        "Title": "King of England",
+        "House": "Tudor",
+        "Birth_Date": "1457-01-28",
+        "Death_Date": "1509-04-21",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1485-08-22",
+        "Reign_1_End": "1509-04-21",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "52",
+        "Reign_Length_Years": "24",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELIZABETH_1466",
+                "MONARCH_CODE": "HENRY_1457",
+                "Spouse Number": 1,
+                "Name": "Elizabeth of York",
+                "Birth Date": "11 Feb 1466",
+                "Death Date": "11 Feb 1503",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Henry VII"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ARTHUR_1486",
+                "name": "Arthur 1486",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1489",
+                "name": " Margaret 1489",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1491",
+                "name": " Henry 1491",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1492",
+                "name": " Elizabeth 1492",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1496",
+                "name": " Mary 1496",
+                "is_monarch": false
+            },
+            {
+                "code": " EDMUND_1499",
+                "name": " Edmund 1499",
+                "is_monarch": false
+            },
+            {
+                "code": " KATHERINE_1503",
+                "name": " Katherine 1503",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HENRY_1491": {
+        "Monarch_Code": "HENRY_1491",
+        "Country": "England",
+        "Name": "Henry VIII",
+        "Title": "King of England",
+        "House": "Tudor",
+        "Birth_Date": "1491-06-28",
+        "Death_Date": "1547-01-28",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1509-04-21",
+        "Reign_1_End": "1547-01-28",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "55",
+        "Reign_Length_Years": "38",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "CATHERINE_1485",
+                "MONARCH_CODE": "HENRY_1491",
+                "Spouse Number": 1,
+                "Name": "Catherine of Aragon",
+                "Birth Date": "16 Dec 1485",
+                "Death Date": "7 Jan 1536",
+                "Country of Birth": "Spain",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Henry VIII"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MARY_1516",
+                "name": "Mary I",
+                "is_monarch": true
+            },
+            {
+                "code": " ELIZABETH_1533",
+                "name": " Elizabeth 1533",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWARD_1537",
+                "name": " Edward 1537",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1537": {
+        "Monarch_Code": "EDWARD_1537",
+        "Country": "England",
+        "Name": "Edward VI",
+        "Title": "King of England",
+        "House": "Tudor",
+        "Birth_Date": "1537-10-12",
+        "Death_Date": "1553-07-06",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1547-01-28",
+        "Reign_1_End": "1553-07-06",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "15",
+        "Reign_Length_Years": "6",
+        "spouses": [],
+        "issue": []
+    },
+    "JANE_1537": {
+        "Monarch_Code": "JANE_1537",
+        "Country": "England",
+        "Name": "Lady Jane Grey",
+        "Title": "Queen of England",
+        "House": "Tudor",
+        "Birth_Date": "1537-10-00",
+        "Death_Date": "1554-02-12",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1553-07-10",
+        "Reign_1_End": "1553-07-19",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Tower of London",
+        "Burial_Latitude": "51.5081",
+        "Burial_Longitude": "-0.0759",
+        "Age_at_Death": "16",
+        "Reign_Length_Years": "0",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "GUILDFORD_1535",
+                "MONARCH_CODE": "JANE_1537",
+                "Spouse Number": 1,
+                "Name": "Guildford Dudley",
+                "Birth Date": "c.1535",
+                "Death Date": "12 Feb 1554",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Husband of Lady Jane Grey"
+            }
+        ],
+        "issue": []
+    },
+    "MARY_1516": {
+        "Monarch_Code": "MARY_1516",
+        "Country": "England",
+        "Name": "Mary I",
+        "Title": "Queen of England",
+        "House": "Tudor",
+        "Birth_Date": "1516-02-18",
+        "Death_Date": "1558-11-17",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1553-07-19",
+        "Reign_1_End": "1558-11-17",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "42",
+        "Reign_Length_Years": "5",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "PHILIP_1527",
+                "MONARCH_CODE": "MARY_1516",
+                "Spouse Number": 1,
+                "Name": "Philip II of Spain",
+                "Birth Date": "21 May 1527",
+                "Death Date": "13 Sep 1598",
+                "Country of Birth": "Spain",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Husband of Mary I"
+            }
+        ],
+        "issue": []
+    },
+    "ELIZABETH_1533": {
+        "Monarch_Code": "ELIZABETH_1533",
+        "Country": "England",
+        "Name": "Elizabeth I",
+        "Title": "Queen of England",
+        "House": "Tudor",
+        "Birth_Date": "1533-09-07",
+        "Death_Date": "1603-03-24",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1558-11-17",
+        "Reign_1_End": "1603-03-24",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "69",
+        "Reign_Length_Years": "45",
+        "spouses": [],
+        "issue": []
+    },
+    "JAMES_1566": {
+        "Monarch_Code": "JAMES_1566",
+        "Country": "Scotland",
+        "Name": "James VI",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1566-06-19",
+        "Death_Date": "1625-03-27",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1567-07-24",
+        "Reign_1_End": "1625-03-27",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "58",
+        "Reign_Length_Years": "58",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANNE_1574",
+                "MONARCH_CODE": "JAMES_1566",
+                "Spouse Number": 1,
+                "Name": "Anne of Denmark",
+                "Birth Date": "12 Dec 1574",
+                "Death Date": "2 Mar 1619",
+                "Country of Birth": "Denmark",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of James I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HENRY_1594",
+                "name": "Henry 1594",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1596",
+                "name": " Elizabeth 1596",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1598",
+                "name": " Margaret 1598",
+                "is_monarch": false
+            },
+            {
+                "code": " CHARLES_1600",
+                "name": " Charles 1600",
+                "is_monarch": false
+            },
+            {
+                "code": " ROBERT_1602",
+                "name": " Robert 1602",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1605",
+                "name": " Mary 1605",
+                "is_monarch": false
+            },
+            {
+                "code": " SOPHIA_1607",
+                "name": " Sophia 1607",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CHARLES_1600": {
+        "Monarch_Code": "CHARLES_1600",
+        "Country": "England",
+        "Name": "Charles I",
+        "Title": "King of England & Scotland",
+        "House": "Stuart",
+        "Birth_Date": "1600-11-19",
+        "Death_Date": "1649-01-30",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1625-03-27",
+        "Reign_1_End": "1649-01-30",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "48",
+        "Reign_Length_Years": "24",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "HENRIETTA_1609",
+                "MONARCH_CODE": "CHARLES_1600",
+                "Spouse Number": 1,
+                "Name": "Henrietta Maria of France",
+                "Birth Date": "25 Nov 1609",
+                "Death Date": "10 Sep 1669",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Charles I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CHARLES_1630",
+                "name": "Charles II",
+                "is_monarch": true
+            },
+            {
+                "code": " MARY_1631",
+                "name": " Mary 1631",
+                "is_monarch": false
+            },
+            {
+                "code": " JAMES_1633",
+                "name": " James 1633",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1635",
+                "name": " Elizabeth 1635",
+                "is_monarch": false
+            },
+            {
+                "code": " ANNE_1637",
+                "name": " Anne 1637",
+                "is_monarch": false
+            },
+            {
+                "code": " CATHERINE_1639",
+                "name": " Catherine 1639",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1640",
+                "name": " Henry 1640",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRIETTA_1644",
+                "name": " Henrietta 1644",
+                "is_monarch": false
+            }
+        ]
+    },
+    "OLIVER_1599": {
+        "Monarch_Code": "OLIVER_1599",
+        "Country": "England",
+        "Name": "Oliver Cromwell",
+        "Title": "Lord Protector",
+        "House": "Commonwealth",
+        "Birth_Date": "1599-04-25",
+        "Death_Date": "1658-09-03",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1653-12-16",
+        "Reign_1_End": "1658-09-03",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey (exhumed)",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "59",
+        "Reign_Length_Years": "5",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELIZABETH_1598",
+                "MONARCH_CODE": "OLIVER_1599",
+                "Spouse Number": 1,
+                "Name": "Elizabeth Bourchier",
+                "Birth Date": "1598",
+                "Death Date": "1665",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Oliver Cromwell"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ROBERT_1621",
+                "name": "Robert 1621",
+                "is_monarch": false
+            },
+            {
+                "code": " OLIVER_1623",
+                "name": " Oliver 1623",
+                "is_monarch": false
+            },
+            {
+                "code": " BRIDGET_1624",
+                "name": " Bridget 1624",
+                "is_monarch": false
+            },
+            {
+                "code": " RICHARD_1626",
+                "name": " Richard 1626",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1628",
+                "name": " Henry 1628",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1629",
+                "name": " Elizabeth 1629",
+                "is_monarch": false
+            },
+            {
+                "code": " JAMES_1632",
+                "name": " James 1632",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1637",
+                "name": " Mary 1637",
+                "is_monarch": false
+            },
+            {
+                "code": " FRANCES_1638",
+                "name": " Frances 1638",
+                "is_monarch": false
+            }
+        ]
+    },
+    "RICHARD_1626": {
+        "Monarch_Code": "RICHARD_1626",
+        "Country": "England",
+        "Name": "Richard Cromwell",
+        "Title": "Lord Protector",
+        "House": "Commonwealth",
+        "Birth_Date": "1626-10-04",
+        "Death_Date": "1712-07-12",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1658-09-03",
+        "Reign_1_End": "1659-05-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Hursley",
+        "Burial_Latitude": "51.0261",
+        "Burial_Longitude": "-1.3844",
+        "Age_at_Death": "85",
+        "Reign_Length_Years": "1",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "DOROTHY_1632",
+                "MONARCH_CODE": "RICHARD_1626",
+                "Spouse Number": 1,
+                "Name": "Dorothy Maijor",
+                "Birth Date": "1632",
+                "Death Date": "1676",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Richard Cromwell"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ANNA_1653",
+                "name": "Anna 1653",
+                "is_monarch": false
+            },
+            {
+                "code": " DOROTHY_1654",
+                "name": " Dorothy 1654",
+                "is_monarch": false
+            },
+            {
+                "code": " OLIVER_1655",
+                "name": " Oliver 1655",
+                "is_monarch": false
+            },
+            {
+                "code": " RICHARD_1657",
+                "name": " Richard 1657",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CHARLES_1630": {
+        "Monarch_Code": "CHARLES_1630",
+        "Country": "England",
+        "Name": "Charles II",
+        "Title": "King of England & Scotland",
+        "House": "Stuart",
+        "Birth_Date": "1630-05-29",
+        "Death_Date": "1685-02-06",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1660-05-29",
+        "Reign_1_End": "1685-02-06",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "54",
+        "Reign_Length_Years": "25",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "CATHERINE_1638",
+                "MONARCH_CODE": "CHARLES_1630",
+                "Spouse Number": 1,
+                "Name": "Catherine of Braganza",
+                "Birth Date": "25 Nov 1638",
+                "Death Date": "31 Dec 1705",
+                "Country of Birth": "Portugal",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Charles II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "None (legitimate)",
+                "name": "None (Legitimate)",
+                "is_monarch": false
+            }
+        ]
+    },
+    "JAMES_1633": {
+        "Monarch_Code": "JAMES_1633",
+        "Country": "England",
+        "Name": "James II of England/VII of Scotland",
+        "Title": "King of England & Scotland",
+        "House": "Stuart",
+        "Birth_Date": "1633-10-14",
+        "Death_Date": "1701-09-16",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1685-02-06",
+        "Reign_1_End": "1688-12-11",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Church of English Benedictines Paris",
+        "Burial_Latitude": "48.8566",
+        "Burial_Longitude": "2.3522",
+        "Age_at_Death": "67",
+        "Reign_Length_Years": "4",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANNE_1637",
+                "MONARCH_CODE": "JAMES_1633",
+                "Spouse Number": 1,
+                "Name": "Anne Hyde",
+                "Birth Date": "12 Mar 1637",
+                "Death Date": "31 Mar 1671",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of James II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MARY_1662",
+                "name": "Mary II",
+                "is_monarch": true
+            },
+            {
+                "code": " ANNE_1665",
+                "name": " Anne 1665",
+                "is_monarch": false
+            },
+            {
+                "code": " JAMES_1688",
+                "name": " James 1688",
+                "is_monarch": false
+            },
+            {
+                "code": " LOUISE_1692",
+                "name": " Louise 1692",
+                "is_monarch": false
+            }
+        ]
+    },
+    "WILLIAM_1650": {
+        "Monarch_Code": "WILLIAM_1650",
+        "Country": "England",
+        "Name": "William III",
+        "Title": "King of England & Scotland",
+        "House": "Stuart",
+        "Birth_Date": "1650-11-14",
+        "Death_Date": "1702-03-08",
+        "Country_of_Birth": "Netherlands",
+        "Reign_1_Start": "1689-02-13",
+        "Reign_1_End": "1702-03-08",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "51",
+        "Reign_Length_Years": "13",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARY_1662",
+                "MONARCH_CODE": "WILLIAM_1650",
+                "Spouse Number": 1,
+                "Name": "Mary II",
+                "Birth Date": "30 Apr 1662",
+                "Death Date": "28 Dec 1694",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of William III"
+            }
+        ],
+        "issue": []
+    },
+    "MARY_1662": {
+        "Monarch_Code": "MARY_1662",
+        "Country": "England",
+        "Name": "Mary II",
+        "Title": "Queen of England & Scotland",
+        "House": "Stuart",
+        "Birth_Date": "1662-04-30",
+        "Death_Date": "1694-12-28",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1689-02-13",
+        "Reign_1_End": "1694-12-28",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "32",
+        "Reign_Length_Years": "6",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "WILLIAM_1650",
+                "MONARCH_CODE": "MARY_1662",
+                "Spouse Number": 1,
+                "Name": "William III",
+                "Birth Date": "14 Nov 1650",
+                "Death Date": "8 Mar 1702",
+                "Country of Birth": "Netherlands",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Husband of Mary II"
+            }
+        ],
+        "issue": []
+    },
+    "ANNE_1665": {
+        "Monarch_Code": "ANNE_1665",
+        "Country": "England",
+        "Name": "Anne",
+        "Title": "Queen of England & Scotland",
+        "House": "Stuart",
+        "Birth_Date": "1665-02-06",
+        "Death_Date": "1714-08-01",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1702-03-08",
+        "Reign_1_End": "1714-08-01",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "49",
+        "Reign_Length_Years": "12",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "GEORGE_1653",
+                "MONARCH_CODE": "ANNE_1665",
+                "Spouse Number": 1,
+                "Name": "George of Denmark",
+                "Birth Date": "2 Apr 1653",
+                "Death Date": "28 Oct 1708",
+                "Country of Birth": "Denmark",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Husband of Anne"
+            }
+        ],
+        "issue": [
+            {
+                "code": "GEORGE_1692",
+                "name": "George 1692",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1685",
+                "name": " Mary 1685",
+                "is_monarch": false
+            },
+            {
+                "code": " GEORGE_1716",
+                "name": " George 1716",
+                "is_monarch": false
+            },
+            {
+                "code": " SOPHIA_1687",
+                "name": " Sophia 1687",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GEORGE_1660": {
+        "Monarch_Code": "GEORGE_1660",
+        "Country": "England",
+        "Name": "George I",
+        "Title": "King of Great Britain",
+        "House": "Hanover",
+        "Birth_Date": "1660-05-28",
+        "Death_Date": "1727-06-11",
+        "Country_of_Birth": "Germany",
+        "Reign_1_Start": "1714-08-01",
+        "Reign_1_End": "1727-06-11",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Leineschloss Hanover",
+        "Burial_Latitude": "52.3759",
+        "Burial_Longitude": "9.732",
+        "Age_at_Death": "66",
+        "Reign_Length_Years": "13",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "SOPHIA_1666",
+                "MONARCH_CODE": "GEORGE_1660",
+                "Spouse Number": 1,
+                "Name": "Sophia Dorothea of Celle",
+                "Birth Date": "15 Sep 1666",
+                "Death Date": "13 Nov 1726",
+                "Country of Birth": "Germany",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of George I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "GEORGE_1683",
+                "name": "George II",
+                "is_monarch": true
+            },
+            {
+                "code": " SOPHIA_1687",
+                "name": " Sophia 1687",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GEORGE_1683": {
+        "Monarch_Code": "GEORGE_1683",
+        "Country": "England",
+        "Name": "George II",
+        "Title": "King of Great Britain",
+        "House": "Hanover",
+        "Birth_Date": "1683-10-30",
+        "Death_Date": "1760-10-25",
+        "Country_of_Birth": "Germany",
+        "Reign_1_Start": "1727-06-11",
+        "Reign_1_End": "1760-10-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "76",
+        "Reign_Length_Years": "33",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "CAROLINE_1683",
+                "MONARCH_CODE": "GEORGE_1683",
+                "Spouse Number": 1,
+                "Name": "Caroline of Ansbach",
+                "Birth Date": "1 Mar 1683",
+                "Death Date": "20 Nov 1737",
+                "Country of Birth": "Germany",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of George II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "FREDERICK_1707",
+                "name": "Frederick 1707",
+                "is_monarch": false
+            },
+            {
+                "code": " ANNE_1709",
+                "name": " Anne 1709",
+                "is_monarch": false
+            },
+            {
+                "code": " PRINCESS_1711",
+                "name": " Princess 1711",
+                "is_monarch": false
+            },
+            {
+                "code": " CAROLINE_1713",
+                "name": " Caroline 1713",
+                "is_monarch": false
+            },
+            {
+                "code": " GEORGE_1721",
+                "name": " George 1721",
+                "is_monarch": false
+            },
+            {
+                "code": " WILLIAM_1721",
+                "name": " William 1721",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1723",
+                "name": " Mary 1723",
+                "is_monarch": false
+            },
+            {
+                "code": " LOUISE_1724",
+                "name": " Louise 1724",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GEORGE_1738": {
+        "Monarch_Code": "GEORGE_1738",
+        "Country": "England",
+        "Name": "George III",
+        "Title": "King of Great Britain",
+        "House": "Hanover",
+        "Birth_Date": "1738-06-04",
+        "Death_Date": "1820-01-29",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1760-10-25",
+        "Reign_1_End": "1820-01-29",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "81",
+        "Reign_Length_Years": "60",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "CHARLOTTE_1744",
+                "MONARCH_CODE": "GEORGE_1738",
+                "Spouse Number": 1,
+                "Name": "Charlotte of Mecklenburg-Strelitz",
+                "Birth Date": "19 May 1744",
+                "Death Date": "17 Nov 1818",
+                "Country of Birth": "Germany",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of George III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "GEORGE_1762",
+                "name": "George IV",
+                "is_monarch": true
+            },
+            {
+                "code": " FREDERICK_1763",
+                "name": " Frederick 1763",
+                "is_monarch": false
+            },
+            {
+                "code": " WILLIAM_1765",
+                "name": " William 1765",
+                "is_monarch": false
+            },
+            {
+                "code": " CHARLOTTE_1766",
+                "name": " Charlotte 1766",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWARD_1767",
+                "name": " Edward 1767",
+                "is_monarch": false
+            },
+            {
+                "code": " AUGUSTA_1768",
+                "name": " Augusta 1768",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1770",
+                "name": " Elizabeth 1770",
+                "is_monarch": false
+            },
+            {
+                "code": " ERNEST_1771",
+                "name": " Ernest 1771",
+                "is_monarch": false
+            },
+            {
+                "code": " AUGUSTUS_1773",
+                "name": " Augustus 1773",
+                "is_monarch": false
+            },
+            {
+                "code": " ADOLPHUS_1774",
+                "name": " Adolphus 1774",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1776",
+                "name": " Mary 1776",
+                "is_monarch": false
+            },
+            {
+                "code": " SOPHIA_1777",
+                "name": " Sophia 1777",
+                "is_monarch": false
+            },
+            {
+                "code": " OCTAVIUS_1779",
+                "name": " Octavius 1779",
+                "is_monarch": false
+            },
+            {
+                "code": " ALFRED_1780",
+                "name": " Alfred 1780",
+                "is_monarch": false
+            },
+            {
+                "code": " AMELIA_1783",
+                "name": " Amelia 1783",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GEORGE_1762": {
+        "Monarch_Code": "GEORGE_1762",
+        "Country": "England",
+        "Name": "George IV",
+        "Title": "King of Great Britain",
+        "House": "Hanover",
+        "Birth_Date": "1762-08-12",
+        "Death_Date": "1830-06-26",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1820-01-29",
+        "Reign_1_End": "1830-06-26",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "67",
+        "Reign_Length_Years": "10",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "CAROLINE_1768",
+                "MONARCH_CODE": "GEORGE_1762",
+                "Spouse Number": 1,
+                "Name": "Caroline of Brunswick",
+                "Birth Date": "17 May 1768",
+                "Death Date": "7 Aug 1821",
+                "Country of Birth": "Germany",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of George IV"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CHARLOTTE_1796",
+                "name": "Charlotte 1796",
+                "is_monarch": false
+            }
+        ]
+    },
+    "WILLIAM_1765": {
+        "Monarch_Code": "WILLIAM_1765",
+        "Country": "England",
+        "Name": "William IV",
+        "Title": "King of Great Britain",
+        "House": "Hanover",
+        "Birth_Date": "1765-08-21",
+        "Death_Date": "1837-06-20",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1830-06-26",
+        "Reign_1_End": "1837-06-20",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "71",
+        "Reign_Length_Years": "7",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ADELAIDE_1792",
+                "MONARCH_CODE": "WILLIAM_1765",
+                "Spouse Number": 1,
+                "Name": "Adelaide of Saxe-Meiningen",
+                "Birth Date": "13 Aug 1792",
+                "Death Date": "2 Dec 1849",
+                "Country of Birth": "Germany",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of William IV"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CHARLOTTE_1819",
+                "name": "Charlotte 1819",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1820",
+                "name": " Elizabeth 1820",
+                "is_monarch": false
+            }
+        ]
+    },
+    "VICTORIA_1819": {
+        "Monarch_Code": "VICTORIA_1819",
+        "Country": "England",
+        "Name": "Victoria",
+        "Title": "Queen of Great Britain",
+        "House": "Hanover",
+        "Birth_Date": "1819-05-24",
+        "Death_Date": "22/01/1901",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1837-06-20",
+        "Reign_1_End": "22/01/1901",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Frogmore Mausoleum",
+        "Burial_Latitude": "51.4678",
+        "Burial_Longitude": "-0.5944",
+        "Age_at_Death": "81",
+        "Reign_Length_Years": "64",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ALBERT_1819",
+                "MONARCH_CODE": "VICTORIA_1819",
+                "Spouse Number": 1,
+                "Name": "Albert of Saxe-Coburg-Gotha",
+                "Birth Date": "26 Aug 1819",
+                "Death Date": "14 Dec 1861",
+                "Country of Birth": "Germany",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Husband of Victoria"
+            }
+        ],
+        "issue": [
+            {
+                "code": "VICTORIA_1840",
+                "name": "Victoria 1840",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWARD_1841",
+                "name": " Edward 1841",
+                "is_monarch": false
+            },
+            {
+                "code": " ALICE_1843",
+                "name": " Alice 1843",
+                "is_monarch": false
+            },
+            {
+                "code": " ALFRED_1844",
+                "name": " Alfred 1844",
+                "is_monarch": false
+            },
+            {
+                "code": " HELENA_1846",
+                "name": " Helena 1846",
+                "is_monarch": false
+            },
+            {
+                "code": " LOUISE_1848",
+                "name": " Louise 1848",
+                "is_monarch": false
+            },
+            {
+                "code": " ARTHUR_1850",
+                "name": " Arthur 1850",
+                "is_monarch": false
+            },
+            {
+                "code": " LEOPOLD_1853",
+                "name": " Leopold 1853",
+                "is_monarch": false
+            },
+            {
+                "code": " BEATRICE_1857",
+                "name": " Beatrice 1857",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1841": {
+        "Monarch_Code": "EDWARD_1841",
+        "Country": "England",
+        "Name": "Edward VII",
+        "Title": "King of United Kingdom",
+        "House": "Saxe-Coburg-Gotha",
+        "Birth_Date": "1841-11-09",
+        "Death_Date": "06/05/1910",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "22/01/1901",
+        "Reign_1_End": "06/05/1910",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "68",
+        "Reign_Length_Years": "9",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ALEXANDRA_1844",
+                "MONARCH_CODE": "EDWARD_1841",
+                "Spouse Number": 1,
+                "Name": "Alexandra of Denmark",
+                "Birth Date": "1 Dec 1844",
+                "Death Date": "20-Nov-25",
+                "Country of Birth": "Denmark",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edward VII"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ALBERT_1864",
+                "name": "Albert 1864",
+                "is_monarch": false
+            },
+            {
+                "code": " GEORGE_1865",
+                "name": " George 1865",
+                "is_monarch": false
+            },
+            {
+                "code": " LOUISE_1867",
+                "name": " Louise 1867",
+                "is_monarch": false
+            },
+            {
+                "code": " VICTORIA_1868",
+                "name": " Victoria 1868",
+                "is_monarch": false
+            },
+            {
+                "code": " MAUD_1869",
+                "name": " Maud 1869",
+                "is_monarch": false
+            },
+            {
+                "code": " ALEXANDER_1871",
+                "name": " Alexander 1871",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GEORGE_1865": {
+        "Monarch_Code": "GEORGE_1865",
+        "Country": "England",
+        "Name": "George V",
+        "Title": "King of United Kingdom",
+        "House": "Saxe-Coburg-Gotha/Windsor",
+        "Birth_Date": "1865-06-03",
+        "Death_Date": "20/01/1936",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "06/05/1910",
+        "Reign_1_End": "20/01/1936",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "70",
+        "Reign_Length_Years": "26",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARY_1867",
+                "MONARCH_CODE": "GEORGE_1865",
+                "Spouse Number": 1,
+                "Name": "Mary of Teck",
+                "Birth Date": "26 May 1867",
+                "Death Date": "24-Mar-53",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of George V"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1894",
+                "name": "Edward VIII",
+                "is_monarch": true
+            },
+            {
+                "code": " ALBERT_1895",
+                "name": " Albert 1895",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1897",
+                "name": " Mary 1897",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1900",
+                "name": " Henry 1900",
+                "is_monarch": false
+            },
+            {
+                "code": " GEORGE_1902",
+                "name": " George 1902",
+                "is_monarch": false
+            },
+            {
+                "code": " JOHN_1905",
+                "name": " John 1905",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDWARD_1894": {
+        "Monarch_Code": "EDWARD_1894",
+        "Country": "England",
+        "Name": "Edward VIII",
+        "Title": "King of United Kingdom",
+        "House": "Windsor",
+        "Birth_Date": "1894-06-23",
+        "Death_Date": "28/05/1972",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "20/01/1936",
+        "Reign_1_End": "11/12/1936",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Frogmore",
+        "Burial_Latitude": "51.4678",
+        "Burial_Longitude": "-0.5944",
+        "Age_at_Death": "77",
+        "Reign_Length_Years": "0",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "WALLIS_1896",
+                "MONARCH_CODE": "EDWARD_1894",
+                "Spouse Number": 1,
+                "Name": "Wallis Simpson",
+                "Birth Date": "19 Jun 1896",
+                "Death Date": "24-Apr-86",
+                "Country of Birth": "USA",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Edward VIII"
+            }
+        ],
+        "issue": []
+    },
+    "GEORGE_1895": {
+        "Monarch_Code": "GEORGE_1895",
+        "Country": "England",
+        "Name": "George VI",
+        "Title": "King of United Kingdom",
+        "House": "Windsor",
+        "Birth_Date": "1895-12-14",
+        "Death_Date": "06/02/1952",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "11/12/1936",
+        "Reign_1_End": "06/02/1952",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "56",
+        "Reign_Length_Years": "15",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELIZABETH_1900",
+                "MONARCH_CODE": "GEORGE_1895",
+                "Spouse Number": 1,
+                "Name": "Elizabeth Bowes-Lyon",
+                "Birth Date": "04-Aug-00",
+                "Death Date": "30-Mar-02",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of George VI"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ELIZABETH_1926",
+                "name": "Elizabeth II",
+                "is_monarch": true
+            },
+            {
+                "code": " MARGARET_1930",
+                "name": " Margaret 1930",
+                "is_monarch": false
+            }
+        ]
+    },
+    "ELIZABETH_1926": {
+        "Monarch_Code": "ELIZABETH_1926",
+        "Country": "England",
+        "Name": "Elizabeth II",
+        "Title": "Queen of United Kingdom",
+        "House": "Windsor",
+        "Birth_Date": "21/04/1926",
+        "Death_Date": "08/09/2022",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "06/02/1952",
+        "Reign_1_End": "08/09/2022",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Windsor Castle",
+        "Burial_Latitude": "51.4839",
+        "Burial_Longitude": "-0.6044",
+        "Age_at_Death": "96",
+        "Reign_Length_Years": "70",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "PHILIP_1921",
+                "MONARCH_CODE": "ELIZABETH_1926",
+                "Spouse Number": 1,
+                "Name": "Philip Mountbatten",
+                "Birth Date": "10-Jun-21",
+                "Death Date": "09-Apr-21",
+                "Country of Birth": "Greece",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Husband of Elizabeth II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CHARLES_1948",
+                "name": "Charles III",
+                "is_monarch": true
+            },
+            {
+                "code": " ANNE_1950",
+                "name": " Anne 1950",
+                "is_monarch": false
+            },
+            {
+                "code": " ANDREW_1960",
+                "name": " Andrew 1960",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWARD_1964",
+                "name": " Edward 1964",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CHARLES_1948": {
+        "Monarch_Code": "CHARLES_1948",
+        "Country": "England",
+        "Name": "Charles III",
+        "Title": "King of United Kingdom",
+        "House": "Windsor",
+        "Birth_Date": "14/11/1948",
+        "Death_Date": "Living",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "08/09/2022",
+        "Reign_1_End": "Present",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Unknown",
+        "Burial_Latitude": "Unknown",
+        "Burial_Longitude": "Unknown",
+        "Age_at_Death": "Living",
+        "Reign_Length_Years": "Present",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "DIANA_1961",
+                "MONARCH_CODE": "CHARLES_1948",
+                "Spouse Number": 1,
+                "Name": "Diana Spencer",
+                "Birth Date": "01-Jul-61",
+                "Death Date": "31-Aug-97",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Charles III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "WILLIAM_1982",
+                "name": "William 1982",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1984",
+                "name": " Henry 1984",
+                "is_monarch": false
+            }
+        ]
+    },
+    "KENNETH_810": {
+        "Monarch_Code": "KENNETH_810",
+        "Country": "Scotland",
+        "Name": "Kenneth I MacAlpin",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.810-00-00",
+        "Death_Date": "858-02-13",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "843-00-00",
+        "Reign_1_End": "858-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "48",
+        "Reign_Length_Years": "15",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CONSTANTINE_836",
+                "name": "Constantine I",
+                "is_monarch": true
+            },
+            {
+                "code": " ÁED_850",
+                "name": " Áed 850",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DONALD_812": {
+        "Monarch_Code": "DONALD_812",
+        "Country": "Scotland",
+        "Name": "Donald I",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.812-00-00",
+        "Death_Date": "862-04-13",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "858-00-00",
+        "Reign_1_End": "862-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "50",
+        "Reign_Length_Years": "4",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "Unknown",
+                "name": "Unknown",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CONSTANTINE_836": {
+        "Monarch_Code": "CONSTANTINE_836",
+        "Country": "Scotland",
+        "Name": "Constantine I",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.836-00-00",
+        "Death_Date": "877-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "862-00-00",
+        "Reign_1_End": "877-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "41",
+        "Reign_Length_Years": "15",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "DONALD_858",
+                "name": "Donald II",
+                "is_monarch": true
+            }
+        ]
+    },
+    "ÁED_850": {
+        "Monarch_Code": "ÁED_850",
+        "Country": "Scotland",
+        "Name": "Áed",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.850-00-00",
+        "Death_Date": "878-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "877-00-00",
+        "Reign_1_End": "878-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "28",
+        "Reign_Length_Years": "1",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CONSTANTINE_874",
+                "name": "Constantine II",
+                "is_monarch": true
+            },
+            {
+                "code": " DONALD_889",
+                "name": " Donald 889",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EOCHAID_865": {
+        "Monarch_Code": "EOCHAID_865",
+        "Country": "Scotland",
+        "Name": "Eochaid",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.865-00-00",
+        "Death_Date": "889-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "878-00-00",
+        "Reign_1_End": "889-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "24",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "Unknown",
+                "name": "Unknown",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GIRIC_860": {
+        "Monarch_Code": "GIRIC_860",
+        "Country": "Scotland",
+        "Name": "Giric",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.860-00-00",
+        "Death_Date": "889-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "878-00-00",
+        "Reign_1_End": "889-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "29",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "Unknown",
+                "name": "Unknown",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DONALD_858": {
+        "Monarch_Code": "DONALD_858",
+        "Country": "Scotland",
+        "Name": "Donald II",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.858-00-00",
+        "Death_Date": "900-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "889-00-00",
+        "Reign_1_End": "900-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "42",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "MALCOLM_954",
+                "name": "Malcolm I",
+                "is_monarch": true
+            }
+        ]
+    },
+    "CONSTANTINE_874": {
+        "Monarch_Code": "CONSTANTINE_874",
+        "Country": "Scotland",
+        "Name": "Constantine II",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.874-00-00",
+        "Death_Date": "952-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "900-00-00",
+        "Reign_1_End": "943-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Andrews",
+        "Burial_Latitude": "56.3398",
+        "Burial_Longitude": "-2.7967",
+        "Age_at_Death": "78",
+        "Reign_Length_Years": "43",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "INDULF_927",
+                "name": "Indulf",
+                "is_monarch": true
+            }
+        ]
+    },
+    "MALCOLM_954": {
+        "Monarch_Code": "MALCOLM_954",
+        "Country": "Scotland",
+        "Name": "Malcolm I",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.900-00-00",
+        "Death_Date": "954-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "943-00-00",
+        "Reign_1_End": "954-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "54",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "DUBH_928",
+                "name": "Dubh",
+                "is_monarch": true
+            },
+            {
+                "code": " KENNETH_929",
+                "name": " Kenneth 929",
+                "is_monarch": false
+            }
+        ]
+    },
+    "INDULF_927": {
+        "Monarch_Code": "INDULF_927",
+        "Country": "Scotland",
+        "Name": "Indulf",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.927-00-00",
+        "Death_Date": "962-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "954-00-00",
+        "Reign_1_End": "962-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "35",
+        "Reign_Length_Years": "8",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CULLEN_933",
+                "name": "Cullen",
+                "is_monarch": true
+            }
+        ]
+    },
+    "DUBH_928": {
+        "Monarch_Code": "DUBH_928",
+        "Country": "Scotland",
+        "Name": "Dubh",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.928-00-00",
+        "Death_Date": "966-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "962-00-00",
+        "Reign_1_End": "967-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "38",
+        "Reign_Length_Years": "5",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "Unknown",
+                "name": "Unknown",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CULLEN_933": {
+        "Monarch_Code": "CULLEN_933",
+        "Country": "Scotland",
+        "Name": "Cullen",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.933-00-00",
+        "Death_Date": "971-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "967-00-00",
+        "Reign_1_End": "971-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "38",
+        "Reign_Length_Years": "4",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CONSTANTINE_962",
+                "name": "Constantine III",
+                "is_monarch": true
+            }
+        ]
+    },
+    "KENNETH_929": {
+        "Monarch_Code": "KENNETH_929",
+        "Country": "Scotland",
+        "Name": "Kenneth II",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.929-00-00",
+        "Death_Date": "995-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "971-00-00",
+        "Reign_1_End": "995-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "66",
+        "Reign_Length_Years": "24",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "MALCOLM_958",
+                "name": "Malcolm II",
+                "is_monarch": true
+            }
+        ]
+    },
+    "CONSTANTINE_962": {
+        "Monarch_Code": "CONSTANTINE_962",
+        "Country": "Scotland",
+        "Name": "Constantine III",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.962-00-00",
+        "Death_Date": "997-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "995-00-00",
+        "Reign_1_End": "997-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "35",
+        "Reign_Length_Years": "2",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "Unknown",
+                "name": "Unknown",
+                "is_monarch": false
+            }
+        ]
+    },
+    "KENNETH_966": {
+        "Monarch_Code": "KENNETH_966",
+        "Country": "Scotland",
+        "Name": "Kenneth III",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.966-00-00",
+        "Death_Date": "1005-03-25",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "997-00-00",
+        "Reign_1_End": "1005-03-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "39",
+        "Reign_Length_Years": "8",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "BODHE_980",
+                "name": "Bodhe 980",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MALCOLM_958": {
+        "Monarch_Code": "MALCOLM_958",
+        "Country": "Scotland",
+        "Name": "Malcolm II",
+        "Title": "King of Scots",
+        "House": "Alpin",
+        "Birth_Date": "c.958-00-00",
+        "Death_Date": "1034-11-25",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1005-03-25",
+        "Reign_1_End": "1034-11-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "76",
+        "Reign_Length_Years": "29",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "BETHOC_984",
+                "name": "Bethoc 984",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DUNCAN_1001": {
+        "Monarch_Code": "DUNCAN_1001",
+        "Country": "Scotland",
+        "Name": "Duncan I",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1001-00-00",
+        "Death_Date": "1040-08-14",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1034-11-25",
+        "Reign_1_End": "1040-08-14",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "39",
+        "Reign_Length_Years": "6",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "SYBILLA_1014",
+                "MONARCH_CODE": "DUNCAN_1001",
+                "Spouse Number": 1,
+                "Name": "Sybilla of Northumbria",
+                "Birth Date": "c.1014",
+                "Death Date": "c.1040",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Duncan I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MALCOLM_1031",
+                "name": "Malcolm III Canmore",
+                "is_monarch": true
+            },
+            {
+                "code": " DONALD_1033",
+                "name": " Donald 1033",
+                "is_monarch": false
+            },
+            {
+                "code": " DUNCAN_1036",
+                "name": " Duncan 1036",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MACBETH_1005": {
+        "Monarch_Code": "MACBETH_1005",
+        "Country": "Scotland",
+        "Name": "Macbeth",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1005-00-00",
+        "Death_Date": "1057-08-15",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1040-08-14",
+        "Reign_1_End": "1057-08-15",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "52",
+        "Reign_Length_Years": "17",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "GRUOCH_1015",
+                "MONARCH_CODE": "MACBETH_1005",
+                "Spouse Number": 1,
+                "Name": "Gruoch of Scotland",
+                "Birth Date": "c.1015",
+                "Death Date": "c.1060",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Macbeth"
+            }
+        ],
+        "issue": [
+            {
+                "code": "LULACH_1032",
+                "name": "Lulach",
+                "is_monarch": true
+            }
+        ]
+    },
+    "LULACH_1032": {
+        "Monarch_Code": "LULACH_1032",
+        "Country": "Scotland",
+        "Name": "Lulach",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1032-00-00",
+        "Death_Date": "1058-03-17",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1057-08-15",
+        "Reign_1_End": "1058-03-17",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Iona",
+        "Burial_Latitude": "56.3342",
+        "Burial_Longitude": "-6.3911",
+        "Age_at_Death": "26",
+        "Reign_Length_Years": "1",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "FINNGHUALA_1040",
+                "MONARCH_CODE": "LULACH_1032",
+                "Spouse Number": 1,
+                "Name": "Finnghuala",
+                "Birth Date": "c.1040",
+                "Death Date": "c.1070",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Lulach"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MÁEL_1058",
+                "name": "Máel 1058",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MALCOLM_1031": {
+        "Monarch_Code": "MALCOLM_1031",
+        "Country": "Scotland",
+        "Name": "Malcolm III Canmore",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1031-00-00",
+        "Death_Date": "1093-11-13",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1058-03-17",
+        "Reign_1_End": "1093-11-13",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Tynemouth then Dunfermline",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "62",
+        "Reign_Length_Years": "35",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "INGIBIORG_1040",
+                "MONARCH_CODE": "MALCOLM_1031",
+                "Spouse Number": 1,
+                "Name": "Ingibiorg Finnsdottir",
+                "Birth Date": "c.1040",
+                "Death Date": "c.1070",
+                "Country of Birth": "Norway",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Malcolm III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "DUNCAN_1060",
+                "name": "Duncan II",
+                "is_monarch": true
+            },
+            {
+                "code": " DONALD_1062",
+                "name": " Donald 1062",
+                "is_monarch": false
+            },
+            {
+                "code": " EDMUND_1070",
+                "name": " Edmund 1070",
+                "is_monarch": false
+            },
+            {
+                "code": " ETHELRED_1072",
+                "name": " Ethelred 1072",
+                "is_monarch": false
+            },
+            {
+                "code": " EDGAR_1074",
+                "name": " Edgar 1074",
+                "is_monarch": false
+            },
+            {
+                "code": " ALEXANDER_1078",
+                "name": " Alexander 1078",
+                "is_monarch": false
+            },
+            {
+                "code": " DAVID_1084",
+                "name": " David 1084",
+                "is_monarch": false
+            },
+            {
+                "code": " EDITH_1080",
+                "name": " Edith 1080",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1082",
+                "name": " Mary 1082",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DONALD_1033": {
+        "Monarch_Code": "DONALD_1033",
+        "Country": "Scotland",
+        "Name": "Donald III",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1033-00-00",
+        "Death_Date": "1099-00-00",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1093-11-13",
+        "Reign_1_End": "1094-05-12",
+        "Reign_2_Start": "1094-11-12",
+        "Reign_2_End": "1097-10-01",
+        "Place_of_Burial": "Dunkeld Cathedral",
+        "Burial_Latitude": "56.5588",
+        "Burial_Longitude": "-3.9737",
+        "Age_at_Death": "66",
+        "Reign_Length_Years": "4",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "Unknown",
+                "name": "Unknown",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DUNCAN_1060": {
+        "Monarch_Code": "DUNCAN_1060",
+        "Country": "Scotland",
+        "Name": "Duncan II",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1060-00-00",
+        "Death_Date": "1094-11-12",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1094-05-12",
+        "Reign_1_End": "1094-11-12",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "34",
+        "Reign_Length_Years": "0",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "OCTREDA_1070",
+                "MONARCH_CODE": "DUNCAN_1060",
+                "Spouse Number": 1,
+                "Name": "Octreda of Dunbar",
+                "Birth Date": "c.1070",
+                "Death Date": "c.1095",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Duncan II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "WILLIAM_1090",
+                "name": "William 1090",
+                "is_monarch": false
+            }
+        ]
+    },
+    "EDGAR_1074": {
+        "Monarch_Code": "EDGAR_1074",
+        "Country": "Scotland",
+        "Name": "Edgar",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1074-00-00",
+        "Death_Date": "1107-01-08",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1097-10-01",
+        "Reign_1_End": "1107-01-08",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "33",
+        "Reign_Length_Years": "9",
+        "spouses": [],
+        "issue": []
+    },
+    "ALEXANDER_1078": {
+        "Monarch_Code": "ALEXANDER_1078",
+        "Country": "Scotland",
+        "Name": "Alexander I",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1078-00-00",
+        "Death_Date": "1124-04-23",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1107-01-08",
+        "Reign_1_End": "1124-04-23",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "46",
+        "Reign_Length_Years": "17",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "SYBILLA_1092",
+                "MONARCH_CODE": "ALEXANDER_1078",
+                "Spouse Number": 1,
+                "Name": "Sybilla of Normandy",
+                "Birth Date": "c.1092",
+                "Death Date": "12 Jul 1122",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Alexander I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MALCOLM_1105",
+                "name": "Malcolm 1105",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DAVID_1084": {
+        "Monarch_Code": "DAVID_1084",
+        "Country": "Scotland",
+        "Name": "David I",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1084-00-00",
+        "Death_Date": "1153-05-24",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1124-04-23",
+        "Reign_1_End": "1153-05-24",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "69",
+        "Reign_Length_Years": "29",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MATILDA_1072",
+                "MONARCH_CODE": "DAVID_1084",
+                "Spouse Number": 1,
+                "Name": "Matilda of Huntingdon",
+                "Birth Date": "c.1072",
+                "Death Date": "23 Apr 1130",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of David I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "HENRY_1114",
+                "name": "Henry 1114",
+                "is_monarch": false
+            },
+            {
+                "code": " MALCOLM_1113",
+                "name": " Malcolm 1113",
+                "is_monarch": false
+            },
+            {
+                "code": " CLARICIA_1115",
+                "name": " Claricia 1115",
+                "is_monarch": false
+            },
+            {
+                "code": " HODIERNA_1117",
+                "name": " Hodierna 1117",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MALCOLM_1113": {
+        "Monarch_Code": "MALCOLM_1113",
+        "Country": "Scotland",
+        "Name": "Malcolm IV",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "1141-03-20",
+        "Death_Date": "1165-12-09",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1153-05-24",
+        "Reign_1_End": "1165-12-09",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "24",
+        "Reign_Length_Years": "12",
+        "spouses": [],
+        "issue": []
+    },
+    "WILLIAM_1143": {
+        "Monarch_Code": "WILLIAM_1143",
+        "Country": "Scotland",
+        "Name": "William I (the Lion)",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "c.1143-00-00",
+        "Death_Date": "1214-12-04",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1165-12-09",
+        "Reign_1_End": "1214-12-04",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Arbroath Abbey",
+        "Burial_Latitude": "56.5632",
+        "Burial_Longitude": "-2.5878",
+        "Age_at_Death": "71",
+        "Reign_Length_Years": "49",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ERMENGARDE_1170",
+                "MONARCH_CODE": "WILLIAM_1143",
+                "Spouse Number": 1,
+                "Name": "Ermengarde de Beaumont",
+                "Birth Date": "c.1170",
+                "Death Date": "11 Feb 1234",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of William I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ALEXANDER_1198",
+                "name": "Alexander II",
+                "is_monarch": true
+            },
+            {
+                "code": " MARGARET_1193",
+                "name": " Margaret 1193",
+                "is_monarch": false
+            },
+            {
+                "code": " ISABELLA_1195",
+                "name": " Isabella 1195",
+                "is_monarch": false
+            },
+            {
+                "code": " MARJORIE_1200",
+                "name": " Marjorie 1200",
+                "is_monarch": false
+            }
+        ]
+    },
+    "ALEXANDER_1198": {
+        "Monarch_Code": "ALEXANDER_1198",
+        "Country": "Scotland",
+        "Name": "Alexander II",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "1198-08-24",
+        "Death_Date": "1249-07-06",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1214-12-04",
+        "Reign_1_End": "1249-07-06",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Melrose Abbey",
+        "Burial_Latitude": "55.5988",
+        "Burial_Longitude": "-2.7187",
+        "Age_at_Death": "50",
+        "Reign_Length_Years": "35",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "JOAN_1210",
+                "MONARCH_CODE": "ALEXANDER_1198",
+                "Spouse Number": 1,
+                "Name": "Joan of England",
+                "Birth Date": "22 Jul 1210",
+                "Death Date": "4 Mar 1238",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Alexander II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ALEXANDER_1241",
+                "name": "Alexander III",
+                "is_monarch": true
+            }
+        ]
+    },
+    "ALEXANDER_1241": {
+        "Monarch_Code": "ALEXANDER_1241",
+        "Country": "Scotland",
+        "Name": "Alexander III",
+        "Title": "King of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "1241-09-04",
+        "Death_Date": "1286-03-19",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1249-07-06",
+        "Reign_1_End": "1286-03-19",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "44",
+        "Reign_Length_Years": "37",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARGARET_1240",
+                "MONARCH_CODE": "ALEXANDER_1241",
+                "Spouse Number": 1,
+                "Name": "Margaret of England",
+                "Birth Date": "29 Sep 1240",
+                "Death Date": "26 Feb 1275",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Alexander III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MARGARET_1261",
+                "name": "Margaret 1261",
+                "is_monarch": false
+            },
+            {
+                "code": " ALEXANDER_1264",
+                "name": " Alexander 1264",
+                "is_monarch": false
+            },
+            {
+                "code": " DAVID_1273",
+                "name": " David 1273",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MARGARET_1283": {
+        "Monarch_Code": "MARGARET_1283",
+        "Country": "Scotland",
+        "Name": "Margaret (Maid of Norway)",
+        "Title": "Queen of Scots",
+        "House": "Dunkeld",
+        "Birth_Date": "1283-04-09",
+        "Death_Date": "1290-09-26",
+        "Country_of_Birth": "Norway",
+        "Reign_1_Start": "1286-03-19",
+        "Reign_1_End": "1290-09-26",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Bergen Cathedral",
+        "Burial_Latitude": "60.3913",
+        "Burial_Longitude": "5.3221",
+        "Age_at_Death": "7",
+        "Reign_Length_Years": "4",
+        "spouses": [],
+        "issue": []
+    },
+    "JOHN_1249": {
+        "Monarch_Code": "JOHN_1249",
+        "Country": "Scotland",
+        "Name": "John Balliol",
+        "Title": "King of Scots",
+        "House": "Balliol",
+        "Birth_Date": "c.1249-00-00",
+        "Death_Date": "1314-11-25",
+        "Country_of_Birth": "England",
+        "Reign_1_Start": "1292-11-17",
+        "Reign_1_End": "1296-07-10",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Bailleul France",
+        "Burial_Latitude": "50.7347",
+        "Burial_Longitude": "2.7371",
+        "Age_at_Death": "65",
+        "Reign_Length_Years": "4",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ISABELLA_1253",
+                "MONARCH_CODE": "JOHN_1249",
+                "Spouse Number": 1,
+                "Name": "Isabella de Warenne",
+                "Birth Date": "c.1253",
+                "Death Date": "before 1292",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of John Balliol"
+            }
+        ],
+        "issue": [
+            {
+                "code": "EDWARD_1283",
+                "name": "Edward 1283",
+                "is_monarch": false
+            },
+            {
+                "code": " HENRY_1284",
+                "name": " Henry 1284",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1286",
+                "name": " Margaret 1286",
+                "is_monarch": false
+            },
+            {
+                "code": " ELEANOR_1288",
+                "name": " Eleanor 1288",
+                "is_monarch": false
+            }
+        ]
+    },
+    "ROBERT_1274": {
+        "Monarch_Code": "ROBERT_1274",
+        "Country": "Scotland",
+        "Name": "Robert I (the Bruce)",
+        "Title": "King of Scots",
+        "House": "Bruce",
+        "Birth_Date": "1274-07-11",
+        "Death_Date": "1329-06-07",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1306-03-25",
+        "Reign_1_End": "1329-06-07",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Dunfermline Abbey",
+        "Burial_Latitude": "56.0717",
+        "Burial_Longitude": "-3.4589",
+        "Age_at_Death": "54",
+        "Reign_Length_Years": "23",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ISABELLA_1272",
+                "MONARCH_CODE": "ROBERT_1274",
+                "Spouse Number": 1,
+                "Name": "Isabella of Mar",
+                "Birth Date": "c.1272",
+                "Death Date": "c.1296",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Robert I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MARJORIE_1296",
+                "name": "Marjorie 1296",
+                "is_monarch": false
+            },
+            {
+                "code": " MATILDA_1310",
+                "name": " Matilda 1310",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1317",
+                "name": " Margaret 1317",
+                "is_monarch": false
+            },
+            {
+                "code": " DAVID_1324",
+                "name": " David 1324",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DAVID_1324": {
+        "Monarch_Code": "DAVID_1324",
+        "Country": "Scotland",
+        "Name": "David II",
+        "Title": "King of Scots",
+        "House": "Bruce",
+        "Birth_Date": "1324-03-05",
+        "Death_Date": "1371-02-22",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1329-06-07",
+        "Reign_1_End": "1371-02-22",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Holyrood Abbey",
+        "Burial_Latitude": "55.9526",
+        "Burial_Longitude": "-3.1722",
+        "Age_at_Death": "46",
+        "Reign_Length_Years": "42",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "JOAN_1321",
+                "MONARCH_CODE": "DAVID_1324",
+                "Spouse Number": 1,
+                "Name": "Joan of the Tower",
+                "Birth Date": "5 Jul 1321",
+                "Death Date": "7 Sep 1362",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of David II"
+            }
+        ],
+        "issue": []
+    },
+    "ROBERT_1316": {
+        "Monarch_Code": "ROBERT_1316",
+        "Country": "Scotland",
+        "Name": "Robert II",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1316-03-02",
+        "Death_Date": "1390-04-19",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1371-02-22",
+        "Reign_1_End": "1390-04-19",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Scone Abbey",
+        "Burial_Latitude": "56.4205",
+        "Burial_Longitude": "-3.4252",
+        "Age_at_Death": "74",
+        "Reign_Length_Years": "19",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELIZABETH_1320",
+                "MONARCH_CODE": "ROBERT_1316",
+                "Spouse Number": 1,
+                "Name": "Elizabeth Mure",
+                "Birth Date": "c.1320",
+                "Death Date": "1355",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Robert II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "JOHN_1337",
+                "name": "John 1337",
+                "is_monarch": false
+            },
+            {
+                "code": " ROBERT_1340",
+                "name": " Robert 1340",
+                "is_monarch": false
+            },
+            {
+                "code": " ALEXANDER_1343",
+                "name": " Alexander 1343",
+                "is_monarch": false
+            },
+            {
+                "code": " DAVID_1356",
+                "name": " David 1356",
+                "is_monarch": false
+            },
+            {
+                "code": " WALTER_1360",
+                "name": " Walter 1360",
+                "is_monarch": false
+            },
+            {
+                "code": " ROBERT_1361",
+                "name": " Robert 1361",
+                "is_monarch": false
+            },
+            {
+                "code": " MARJORIE_1344",
+                "name": " Marjorie 1344",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1346",
+                "name": " Margaret 1346",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1348",
+                "name": " Elizabeth 1348",
+                "is_monarch": false
+            },
+            {
+                "code": " ISABELLA_1351",
+                "name": " Isabella 1351",
+                "is_monarch": false
+            },
+            {
+                "code": " JEAN_1353",
+                "name": " Jean 1353",
+                "is_monarch": false
+            },
+            {
+                "code": " KATHARINE_1354",
+                "name": " Katharine 1354",
+                "is_monarch": false
+            },
+            {
+                "code": " ANNABELLA_1355",
+                "name": " Annabella 1355",
+                "is_monarch": false
+            },
+            {
+                "code": " EGIDIA_1370",
+                "name": " Egidia 1370",
+                "is_monarch": false
+            }
+        ]
+    },
+    "ROBERT_1340": {
+        "Monarch_Code": "ROBERT_1340",
+        "Country": "Scotland",
+        "Name": "Robert III",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "c.1340-00-00",
+        "Death_Date": "1406-04-04",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1390-04-19",
+        "Reign_1_End": "1406-04-04",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Paisley Abbey",
+        "Burial_Latitude": "55.8467",
+        "Burial_Longitude": "-4.4244",
+        "Age_at_Death": "66",
+        "Reign_Length_Years": "16",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANNABELLA_1350",
+                "MONARCH_CODE": "ROBERT_1340",
+                "Spouse Number": 1,
+                "Name": "Annabella Drummond",
+                "Birth Date": "c.1350",
+                "Death Date": "c.1401",
+                "Country of Birth": "Scotland",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Robert III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "DAVID_1378",
+                "name": "David 1378",
+                "is_monarch": false
+            },
+            {
+                "code": " ROBERT_1379",
+                "name": " Robert 1379",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1380",
+                "name": " Margaret 1380",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1383",
+                "name": " Mary 1383",
+                "is_monarch": false
+            },
+            {
+                "code": " EGIDIA_1387",
+                "name": " Egidia 1387",
+                "is_monarch": false
+            },
+            {
+                "code": " ELIZABETH_1390",
+                "name": " Elizabeth 1390",
+                "is_monarch": false
+            }
+        ]
+    },
+    "JAMES_1394": {
+        "Monarch_Code": "JAMES_1394",
+        "Country": "Scotland",
+        "Name": "James I",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1394-07-25",
+        "Death_Date": "1437-02-21",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1406-04-04",
+        "Reign_1_End": "1437-02-21",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Perth Charterhouse",
+        "Burial_Latitude": "56.3961",
+        "Burial_Longitude": "-3.4372",
+        "Age_at_Death": "42",
+        "Reign_Length_Years": "31",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "JOAN_1404",
+                "MONARCH_CODE": "JAMES_1394",
+                "Spouse Number": 1,
+                "Name": "Joan Beaufort",
+                "Birth Date": "c.1404",
+                "Death Date": "15 Jul 1445",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of James I"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MARGARET_1424",
+                "name": "Margaret 1424",
+                "is_monarch": false
+            },
+            {
+                "code": " ISABELLA_1426",
+                "name": " Isabella 1426",
+                "is_monarch": false
+            },
+            {
+                "code": " JOAN_1428",
+                "name": " Joan 1428",
+                "is_monarch": false
+            },
+            {
+                "code": " ELEANOR_1427",
+                "name": " Eleanor 1427",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1433",
+                "name": " Mary 1433",
+                "is_monarch": false
+            },
+            {
+                "code": " ANNABELLA_1435",
+                "name": " Annabella 1435",
+                "is_monarch": false
+            },
+            {
+                "code": " ALEXANDER_1430",
+                "name": " Alexander 1430",
+                "is_monarch": false
+            },
+            {
+                "code": " JAMES_1430",
+                "name": " James 1430",
+                "is_monarch": false
+            }
+        ]
+    },
+    "JAMES_1430": {
+        "Monarch_Code": "JAMES_1430",
+        "Country": "Scotland",
+        "Name": "James II",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1430-10-16",
+        "Death_Date": "1460-08-03",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1437-02-21",
+        "Reign_1_End": "1460-08-03",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Holyrood Abbey",
+        "Burial_Latitude": "55.9526",
+        "Burial_Longitude": "-3.1722",
+        "Age_at_Death": "29",
+        "Reign_Length_Years": "23",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARY_1433",
+                "MONARCH_CODE": "JAMES_1430",
+                "Spouse Number": 1,
+                "Name": "Mary of Guelders",
+                "Birth Date": "c.1433",
+                "Death Date": "1 Dec 1463",
+                "Country of Birth": "Netherlands",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of James II"
+            }
+        ],
+        "issue": [
+            {
+                "code": "JAMES_1451",
+                "name": "James III",
+                "is_monarch": true
+            },
+            {
+                "code": " ALEXANDER_1454",
+                "name": " Alexander 1454",
+                "is_monarch": false
+            },
+            {
+                "code": " DAVID_1456",
+                "name": " David 1456",
+                "is_monarch": false
+            },
+            {
+                "code": " JOHN_1459",
+                "name": " John 1459",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1455",
+                "name": " Margaret 1455",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1453",
+                "name": " Mary 1453",
+                "is_monarch": false
+            }
+        ]
+    },
+    "JAMES_1451": {
+        "Monarch_Code": "JAMES_1451",
+        "Country": "Scotland",
+        "Name": "James III",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1451-07-10",
+        "Death_Date": "1488-06-11",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1460-08-03",
+        "Reign_1_End": "1488-06-11",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Cambuskenneth Abbey",
+        "Burial_Latitude": "56.1256",
+        "Burial_Longitude": "-3.9456",
+        "Age_at_Death": "36",
+        "Reign_Length_Years": "28",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARGARET_1456",
+                "MONARCH_CODE": "JAMES_1451",
+                "Spouse Number": 1,
+                "Name": "Margaret of Denmark",
+                "Birth Date": "23 Jun 1456",
+                "Death Date": "14 Jul 1486",
+                "Country of Birth": "Denmark",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of James III"
+            }
+        ],
+        "issue": [
+            {
+                "code": "JAMES_1473",
+                "name": "James IV",
+                "is_monarch": true
+            },
+            {
+                "code": " JAMES_1476",
+                "name": " James 1476",
+                "is_monarch": false
+            },
+            {
+                "code": " JOHN_1479",
+                "name": " John 1479",
+                "is_monarch": false
+            }
+        ]
+    },
+    "JAMES_1473": {
+        "Monarch_Code": "JAMES_1473",
+        "Country": "Scotland",
+        "Name": "James IV",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1473-03-17",
+        "Death_Date": "1513-09-09",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1488-06-11",
+        "Reign_1_End": "1513-09-09",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Sheen Priory",
+        "Burial_Latitude": "51.4613",
+        "Burial_Longitude": "-0.2906",
+        "Age_at_Death": "40",
+        "Reign_Length_Years": "25",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MARGARET_1489",
+                "MONARCH_CODE": "JAMES_1473",
+                "Spouse Number": 1,
+                "Name": "Margaret Tudor",
+                "Birth Date": "28 Nov 1489",
+                "Death Date": "18 Oct 1541",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of James IV"
+            }
+        ],
+        "issue": [
+            {
+                "code": "JAMES_1512",
+                "name": "James V",
+                "is_monarch": true
+            },
+            {
+                "code": " ARTHUR_1509",
+                "name": " Arthur 1509",
+                "is_monarch": false
+            },
+            {
+                "code": " ALEXANDER_1514",
+                "name": " Alexander 1514",
+                "is_monarch": false
+            }
+        ]
+    },
+    "JAMES_1512": {
+        "Monarch_Code": "JAMES_1512",
+        "Country": "Scotland",
+        "Name": "James V",
+        "Title": "King of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1512-04-10",
+        "Death_Date": "1542-12-14",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1513-09-09",
+        "Reign_1_End": "1542-12-14",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Holyrood Abbey",
+        "Burial_Latitude": "55.9526",
+        "Burial_Longitude": "-3.1722",
+        "Age_at_Death": "30",
+        "Reign_Length_Years": "29",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MADELEINE_1520",
+                "MONARCH_CODE": "JAMES_1512",
+                "Spouse Number": 1,
+                "Name": "Madeleine of Valois",
+                "Birth Date": "10 Aug 1520",
+                "Death Date": "7 Jul 1537",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of James V"
+            }
+        ],
+        "issue": [
+            {
+                "code": "JAMES_1540",
+                "name": "James 1540",
+                "is_monarch": false
+            },
+            {
+                "code": " ARTHUR_1541",
+                "name": " Arthur 1541",
+                "is_monarch": false
+            },
+            {
+                "code": " MARY_1542",
+                "name": " Mary 1542",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MARY_1542": {
+        "Monarch_Code": "MARY_1542",
+        "Country": "Scotland",
+        "Name": "Mary I (Queen of Scots)",
+        "Title": "Queen of Scots",
+        "House": "Stewart",
+        "Birth_Date": "1542-12-08",
+        "Death_Date": "1587-02-08",
+        "Country_of_Birth": "Scotland",
+        "Reign_1_Start": "1542-12-14",
+        "Reign_1_End": "1567-07-24",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Westminster Abbey",
+        "Burial_Latitude": "51.4994",
+        "Burial_Longitude": "-0.1273",
+        "Age_at_Death": "44",
+        "Reign_Length_Years": "25",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "FRANCIS_1544",
+                "MONARCH_CODE": "MARY_1542",
+                "Spouse Number": 1,
+                "Name": "Francis II of France",
+                "Birth Date": "19 Jan 1544",
+                "Death Date": "5 Dec 1560",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First husband of Mary Queen of Scots"
+            }
+        ],
+        "issue": [
+            {
+                "code": "JAMES_1566",
+                "name": "James I of England/VI of Scotland",
+                "is_monarch": true
+            }
+        ]
+    },
+    "RHODRI_820": {
+        "Monarch_Code": "RHODRI_820",
+        "Country": "Wales",
+        "Name": "Rhodri the Great",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.820-00-00",
+        "Death_Date": "878-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "844-00-00",
+        "Reign_1_End": "878-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "58",
+        "Reign_Length_Years": "34",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANGHARAD_825",
+                "MONARCH_CODE": "RHODRI_820",
+                "Spouse Number": 1,
+                "Name": "Angharad ferch Meurig",
+                "Birth Date": "c.825",
+                "Death Date": "c.870",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Rhodri the Great"
+            }
+        ],
+        "issue": [
+            {
+                "code": "ANARAWD_857",
+                "name": "Anarawd ap Rhodri",
+                "is_monarch": true
+            },
+            {
+                "code": " CADELL_861",
+                "name": " Cadell 861",
+                "is_monarch": false
+            },
+            {
+                "code": " MERFYN_865",
+                "name": " Merfyn 865",
+                "is_monarch": false
+            },
+            {
+                "code": " TUDWAL_869",
+                "name": " Tudwal 869",
+                "is_monarch": false
+            }
+        ]
+    },
+    "ANARAWD_857": {
+        "Monarch_Code": "ANARAWD_857",
+        "Country": "Wales",
+        "Name": "Anarawd ap Rhodri",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.857-00-00",
+        "Death_Date": "916-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "878-00-00",
+        "Reign_1_End": "916-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "59",
+        "Reign_Length_Years": "38",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "PRAWST_870",
+                "MONARCH_CODE": "ANARAWD_857",
+                "Spouse Number": 1,
+                "Name": "Prawst",
+                "Birth Date": "c.870",
+                "Death Date": "c.916",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Anarawd ap Rhodri"
+            }
+        ],
+        "issue": [
+            {
+                "code": "IDWAL_883",
+                "name": "Idwal Foel",
+                "is_monarch": true
+            },
+            {
+                "code": " ELISE_890",
+                "name": " Elise 890",
+                "is_monarch": false
+            }
+        ]
+    },
+    "IDWAL_883": {
+        "Monarch_Code": "IDWAL_883",
+        "Country": "Wales",
+        "Name": "Idwal Foel",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.883-00-00",
+        "Death_Date": "942-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "916-00-00",
+        "Reign_1_End": "942-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "59",
+        "Reign_Length_Years": "26",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "MYFANWY_890",
+                "MONARCH_CODE": "IDWAL_883",
+                "Spouse Number": 1,
+                "Name": "Myfanwy",
+                "Birth Date": "c.890",
+                "Death Date": "c.942",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Idwal Foel"
+            }
+        ],
+        "issue": [
+            {
+                "code": "IEUAF_920",
+                "name": "Ieuaf ab Idwal",
+                "is_monarch": true
+            },
+            {
+                "code": " IAGO_925",
+                "name": " Iago 925",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HYWEL_880": {
+        "Monarch_Code": "HYWEL_880",
+        "Country": "Wales",
+        "Name": "Hywel Dda",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.880-00-00",
+        "Death_Date": "950-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "909-00-00",
+        "Reign_1_End": "950-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Whitland Abbey",
+        "Burial_Latitude": "51.8432",
+        "Burial_Longitude": "-4.6128",
+        "Age_at_Death": "70",
+        "Reign_Length_Years": "41",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELEN_885",
+                "MONARCH_CODE": "HYWEL_880",
+                "Spouse Number": 1,
+                "Name": "Elen ferch Llywarch",
+                "Birth Date": "c.885",
+                "Death Date": "c.950",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Hywel Dda"
+            }
+        ],
+        "issue": [
+            {
+                "code": "OWAIN_913",
+                "name": "Owain ap Hywel",
+                "is_monarch": true
+            },
+            {
+                "code": " RHUN_917",
+                "name": " Rhun 917",
+                "is_monarch": false
+            },
+            {
+                "code": " RHODRI_920",
+                "name": " Rhodri 920",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWIN_925",
+                "name": " Edwin 925",
+                "is_monarch": false
+            },
+            {
+                "code": " CADELL_930",
+                "name": " Cadell 930",
+                "is_monarch": false
+            }
+        ]
+    },
+    "IAGO_925": {
+        "Monarch_Code": "IAGO_925",
+        "Country": "Wales",
+        "Name": "Iago ab Idwal",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.925-00-00",
+        "Death_Date": "979-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "950-00-00",
+        "Reign_1_End": "979-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "54",
+        "Reign_Length_Years": "29",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "AFANDREG_930",
+                "MONARCH_CODE": "IAGO_925",
+                "Spouse Number": 1,
+                "Name": "Afandreg",
+                "Birth Date": "c.930",
+                "Death Date": "c.979",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Iago ab Idwal"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CUSTENNIN_950",
+                "name": "Custennin 950",
+                "is_monarch": false
+            },
+            {
+                "code": " CADWALLON_955",
+                "name": " Cadwallon 955",
+                "is_monarch": false
+            }
+        ]
+    },
+    "IEUAF_920": {
+        "Monarch_Code": "IEUAF_920",
+        "Country": "Wales",
+        "Name": "Ieuaf ab Idwal",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.920-00-00",
+        "Death_Date": "988-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "950-00-00",
+        "Reign_1_End": "979-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "68",
+        "Reign_Length_Years": "29",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "GWERFUL_925",
+                "MONARCH_CODE": "IEUAF_920",
+                "Spouse Number": 1,
+                "Name": "Gwerful",
+                "Birth Date": "c.925",
+                "Death Date": "c.988",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Ieuaf ab Idwal"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CADWALLON_950",
+                "name": "Cadwallon 950",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HYWEL_949": {
+        "Monarch_Code": "HYWEL_949",
+        "Country": "Wales",
+        "Name": "Hywel ab Ieuaf",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.949-00-00",
+        "Death_Date": "985-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "979-00-00",
+        "Reign_1_End": "985-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "36",
+        "Reign_Length_Years": "6",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "PRAWST_955",
+                "MONARCH_CODE": "HYWEL_949",
+                "Spouse Number": 1,
+                "Name": "Prawst",
+                "Birth Date": "c.955",
+                "Death Date": "c.985",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Hywel ab Ieuaf"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CADELL_975",
+                "name": "Cadell 975",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CADWALLON_955": {
+        "Monarch_Code": "CADWALLON_955",
+        "Country": "Wales",
+        "Name": "Cadwallon ab Ieuaf",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.955-00-00",
+        "Death_Date": "986-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "985-00-00",
+        "Reign_1_End": "986-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "31",
+        "Reign_Length_Years": "1",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANGHARAD_960",
+                "MONARCH_CODE": "CADWALLON_955",
+                "Spouse Number": 1,
+                "Name": "Angharad",
+                "Birth Date": "c.960",
+                "Death Date": "c.986",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Cadwallon ab Ieuaf"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CYNAN_980",
+                "name": "Cynan ap Hywel",
+                "is_monarch": true
+            }
+        ]
+    },
+    "MAREDUDD_938": {
+        "Monarch_Code": "MAREDUDD_938",
+        "Country": "Wales",
+        "Name": "Maredudd ab Owain",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.938-00-00",
+        "Death_Date": "999-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "988-00-00",
+        "Reign_1_End": "999-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "61",
+        "Reign_Length_Years": "11",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANGHARAD_945",
+                "MONARCH_CODE": "MAREDUDD_938",
+                "Spouse Number": 1,
+                "Name": "Angharad ferch Owain",
+                "Birth Date": "c.945",
+                "Death Date": "c.999",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Maredudd ab Owain"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CADWALLON_965",
+                "name": "Cadwallon 965",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWIN_970",
+                "name": " Edwin 970",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CYNAN_980": {
+        "Monarch_Code": "CYNAN_980",
+        "Country": "Wales",
+        "Name": "Cynan ap Hywel",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.980-00-00",
+        "Death_Date": "1005-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "999-00-00",
+        "Reign_1_End": "1005-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "25",
+        "Reign_Length_Years": "6",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "RAGNHILD_985",
+                "MONARCH_CODE": "CYNAN_980",
+                "Spouse Number": 1,
+                "Name": "Ragnhild",
+                "Birth Date": "c.985",
+                "Death Date": "c.1005",
+                "Country of Birth": "Ireland/Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Cynan ap Hywel"
+            }
+        ],
+        "issue": [
+            {
+                "code": "IAGO_1000",
+                "name": "Iago ab Idwal",
+                "is_monarch": true
+            }
+        ]
+    },
+    "AEDDAN_970": {
+        "Monarch_Code": "AEDDAN_970",
+        "Country": "Wales",
+        "Name": "Aeddan ap Blegywryd",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.970-00-00",
+        "Death_Date": "1018-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1005-00-00",
+        "Reign_1_End": "1018-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "48",
+        "Reign_Length_Years": "13",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "PRAWST_975",
+                "MONARCH_CODE": "AEDDAN_970",
+                "Spouse Number": 1,
+                "Name": "Prawst",
+                "Birth Date": "c.975",
+                "Death Date": "c.1018",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Aeddan ap Blegywryd"
+            }
+        ],
+        "issue": [
+            {
+                "code": "LLYWELYN_995",
+                "name": "Llywelyn ap Seisyll",
+                "is_monarch": true
+            }
+        ]
+    },
+    "LLYWELYN_995": {
+        "Monarch_Code": "LLYWELYN_995",
+        "Country": "Wales",
+        "Name": "Llywelyn ap Seisyll",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.995-00-00",
+        "Death_Date": "1023-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1018-00-00",
+        "Reign_1_End": "1023-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "28",
+        "Reign_Length_Years": "5",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANGHARAD_1000",
+                "MONARCH_CODE": "LLYWELYN_995",
+                "Spouse Number": 1,
+                "Name": "Angharad ferch Maredudd",
+                "Birth Date": "c.1000",
+                "Death Date": "c.1023",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Llywelyn ap Seisyll"
+            }
+        ],
+        "issue": [
+            {
+                "code": "GRUFFYDD_1007",
+                "name": "Gruffydd ap Llywelyn",
+                "is_monarch": true
+            }
+        ]
+    },
+    "IAGO_1000": {
+        "Monarch_Code": "IAGO_1000",
+        "Country": "Wales",
+        "Name": "Iago ab Idwal",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1000-00-00",
+        "Death_Date": "1039-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1023-00-00",
+        "Reign_1_End": "1039-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "39",
+        "Reign_Length_Years": "16",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "AFANDREG_1005",
+                "MONARCH_CODE": "IAGO_1000",
+                "Spouse Number": 1,
+                "Name": "Afandreg",
+                "Birth Date": "c.1005",
+                "Death Date": "c.1039",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Iago ab Idwal"
+            }
+        ],
+        "issue": [
+            {
+                "code": "CYNAN_1020",
+                "name": "Cynan 1020",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GRUFFYDD_1007": {
+        "Monarch_Code": "GRUFFYDD_1007",
+        "Country": "Wales",
+        "Name": "Gruffydd ap Llywelyn",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1007-00-00",
+        "Death_Date": "1063-08-05",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1039-00-00",
+        "Reign_1_End": "1063-08-05",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "56",
+        "Reign_Length_Years": "24",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "EALDGYTH_1035",
+                "MONARCH_CODE": "GRUFFYDD_1007",
+                "Spouse Number": 1,
+                "Name": "Ealdgyth",
+                "Birth Date": "c.1035",
+                "Death Date": "c.1070",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Gruffydd ap Llywelyn"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MAREDUDD_1055",
+                "name": "Maredudd 1055",
+                "is_monarch": false
+            },
+            {
+                "code": " IDWAL_1057",
+                "name": " Idwal 1057",
+                "is_monarch": false
+            },
+            {
+                "code": " NEST_1059",
+                "name": " Nest 1059",
+                "is_monarch": false
+            }
+        ]
+    },
+    "BLEDDYN_1025": {
+        "Monarch_Code": "BLEDDYN_1025",
+        "Country": "Wales",
+        "Name": "Bleddyn ap Cynfyn",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1025-00-00",
+        "Death_Date": "1075-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1063-00-00",
+        "Reign_1_End": "1075-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "50",
+        "Reign_Length_Years": "12",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "HAER_1030",
+                "MONARCH_CODE": "BLEDDYN_1025",
+                "Spouse Number": 1,
+                "Name": "Haer",
+                "Birth Date": "c.1030",
+                "Death Date": "c.1075",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Bleddyn ap Cynfyn"
+            }
+        ],
+        "issue": [
+            {
+                "code": "MAREDUDD_1047",
+                "name": "Maredudd 1047",
+                "is_monarch": false
+            },
+            {
+                "code": " RHYS_1050",
+                "name": " Rhys 1050",
+                "is_monarch": false
+            },
+            {
+                "code": " CADWGAN_1051",
+                "name": " Cadwgan 1051",
+                "is_monarch": false
+            },
+            {
+                "code": " IORWERTH_1053",
+                "name": " Iorwerth 1053",
+                "is_monarch": false
+            }
+        ]
+    },
+    "TRAHAEARN_1044": {
+        "Monarch_Code": "TRAHAEARN_1044",
+        "Country": "Wales",
+        "Name": "Trahaearn ap Caradog",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1044-00-00",
+        "Death_Date": "1081-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1075-00-00",
+        "Reign_1_End": "1081-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Anglesey",
+        "Burial_Latitude": "53.2285",
+        "Burial_Longitude": "-4.1291",
+        "Age_at_Death": "37",
+        "Reign_Length_Years": "6",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "NEST_1050",
+                "MONARCH_CODE": "TRAHAEARN_1044",
+                "Spouse Number": 1,
+                "Name": "Nest",
+                "Birth Date": "c.1050",
+                "Death Date": "c.1081",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Trahaearn ap Caradog"
+            }
+        ],
+        "issue": [
+            {
+                "code": "LLYWARCH_1070",
+                "name": "Llywarch 1070",
+                "is_monarch": false
+            },
+            {
+                "code": " OWAIN_1072",
+                "name": " Owain 1072",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GRUFFYDD_1055": {
+        "Monarch_Code": "GRUFFYDD_1055",
+        "Country": "Wales",
+        "Name": "Gruffydd ap Cynan",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1055-00-00",
+        "Death_Date": "1137-00-00",
+        "Country_of_Birth": "Ireland",
+        "Reign_1_Start": "1081-00-00",
+        "Reign_1_End": "1137-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Bangor Cathedral",
+        "Burial_Latitude": "53.2281",
+        "Burial_Longitude": "-4.1289",
+        "Age_at_Death": "82",
+        "Reign_Length_Years": "56",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ANGHARAD_1065",
+                "MONARCH_CODE": "GRUFFYDD_1055",
+                "Spouse Number": 1,
+                "Name": "Angharad ferch Owain",
+                "Birth Date": "c.1065",
+                "Death Date": "c.1162",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Gruffydd ap Cynan"
+            }
+        ],
+        "issue": [
+            {
+                "code": "OWAIN_1100",
+                "name": "Owain Gwynedd",
+                "is_monarch": true
+            },
+            {
+                "code": " CADWALADR_1096",
+                "name": " Cadwaladr 1096",
+                "is_monarch": false
+            },
+            {
+                "code": " SUSANNA_1098",
+                "name": " Susanna 1098",
+                "is_monarch": false
+            },
+            {
+                "code": " GWENLLIAN_1100",
+                "name": " Gwenllian 1100",
+                "is_monarch": false
+            },
+            {
+                "code": " MARARED_1102",
+                "name": " Marared 1102",
+                "is_monarch": false
+            },
+            {
+                "code": " RAGNHILD_1104",
+                "name": " Ragnhild 1104",
+                "is_monarch": false
+            },
+            {
+                "code": " ANNEST_1106",
+                "name": " Annest 1106",
+                "is_monarch": false
+            }
+        ]
+    },
+    "OWAIN_1100": {
+        "Monarch_Code": "OWAIN_1100",
+        "Country": "Wales",
+        "Name": "Owain Gwynedd",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1100-00-00",
+        "Death_Date": "1170-11-23",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1137-00-00",
+        "Reign_1_End": "1170-11-23",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Bangor Cathedral",
+        "Burial_Latitude": "53.2281",
+        "Burial_Longitude": "-4.1289",
+        "Age_at_Death": "70",
+        "Reign_Length_Years": "33",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "GWLADYS_1110",
+                "MONARCH_CODE": "OWAIN_1100",
+                "Spouse Number": 1,
+                "Name": "Gwladys ferch Llywarch",
+                "Birth Date": "c.1110",
+                "Death Date": "c.1155",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "First wife of Owain Gwynedd"
+            }
+        ],
+        "issue": [
+            {
+                "code": "IORWERTH_1130",
+                "name": "Iorwerth 1130",
+                "is_monarch": false
+            },
+            {
+                "code": " MAELGWN_1135",
+                "name": " Maelgwn 1135",
+                "is_monarch": false
+            },
+            {
+                "code": " DAFYDD_1140",
+                "name": " Dafydd 1140",
+                "is_monarch": false
+            },
+            {
+                "code": " RHODRI_1145",
+                "name": " Rhodri 1145",
+                "is_monarch": false
+            },
+            {
+                "code": " CYNAN_1150",
+                "name": " Cynan 1150",
+                "is_monarch": false
+            },
+            {
+                "code": " GWENLLIAN_1131",
+                "name": " Gwenllian 1131",
+                "is_monarch": false
+            },
+            {
+                "code": " MARGARET_1134",
+                "name": " Margaret 1134",
+                "is_monarch": false
+            },
+            {
+                "code": " ANGHARAD_1138",
+                "name": " Angharad 1138",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DAFYDD_1140": {
+        "Monarch_Code": "DAFYDD_1140",
+        "Country": "Wales",
+        "Name": "Dafydd ab Owain",
+        "Title": "King of Gwynedd",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1140-00-00",
+        "Death_Date": "1203-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1170-11-23",
+        "Reign_1_End": "1195-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Bangor Cathedral",
+        "Burial_Latitude": "53.2281",
+        "Burial_Longitude": "-4.1289",
+        "Age_at_Death": "63",
+        "Reign_Length_Years": "25",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "EMMA_1152",
+                "MONARCH_CODE": "DAFYDD_1140",
+                "Spouse Number": 1,
+                "Name": "Emma of Anjou",
+                "Birth Date": "c.1152",
+                "Death Date": "c.1214",
+                "Country of Birth": "France",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Dafydd ab Owain"
+            }
+        ],
+        "issue": [
+            {
+                "code": "LLYWELYN_1173",
+                "name": "Llywelyn the Great",
+                "is_monarch": true
+            },
+            {
+                "code": " OWAIN_1175",
+                "name": " Owain 1175",
+                "is_monarch": false
+            }
+        ]
+    },
+    "LLYWELYN_1173": {
+        "Monarch_Code": "LLYWELYN_1173",
+        "Country": "Wales",
+        "Name": "Llywelyn the Great",
+        "Title": "Prince of Wales",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1173-00-00",
+        "Death_Date": "1240-04-11",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1195-00-00",
+        "Reign_1_End": "1240-04-11",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Aberconwy Abbey",
+        "Burial_Latitude": "53.2801",
+        "Burial_Longitude": "-3.8284",
+        "Age_at_Death": "67",
+        "Reign_Length_Years": "45",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "JOAN_1188",
+                "MONARCH_CODE": "LLYWELYN_1173",
+                "Spouse Number": 1,
+                "Name": "Joan, Lady of Wales",
+                "Birth Date": "c.1188",
+                "Death Date": "2 Feb 1237",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Llywelyn the Great"
+            }
+        ],
+        "issue": [
+            {
+                "code": "DAFYDD_1208",
+                "name": "Dafydd ap Llywelyn",
+                "is_monarch": true
+            },
+            {
+                "code": " ELEN_1206",
+                "name": " Elen 1206",
+                "is_monarch": false
+            },
+            {
+                "code": " GWLADYS_1206",
+                "name": " Gwladys 1206",
+                "is_monarch": false
+            },
+            {
+                "code": " MARARED_1198",
+                "name": " Marared 1198",
+                "is_monarch": false
+            },
+            {
+                "code": " GWENLLIAN_1205",
+                "name": " Gwenllian 1205",
+                "is_monarch": false
+            },
+            {
+                "code": " SUSANNA_1210",
+                "name": " Susanna 1210",
+                "is_monarch": false
+            }
+        ]
+    },
+    "DAFYDD_1208": {
+        "Monarch_Code": "DAFYDD_1208",
+        "Country": "Wales",
+        "Name": "Dafydd ap Llywelyn",
+        "Title": "Prince of Wales",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1208-00-00",
+        "Death_Date": "1246-02-25",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1240-04-11",
+        "Reign_1_End": "1246-02-25",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Aberconwy Abbey",
+        "Burial_Latitude": "53.2801",
+        "Burial_Longitude": "-3.8284",
+        "Age_at_Death": "38",
+        "Reign_Length_Years": "6",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ISABELLA_1218",
+                "MONARCH_CODE": "DAFYDD_1208",
+                "Spouse Number": 1,
+                "Name": "Isabella de Braose",
+                "Birth Date": "c.1218",
+                "Death Date": "c.1248",
+                "Country of Birth": "Wales",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Dafydd ap Llywelyn"
+            }
+        ],
+        "issue": []
+    },
+    "LLYWELYN_1223": {
+        "Monarch_Code": "LLYWELYN_1223",
+        "Country": "Wales",
+        "Name": "Llywelyn ap Gruffydd",
+        "Title": "Prince of Wales",
+        "House": "Gwynedd",
+        "Birth_Date": "c.1223-00-00",
+        "Death_Date": "1282-12-11",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1246-02-25",
+        "Reign_1_End": "1282-12-11",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Aberconwy Abbey",
+        "Burial_Latitude": "53.2801",
+        "Burial_Longitude": "-3.8284",
+        "Age_at_Death": "59",
+        "Reign_Length_Years": "37",
+        "spouses": [
+            {
+                "SPOUSE_CODE": "ELEANOR_1252",
+                "MONARCH_CODE": "LLYWELYN_1223",
+                "Spouse Number": 1,
+                "Name": "Eleanor de Montfort",
+                "Birth Date": "c.1252",
+                "Death Date": "12 Jun 1282",
+                "Country of Birth": "England",
+                "Wife/Husband/Spouse": NaN,
+                "Notable Information": "Wife of Llywelyn ap Gruffydd"
+            }
+        ],
+        "issue": [
+            {
+                "code": "GWENLLIAN_1282",
+                "name": "Gwenllian 1282",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CADELL_861": {
+        "Monarch_Code": "CADELL_861",
+        "Country": "Wales",
+        "Name": "Cadell ap Rhodri",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.861-00-00",
+        "Death_Date": "909-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "878-00-00",
+        "Reign_1_End": "909-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "48",
+        "Reign_Length_Years": "31",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "HYWEL_880",
+                "name": "Hywel Dda",
+                "is_monarch": true
+            },
+            {
+                "code": " CLYDOG_885",
+                "name": " Clydog 885",
+                "is_monarch": false
+            },
+            {
+                "code": " MEURIG_890",
+                "name": " Meurig 890",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CLYDOG_885": {
+        "Monarch_Code": "CLYDOG_885",
+        "Country": "Wales",
+        "Name": "Clydog ap Cadell",
+        "Title": "King of Powys",
+        "House": "Powys",
+        "Birth_Date": "c.885-00-00",
+        "Death_Date": "920-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "909-00-00",
+        "Reign_1_End": "920-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Powys",
+        "Burial_Latitude": "52.5167",
+        "Burial_Longitude": "-3.2833",
+        "Age_at_Death": "35",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CADELL_910",
+                "name": "Cadell ap Clydog",
+                "is_monarch": true
+            },
+            {
+                "code": " MAREDUDD_912",
+                "name": " Maredudd 912",
+                "is_monarch": false
+            }
+        ]
+    },
+    "CADELL_910": {
+        "Monarch_Code": "CADELL_910",
+        "Country": "Wales",
+        "Name": "Cadell ap Clydog",
+        "Title": "King of Powys",
+        "House": "Powys",
+        "Birth_Date": "c.910-00-00",
+        "Death_Date": "950-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "920-00-00",
+        "Reign_1_End": "950-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Powys",
+        "Burial_Latitude": "52.5167",
+        "Burial_Longitude": "-3.2833",
+        "Age_at_Death": "40",
+        "Reign_Length_Years": "30",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "OWAIN_935",
+                "name": "Owain ap Cadell",
+                "is_monarch": true
+            },
+            {
+                "code": " MAREDUDD_938",
+                "name": " Maredudd 938",
+                "is_monarch": false
+            }
+        ]
+    },
+    "OWAIN_935": {
+        "Monarch_Code": "OWAIN_935",
+        "Country": "Wales",
+        "Name": "Owain ap Cadell",
+        "Title": "King of Powys",
+        "House": "Powys",
+        "Birth_Date": "c.935-00-00",
+        "Death_Date": "988-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "950-00-00",
+        "Reign_1_End": "988-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Powys",
+        "Burial_Latitude": "52.5167",
+        "Burial_Longitude": "-3.2833",
+        "Age_at_Death": "53",
+        "Reign_Length_Years": "38",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "MAREDUDD_960",
+                "name": "Maredudd ap Owain",
+                "is_monarch": true
+            },
+            {
+                "code": " CADWALLON_965",
+                "name": " Cadwallon 965",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWIN_970",
+                "name": " Edwin 970",
+                "is_monarch": false
+            }
+        ]
+    },
+    "MAREDUDD_960": {
+        "Monarch_Code": "MAREDUDD_960",
+        "Country": "Wales",
+        "Name": "Maredudd ap Owain",
+        "Title": "King of Powys",
+        "House": "Powys",
+        "Birth_Date": "c.960-00-00",
+        "Death_Date": "999-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "988-00-00",
+        "Reign_1_End": "999-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "Powys",
+        "Burial_Latitude": "52.5167",
+        "Burial_Longitude": "-3.2833",
+        "Age_at_Death": "39",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CADWALLON_985",
+                "name": "Cadwallon 985",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWIN_987",
+                "name": " Edwin 987",
+                "is_monarch": false
+            }
+        ]
+    },
+    "OWAIN_913": {
+        "Monarch_Code": "OWAIN_913",
+        "Country": "Wales",
+        "Name": "Owain ap Hywel",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.913-00-00",
+        "Death_Date": "988-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "950-00-00",
+        "Reign_1_End": "988-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "75",
+        "Reign_Length_Years": "38",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "MAREDUDD_938",
+                "name": "Maredudd ab Owain",
+                "is_monarch": true
+            },
+            {
+                "code": " CADWALLON_940",
+                "name": " Cadwallon 940",
+                "is_monarch": false
+            },
+            {
+                "code": " EDWIN_945",
+                "name": " Edwin 945",
+                "is_monarch": false
+            }
+        ]
+    },
+    "RHYDDERCH_980": {
+        "Monarch_Code": "RHYDDERCH_980",
+        "Country": "Wales",
+        "Name": "Rhydderch ab Iestyn",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.980-00-00",
+        "Death_Date": "1033-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1023-00-00",
+        "Reign_1_End": "1033-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "53",
+        "Reign_Length_Years": "10",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CARADOG_1005",
+                "name": "Caradog 1005",
+                "is_monarch": false
+            },
+            {
+                "code": " GRUFFYDD_1010",
+                "name": " Gruffydd 1010",
+                "is_monarch": false
+            }
+        ]
+    },
+    "HYWEL_1005": {
+        "Monarch_Code": "HYWEL_1005",
+        "Country": "Wales",
+        "Name": "Hywel ab Edwin",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.1005-00-00",
+        "Death_Date": "1044-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1033-00-00",
+        "Reign_1_End": "1044-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "39",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "MAREDUDD_1030",
+                "name": "Maredudd 1030",
+                "is_monarch": false
+            },
+            {
+                "code": " RHYS_1035",
+                "name": " Rhys 1035",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GRUFFYDD_1010": {
+        "Monarch_Code": "GRUFFYDD_1010",
+        "Country": "Wales",
+        "Name": "Gruffydd ap Rhydderch",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.1010-00-00",
+        "Death_Date": "1055-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1044-00-00",
+        "Reign_1_End": "1055-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "45",
+        "Reign_Length_Years": "11",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "CARADOG_1035",
+                "name": "Caradog 1035",
+                "is_monarch": false
+            },
+            {
+                "code": " RHYS_1040",
+                "name": " Rhys 1040",
+                "is_monarch": false
+            }
+        ]
+    },
+    "RHYS_1040": {
+        "Monarch_Code": "RHYS_1040",
+        "Country": "Wales",
+        "Name": "Rhys ap Gruffydd",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.1040-00-00",
+        "Death_Date": "1093-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1055-00-00",
+        "Reign_1_End": "1093-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "53",
+        "Reign_Length_Years": "38",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "GRUFFYDD_1065",
+                "name": "Gruffydd ap Rhys",
+                "is_monarch": true
+            },
+            {
+                "code": " CADELL_1070",
+                "name": " Cadell 1070",
+                "is_monarch": false
+            },
+            {
+                "code": " MAREDUDD_1075",
+                "name": " Maredudd 1075",
+                "is_monarch": false
+            }
+        ]
+    },
+    "GRUFFYDD_1065": {
+        "Monarch_Code": "GRUFFYDD_1065",
+        "Country": "Wales",
+        "Name": "Gruffydd ap Rhys",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "c.1065-00-00",
+        "Death_Date": "1137-00-00",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1093-00-00",
+        "Reign_1_End": "1137-00-00",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "72",
+        "Reign_Length_Years": "44",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "RHYS_1132",
+                "name": "Rhys ap Gruffydd (Lord Rhys)",
+                "is_monarch": true
+            },
+            {
+                "code": " MORGAN_1130",
+                "name": " Morgan 1130",
+                "is_monarch": false
+            },
+            {
+                "code": " MAREDUDD_1135",
+                "name": " Maredudd 1135",
+                "is_monarch": false
+            },
+            {
+                "code": " CADELL_1138",
+                "name": " Cadell 1138",
+                "is_monarch": false
+            }
+        ]
+    },
+    "RHYS_1132": {
+        "Monarch_Code": "RHYS_1132",
+        "Country": "Wales",
+        "Name": "Rhys ap Gruffydd (Lord Rhys)",
+        "Title": "King of Deheubarth",
+        "House": "Deheubarth",
+        "Birth_Date": "1132-00-00",
+        "Death_Date": "1197-04-28",
+        "Country_of_Birth": "Wales",
+        "Reign_1_Start": "1155-00-00",
+        "Reign_1_End": "1197-04-28",
+        "Reign_2_Start": NaN,
+        "Reign_2_End": NaN,
+        "Place_of_Burial": "St Davids",
+        "Burial_Latitude": "51.8816",
+        "Burial_Longitude": "-5.2689",
+        "Age_at_Death": "65",
+        "Reign_Length_Years": "42",
+        "spouses": [],
+        "issue": [
+            {
+                "code": "GRUFFYDD_1160",
+                "name": "Gruffydd 1160",
+                "is_monarch": false
+            },
+            {
+                "code": " MAELGWN_1165",
+                "name": " Maelgwn 1165",
+                "is_monarch": false
+            },
+            {
+                "code": " RHYS_1170",
+                "name": " Rhys 1170",
+                "is_monarch": false
+            },
+            {
+                "code": " MAREDUDD_1175",
+                "name": " Maredudd 1175",
+                "is_monarch": false
+            },
+            {
+                "code": " CADELL_1180",
+                "name": " Cadell 1180",
+                "is_monarch": false
+            }
+        ]
+    }
+}
