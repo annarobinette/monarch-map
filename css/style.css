@@ -113,3 +113,64 @@ html, body, #map {
 .person-link:hover {
     text-decoration: underline;
 }
+
+/* --- location Panel Styling --- */
+#location-panel {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 1000;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+#location-panel h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+#location-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#location-list li {
+    padding: 4px 0;
+    cursor: pointer;
+    color: #007bff;
+}
+
+#location-list li:hover {
+    text-decoration: underline;
+}
+
+/* --- Floor Plan Styling --- */
+#floorplan-container {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#floorplan-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.floorplan-pin {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #ff4136;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px black;
+    transform: translate(-50%, -50%); /* Center the pin on its coordinates */
+    cursor: pointer;
+    z-index: 10;
+}
