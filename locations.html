@@ -10,7 +10,30 @@
 <body>
 
     <header>
-        </header>
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <a href="index.html">Monarch Map</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Map</a>
+            <a href="monarchs.html">Monarchs</a>
+            <a href="locations.html">Locations</a>
+        </div>
+    </nav>
+    <div class="filter-bar">
+        <span>Filter by:</span>
+        <select id="house-filter">
+            <option value="">All Houses</option>
+            </select>
+        <select id="country-filter">
+            <option value="">All Countries</option>
+            </select>
+        <select id="century-filter">
+            <option value="">All Centuries</option>
+            </select>
+        <button id="clear-filters">Clear Filters</button>
+    </div>
+</header>
 
     <main class="content-container">
         <h1 id="page-title">Burial Locations</h1>
