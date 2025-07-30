@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
             for (const locationId in allData.locations) {
                 const location = allData.locations[locationId];
                 const listItem = document.createElement('li');
-                listItem.textContent = location.location_Name;
-                listItem.onclick = () => showlocation(locationId);
+                listItem.textContent = location.Location_Name;
+                listItem.onclick = () => showLocation(locationId);
                 locationList.appendChild(listItem);
             }
         })
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('sidebar').style.width = '400px';
     };
 
-    window.showlocation = (locationId) => {
+    window.showLocation = (locationId) => {
         const location = allData.locations[locationId];
         if (!location) return;
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Switch sidebar view and populate
         switchSidebarView('location');
-        document.getElementById('location-title').textContent = location.location_Name;
+        document.getElementById('location-title').textContent = location.Location_Name;
         document.getElementById('floorplan-image').src = location.Floorplan_Image_Path;
         
         // 3. Populate monarch list for the location
