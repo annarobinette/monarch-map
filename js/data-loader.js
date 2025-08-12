@@ -2,7 +2,7 @@
 
 async function loadAndProcessData() {
     // Paste the Web App URL you just copied from the deployment step here.
-    const WEB_APP_URL = https://script.google.com/macros/s/AKfycbz_vb0m_NL35-GtYCcvWV47rznpTMq2WgKCZMCoV72gQZQu8F5OudzXBe_78gpd-DgpYQ/exec'; 
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz_vb0m_NL35-GtYCcvWV47rznpTMq2WgKCZMCoV72gQZQu8F5OudzXBe_78gpd-DgpYQ/exec'; 
 
     try {
         const response = await fetch(WEB_APP_URL);
