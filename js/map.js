@@ -1,4 +1,4 @@
-// js/map.js - Complete and Corrected Version: August 12, 2025
+// js/map.js - Complete and Corrected Version
 
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([54.5, -2.0], 6);
@@ -8,13 +8,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const params = new URLSearchParams(window.location.search);
 
+    // This function will populate the filter dropdowns with data
+    function populateFilterDropdowns(data) {
+        const houses = new Set();
+        const countries = new Set();
+        const centuries = new Set();
+
+        Object.values(data.monarchs).forEach(m => {
+            if (m.house) houses.add(m.house);
+            if (m.country) countries.add(m.country);
+            if (m.reign_1_start) {
+                const yearMatch = m.reign_1_start.match(/\d{3,4}/);
+                if (yearMatch) {
+                    const year = parseInt(yearMatch[0]);
+                    const century = Math.floor(year / 100) + 1;
+                    centuries.add(century);
+                }
+            }
+        });
+
+        const houseFilter = document.getElementById('house-filter');
+        Array.from(houses).sort().forEach(h => houseFilter.innerHTML += `<option value="${h}">${h}</option>`);
+
+        const countryFilter = document.getElementById('country-filter');
+        Array.from(countries).sort().forEach(c => countryFilter.innerHTML += `<option value="${c}">${c}</option>`);
+        
+        const centuryFilter = document.getElementById('century-filter');
+        Array.from(centuries).sort((a, b) => a - b).forEach(c => centuryFilter.innerHTML += `<option value="${c}">${c}th Century</option>`);
+
+        // Reselect values from URL params after populating
+        houseFilter.value = params.get('house') || '';
+        countryFilter.value = params.get('country') || '';
+        centuryFilter.value = params.get('century') || '';
+    }
+
     loadAndProcessData().then(result => {
         if (!result) {
-            alert("Failed to load map data from the Google Sheet. Please check the link and make sure it's published.");
+            alert("Failed to load map data. Please check the console for errors.");
             return;
         }
         
         const { allData, houseColors } = result;
+
+        // Populate the filters as soon as the data is available
+        populateFilterDropdowns(allData);
 
         let filteredMonarchs = Object.values(allData.monarchs).filter(m => {
             const houseMatch = !params.has('house') || m.house === params.get('house');
@@ -31,9 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return houseMatch && countryMatch && centuryMatch;
         });
 
+        console.log(`Found ${filteredMonarchs.length} monarchs after filtering.`);
+
         filteredMonarchs.forEach(monarch => {
-            // Use the main burial details for the map pin
-            const primaryBurial = monarch.burial_details && monarch.burial_details.length > 0 ? monarch.burial_details[0] : null;
+            // Corrected logic to find burial location details
+            const primaryBurial = monarch.burial_details && monarch.burial_details.find(b => b.body_part === 'Body');
             const locationDetails = primaryBurial ? allData.locations[primaryBurial.location_id] : null;
 
             if (locationDetails && locationDetails.map_latitude && locationDetails.map_longitude && !isNaN(parseFloat(locationDetails.map_latitude))) {
@@ -57,6 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }).addTo(map);
 
                 marker.bindTooltip(monarch.name);
+            } else {
+                 console.log(`Could not create pin for ${monarch.name}. Reason: Missing or invalid location/coordinate data.`);
             }
         });
 
@@ -69,4 +110,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-}); // This is the final closing bracket for the entire script.
+});
