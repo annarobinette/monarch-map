@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let allData = {};
 
-    if (!grid) return;
-
     loadAndProcessData().then(result => {
         if (!result) {
             grid.innerHTML = "<p>Error: Could not load data from the live source.</p>";
