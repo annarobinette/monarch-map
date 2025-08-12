@@ -18,7 +18,7 @@ async function loadAndProcessData() {
                 houseColors[house.house] = house.colour;
             }
         });
-        houseColors['Default'] = '#777777';
+        houseColors['Default'] = '#d6edf5';
 
         // Process and join all the data into the final structure
         const allData = {
