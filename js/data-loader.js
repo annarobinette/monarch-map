@@ -11,16 +11,19 @@ async function loadAndProcessData() {
         }
         const rawData = await response.json();
 
-        // Dynamically create the houseColors object
+        // Dynamically create the houseColors object from the sheet
         const houseColors = {};
-        rawData.housesandcolours.forEach(house => {
-            if (house.house && house.colour) {
-                houseColors[house.house] = house.colour;
+        rawData.housesAndColours.forEach(house => {
+            // Google Apps Script preserves case, but we lowercase for safety
+            const houseName = house.house;
+            const houseColour = house.colour;
+            if (houseName && houseColour) {
+                houseColors[houseName] = houseColour;
             }
         });
         houseColors['Default'] = '#777777';
 
-        // Process and join the data into the final structure
+        // Process and join all the data into the final structure
         const allData = {
             monarchs: {},
             locations: {}
@@ -48,7 +51,9 @@ async function loadAndProcessData() {
                 .filter(r => r.person1_code === monarchCode)
                 .forEach(rel => {
                     const spouseDetails = peopleMap.get(rel.person2_code);
-                    if (spouseDetails) monarch.spouses.push({ ...spouseDetails, relationship_type: rel.relationship_type });
+                    if (spouseDetails) {
+                        monarch.spouses.push({ ...spouseDetails, relationship_type: rel.relationship_type });
+                    }
                 });
 
             rawData.parentage
