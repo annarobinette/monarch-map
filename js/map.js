@@ -6,8 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }).addTo(map);
 
     const params = new URLSearchParams(window.location.search);
-    const houseColors = { 'Wessex': '#ff7800', 'Denmark': '#006400', 'Normandy': '#e5e500', 'Blois': '#4682b4', 'Anjou': '#ff0000', 'Plantagenet': '#dc143c', 'Lancaster': '#8b0000', 'York': '#ffffff', 'Tudor': '#008080', 'Stuart': '#800080', 'Hanover': '#d2b48c', 'Saxe-Coburg-Gotha': '#f0e68c', 'Saxe-Coburg and Gotha': '#f0e68c', 'Windsor': '#0000ff', 'Commonwealth': '#A9A9A9', 'Mercia': '#9370db', 'Dinefwr': '#228b22', 'Aberffraw': '#3cb371', 'Mathrafal': '#8fbc8f', 'Deheubarth': '#6b8e23', 'Alpin': '#b8860b', 'Dunkeld': '#daa520', 'Balliol': '#bdb76b', 'Bruce': '#cd853f', 'Stewart': '#800080', 'Gwynedd': '#4B0082', 'Powys': '#800000', 'Default': '#777777' };
-    let allData = {};
+
+    loadAndProcessData().then(result => {
+        if (!result) {
+            alert("Failed to load data from the Google Sheet. Please check the link and make sure it's published.");
+            return;
+        }
+        
+        const { allData, houseColors } = result; // Get both pieces of data;
 
     // --- 2. FETCHING AND PROCESSING DATA ---
     fetch('data/monarchs_data.json')
