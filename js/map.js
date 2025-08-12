@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const params = new URLSearchParams(window.location.search);
 
-    // This function will populate the filter dropdowns with data
     function populateFilterDropdowns(data) {
         const houses = new Set();
         const countries = new Set();
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const centuryFilter = document.getElementById('century-filter');
         Array.from(centuries).sort((a, b) => a - b).forEach(c => centuryFilter.innerHTML += `<option value="${c}">${c}th Century</option>`);
 
-        // Reselect values from URL params after populating
         houseFilter.value = params.get('house') || '';
         countryFilter.value = params.get('country') || '';
         centuryFilter.value = params.get('century') || '';
@@ -49,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         const { allData, houseColors } = result;
-
-        // Populate the filters as soon as the data is available
         populateFilterDropdowns(allData);
 
         let filteredMonarchs = Object.values(allData.monarchs).filter(m => {
@@ -71,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(`Found ${filteredMonarchs.length} monarchs after filtering.`);
 
         filteredMonarchs.forEach(monarch => {
-            // Corrected logic to find burial location details
-            const primaryBurial = monarch.burial_details && monarch.burial_details.find(b => b.body_part === 'Body');
+            // UPDATED LOGIC: Use the first available burial record for the main map pin.
+            const primaryBurial = monarch.burial_details && monarch.burial_details.length > 0 ? monarch.burial_details[0] : null;
             const locationDetails = primaryBurial ? allData.locations[primaryBurial.location_id] : null;
 
             if (locationDetails && locationDetails.map_latitude && locationDetails.map_longitude && !isNaN(parseFloat(locationDetails.map_latitude))) {
@@ -96,8 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }).addTo(map);
 
                 marker.bindTooltip(monarch.name);
-            } else {
-                 console.log(`Could not create pin for ${monarch.name}. Reason: Missing or invalid location/coordinate data.`);
             }
         });
 
