@@ -1,4 +1,4 @@
-// js/map.js
+// js/map.js - Complete and Corrected Version: August 12, 2025
 
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([54.5, -2.0], 6);
@@ -32,7 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         filteredMonarchs.forEach(monarch => {
-            if (monarch.burial_latitude && monarch.burial_longitude && !isNaN(parseFloat(monarch.burial_latitude))) {
+            // Use the main burial details for the map pin
+            const primaryBurial = monarch.burial_details && monarch.burial_details.length > 0 ? monarch.burial_details[0] : null;
+            const locationDetails = primaryBurial ? allData.locations[primaryBurial.location_id] : null;
+
+            if (locationDetails && locationDetails.map_latitude && locationDetails.map_longitude && !isNaN(parseFloat(locationDetails.map_latitude))) {
                 const color = houseColors[monarch.house] || houseColors['Default'];
                 const markerHtmlStyles = `
                     background-color: ${color};
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     html: `<span style="${markerHtmlStyles}"></span>`
                 });
 
-                const marker = L.marker([monarch.burial_latitude, monarch.burial_longitude], {
+                const marker = L.marker([locationDetails.map_latitude, locationDetails.map_longitude], {
                     icon: icon,
                     riseOnHover: true
                 }).addTo(map);
@@ -65,4 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});
+}); // This is the final closing bracket for the entire script.
