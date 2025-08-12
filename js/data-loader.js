@@ -1,10 +1,10 @@
 // js/data-loader.js
 
 async function loadAndProcessData() {
-    // 1. Your unique Google Sheet ID.
+    // 1. Unique Google Sheet ID.
     const SHEET_ID = '1ekOIHTOZtCo7xLmVEkMi5yUAxWMwB-twLww2AyJE2Xw'; 
     
-    // 2. JSON links for each tab, matching your specified order.
+    // 2. JSON links
     const urls = {
         housesAndColours: `https://spreadsheets.google.com/feeds/list/${SHEET_ID}/2/public/values?alt=json`,
         people:           `https://spreadsheets.google.com/feeds/list/${SHEET_ID}/3/public/values?alt=json`,
@@ -44,7 +44,6 @@ async function loadAndProcessData() {
         const burialsList = cleanGoogleSheetData(jsonData[5]);
         const locationsList = cleanGoogleSheetData(jsonData[6]);
         
-        // Create a quick lookup map for all people
         const peopleMap = new Map(peopleList.map(p => [p.person_code, p]));
 
         // 5. Dynamically create the houseColors object from your sheet.
@@ -62,7 +61,6 @@ async function loadAndProcessData() {
             locations: {}
         };
 
-        // Process locations and burials
         locationsList.forEach(loc => {
             allData.locations[loc.location_id] = { 
                 ...loc, 
@@ -70,17 +68,15 @@ async function loadAndProcessData() {
             };
         });
 
-        // Process monarchs and their relationships
         monarchsList.forEach(monarchData => {
             const monarchCode = monarchData.monarch_code;
             const personDetails = peopleMap.get(monarchCode) || {};
-            const monarch = { ...personDetails, ...monarchData }; // Combine person and monarch data
+            let monarch = { ...personDetails, ...monarchData };
 
             monarch.spouses = [];
             monarch.issue = [];
             monarch.burial_details = burialsList.filter(b => b.monarch_code === monarchCode);
             
-            // Join spouses/partners via the RELATIONSHIPS sheet
             relationshipsList
                 .filter(r => r.person1_code === monarchCode)
                 .forEach(rel => {
@@ -90,7 +86,6 @@ async function loadAndProcessData() {
                     }
                 });
 
-            // Join issue via the PARENTAGE sheet
             parentageList
                 .filter(p => p.parent_code === monarchCode)
                 .forEach(p => {
