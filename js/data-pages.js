@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let allData = {}; // To store the fetched data
 
+    loadAndProcessData().then(result => {
+        if (!result) {
+            grid.innerHTML = "<p>Error: Could not load data from the live source.</p>";
+            return;
+        }
+        
+        allData = result.allData; // We only need the main data object here
+        
     if (!grid) return;
 
     fetch('data/monarchs_data.json')
