@@ -1,4 +1,4 @@
-// js/map.js - Final Version
+// js/map.js - Final Corrected Version
 
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([54.5, -2.0], 6);
@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }).addTo(map);
 
     const params = new URLSearchParams(window.location.search);
+    let allData = {}; // This will be populated by the data loader
 
+    // Helper function to populate the filter dropdowns
     function populateFilterDropdowns(monarchsArray) {
-        const houses = new Set();
-        const countries = new Set();
-        const centuries = new Set();
-
+        const houses = new Set(), countries = new Set(), centuries = new Set();
         monarchsArray.forEach(m => {
             if (m.house) houses.add(m.house);
             if (m.country) countries.add(m.country);
@@ -20,95 +19,121 @@ document.addEventListener('DOMContentLoaded', () => {
                 const yearMatch = String(m.reign_1_start).match(/\d{3,4}/);
                 if (yearMatch) {
                     const year = parseInt(yearMatch[0]);
-                    const century = Math.floor(year / 100) + 1;
-                    centuries.add(century);
+                    centuries.add(Math.floor(year / 100) + 1);
                 }
             }
         });
-
         const houseFilter = document.getElementById('house-filter');
         Array.from(houses).sort().forEach(h => houseFilter.innerHTML += `<option value="${h}">${h}</option>`);
-
         const countryFilter = document.getElementById('country-filter');
         Array.from(countries).sort().forEach(c => countryFilter.innerHTML += `<option value="${c}">${c}</option>`);
-        
         const centuryFilter = document.getElementById('century-filter');
         Array.from(centuries).sort((a, b) => a - b).forEach(c => centuryFilter.innerHTML += `<option value="${c}">${c}th Century</option>`);
-
         houseFilter.value = params.get('house') || '';
         countryFilter.value = params.get('country') || '';
         centuryFilter.value = params.get('century') || '';
     }
 
+    // Helper function to open the sidebar with location details
+    function showLocationInSidebar(locationId) {
+        const location = allData.locations.find(l => l.location_id === locationId);
+        if (!location) return;
+        document.getElementById('location-title').textContent = location.location_name;
+        document.getElementById('floorplan-image').src = location.floorplan_image_path || '';
+        const monarchList = document.getElementById('location-monarch-list');
+        monarchList.innerHTML = '';
+        const peopleMap = new Map(allData.people.map(p => [p.person_id, p]));
+        location.burials.forEach(burial => {
+            const person = peopleMap.get(burial.person_id);
+            if (person) monarchList.innerHTML += `<li>${person.name}</li>`;
+        });
+        const planContainer = document.getElementById('floorplan-container');
+        planContainer.querySelectorAll('.floorplan-pin').forEach(pin => pin.remove());
+        location.burials.forEach(burial => {
+            if (burial.floorplan_x && burial.floorplan_y) {
+                const pin = document.createElement('div');
+                pin.className = 'floorplan-pin';
+                pin.style.left = `${burial.floorplan_x}px`;
+                pin.style.top = `${burial.floorplan_y}px`;
+                const person = peopleMap.get(burial.person_id);
+                pin.title = person ? `${person.name} - ${burial.sub_location_name || ''}`.trim() : 'Unknown';
+                planContainer.appendChild(pin);
+            }
+        });
+        document.getElementById('sidebar-monarch-content').style.display = 'none';
+        document.getElementById('sidebar-location-content').style.display = 'block';
+        document.getElementById('sidebar').style.width = '450px';
+    }
+
+    // This function runs AFTER the data has finished loading
     loadAndProcessData().then(result => {
         if (!result) return;
         
-        const { people, monarchs, locations, burials, houseColors } = result;
+        // All code that uses 'locations', 'people', etc. MUST go inside here.
+        allData = result; // Store data globally so helper functions can access it
+        const { people, monarchs, locations, houseColors } = result;
         
+        // 1. Set up data and populate filters
         populateFilterDropdowns(monarchs);
-        
         const peopleMap = new Map(people.map(p => [p.person_id, p]));
-        const locationsMap = new Map(locations.map(l => [l.location_id, l]));
         const monarchMap = new Map(monarchs.map(m => [m.person_id, m]));
+        const locationsMap = new Map(locations.map(l => [l.location_id, l]));
 
-        const filteredBurials = burials.filter(burial => {
-            const monarchInfo = monarchMap.get(burial.person_id);
-            if (!monarchInfo) return true; // Always show non-monarchs
+        // 2. Initialize MarkerCluster group
+        const markers = L.markerClusterGroup();
 
-            const houseMatch = !params.has('house') || monarchInfo.house === params.get('house');
-            const countryMatch = !params.has('country') || monarchInfo.country === params.get('country');
-            let centuryMatch = true;
-            if (params.has('century')) {
-                if (!monarchInfo.reign_1_start) return false;
-                const yearMatch = String(monarchInfo.reign_1_start).match(/\d{3,4}/);
-                if (!yearMatch) return false;
-                const year = parseInt(yearMatch[0]);
-                const century = Math.floor(year / 100) + 1;
-                centuryMatch = century.toString() === params.get('century');
-            }
-            return houseMatch && countryMatch && centuryMatch;
-        });
-        
-        console.log(`Displaying ${filteredBurials.length} pins after filtering.`);
+        // 3. Loop through locations to create pins
+        locations.forEach(location => {
+            if (!location.burials || location.burials.length === 0) return;
 
-        filteredBurials.forEach(burial => {
-            const person = peopleMap.get(burial.person_id);
-            const location = locationsMap.get(burial.location_id);
-            const monarchInfo = monarchMap.get(burial.person_id);
+            const monarchsAtLocation = location.burials.map(b => monarchMap.get(b.person_id)).filter(Boolean);
+            const passesFilter = monarchsAtLocation.length === 0 || monarchsAtLocation.some(monarchInfo => {
+                const houseMatch = !params.has('house') || monarchInfo.house === params.get('house');
+                const countryMatch = !params.has('country') || monarchInfo.country === params.get('country');
+                // ... add other filter checks here if desired ...
+                return houseMatch && countryMatch;
+            });
 
-            if (person && location && location.map_latitude && location.map_longitude && !isNaN(parseFloat(location.map_latitude))) {
-                
-                const house = monarchInfo ? monarchInfo.house : 'Default';
+            if (!passesFilter) return;
+
+            if (location.map_latitude && location.map_longitude && !isNaN(parseFloat(location.map_latitude))) {
+                const primaryMonarch = monarchsAtLocation[0];
+                const house = primaryMonarch ? primaryMonarch.house : 'Default';
                 const color = houseColors[house] || houseColors['Default'];
-
                 const markerHtmlStyles = `
-                    background-color: ${color};
-                    width: 1.5rem; height: 1.5rem; display: block;
-                    left: -0.75rem; top: -0.75rem; position: relative;
-                    border-radius: 2rem 2rem 0; transform: rotate(45deg);
-                    border: 1px solid #FFFFFF; box-shadow: 0 0 5px rgba(0,0,0,0.5);`;
-                
-                const icon = L.divIcon({
-                    className: "my-custom-pin",
-                    iconAnchor: [0, 24],
-                    html: `<span style="${markerHtmlStyles}"></span>`
+                    background-color: ${color}; width: 1.5rem; height: 1.5rem; display: block;
+                    left: -0.75rem; top: -0.75rem; position: relative; border-radius: 2rem 2rem 0;
+                    transform: rotate(45deg); border: 1px solid #FFFFFF; box-shadow: 0 0 5px rgba(0,0,0,0.5);`;
+                const icon = L.divIcon({ className: "my-custom-pin", iconAnchor: [0, 24], html: `<span style="${markerHtmlStyles}"></span>` });
+                const marker = L.marker([location.map_latitude, location.map_longitude], { icon: icon });
+
+                let tooltipContent = `<b style='font-size: 1.1em;'>${location.location_name}</b><hr style='margin: 4px 0;'>`;
+                location.burials.slice(0, 10).forEach(burial => {
+                    const person = peopleMap.get(burial.person_id);
+                    if (person) tooltipContent += `${person.name}<br>`;
+                });
+                if (location.burials.length > 10) tooltipContent += `...and ${location.burials.length - 10} more.`;
+                marker.bindTooltip(tooltipContent);
+
+                marker.on('click', () => {
+                    showLocationInSidebar(location.location_id);
                 });
 
-                const marker = L.marker([location.map_latitude, location.map_longitude], {
-                    icon: icon,
-                    riseOnHover: true
-                }).addTo(map);
-
-                marker.bindTooltip(person.name);
+                markers.addLayer(marker);
             }
         });
         
+        // 4. Add the cluster layer to the map
+        map.addLayer(markers);
+
+        // 5. Handle zooming from URL
         if (params.has('location')) {
             const locationId = params.get('location');
             const zoomLevel = parseInt(params.get('zoom')) || 19;
             const location = locationsMap.get(locationId);
             if (location && location.map_latitude && location.map_longitude) {
                 map.flyTo([location.map_latitude, location.map_longitude], zoomLevel);
+                setTimeout(() => { showLocationInSidebar(locationId); }, 1000);
             }
         }
     });
