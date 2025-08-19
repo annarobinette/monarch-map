@@ -1,4 +1,4 @@
-// js/data-loader.js - Definitive Version
+// js/data-loader.js - Definitive Final Version
 
 async function loadAndProcessData() {
     const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz_vb0m_NL35-GtYCcvWV47rznpTMq2WgKCZMCoV72gQZQu8F5OudzXBe_78gpd-DgpYQ/exec'; 
@@ -6,14 +6,15 @@ async function loadAndProcessData() {
     try {
         const response = await fetch(WEB_APP_URL);
         if (!response.ok) throw new Error(`Network response was not ok`);
+        
         const rawData = await response.json();
 
-        if (!rawData.monarchs || rawData.monarchs.length === 0) {
-            throw new Error("Monarchs data is missing or empty in the API response.");
+        if (!rawData.houseData) { // UPDATED to use houseData
+            throw new Error("Data for 'houseData' not found. Check sheet names and Apps Script.");
         }
 
         const houseColors = {};
-        (rawData.houses_&_colours || []).forEach(house => {
+        rawData.houseData.forEach(house => { // UPDATED to use houseData
             if (house.house && house.colour) {
                 houseColors[house.house] = house.colour;
             }
@@ -32,7 +33,7 @@ async function loadAndProcessData() {
 
         rawData.monarchs.forEach(monarchData => {
             const monarchCode = monarchData.monarch_code;
-            if (!monarchCode) return; // Skip any rows that might be missing a monarch code
+            if (!monarchCode) return;
 
             const personDetails = peopleMap.get(monarchCode) || {};
             let monarch = { ...personDetails, ...monarchData };
