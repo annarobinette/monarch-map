@@ -14,17 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const { people, monarchs, locations, burials, houseColors } = result;
         
         // Create lookup maps for fast searching
-        const peopleMap = new Map(people.map(p => [p.person_code, p]));
+        const peopleMap = new Map(people.map(p => [p.person_id, p]));
         const locationsMap = new Map(locations.map(l => [l.location_id, l]));
-        const monarchMap = new Map(monarchs.map(m => [m.people_id, m]));
+        const monarchMap = new Map(monarchs.map(m => [m.person_id, m]));
 
         console.log(`Plotting ${burials.length} total burial records.`);
 
         // Loop through every BURIAL record
         burials.forEach(burial => {
-            const person = peopleMap.get(burial.monarch_code); // 'monarch_code' column in Burials sheet links to person_code
+            const person = peopleMap.get(burial.person_ID); // 'monarch_code' column in Burials sheet links to person_code
             const location = locationsMap.get(burial.location_id);
-            const monarchInfo = monarchMap.get(burial.monarch_code);
+            const monarchInfo = monarchMap.get(burial.Person_ID);
 
             if (person && location && location.map_latitude && location.map_longitude && !isNaN(parseFloat(location.map_latitude))) {
                 
