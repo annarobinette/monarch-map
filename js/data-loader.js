@@ -15,7 +15,7 @@ async function loadAndProcessData() {
         const houseColors = {};
         
         // ▼▼▼ THIS IS THE CORRECTED LINE ▼▼▼
-        rawData.housesAndColours.forEach(house => {
+          rawData.housesAndColours.forEach(house => {
             // The headers inside the sheet are lowercase, e.g., 'house' and 'colour'
             if (house.house && house.colour) {
                 houseColors[house.house] = house.colour;
