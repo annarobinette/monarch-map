@@ -1,4 +1,4 @@
-// js/map.js - Final Corrected Version
+// js/map.js - Final Version
 
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([54.5, -2.0], 6);
@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const params = new URLSearchParams(window.location.search);
 
-    // This function populates the filter dropdowns with data
     function populateFilterDropdowns(monarchsArray) {
         const houses = new Set();
         const countries = new Set();
@@ -46,17 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const { people, monarchs, locations, burials, houseColors } = result;
         
-        // Populate filters with the monarch data
         populateFilterDropdowns(monarchs);
         
-        // Create lookup maps for fast searching
         const peopleMap = new Map(people.map(p => [p.person_id, p]));
         const locationsMap = new Map(locations.map(l => [l.location_id, l]));
         const monarchMap = new Map(monarchs.map(m => [m.person_id, m]));
 
-        console.log(`Plotting ${burials.length} total burial records.`);
-
-        // Filter the burials based on URL parameters
         const filteredBurials = burials.filter(burial => {
             const monarchInfo = monarchMap.get(burial.person_id);
             if (!monarchInfo) return true; // Always show non-monarchs
@@ -77,9 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         console.log(`Displaying ${filteredBurials.length} pins after filtering.`);
 
-        // Loop through every FILTERED BURIAL record
         filteredBurials.forEach(burial => {
-            // ▼▼▼ CORRECTED these lookups to use lowercase 'person_id' ▼▼▼
             const person = peopleMap.get(burial.person_id);
             const location = locationsMap.get(burial.location_id);
             const monarchInfo = monarchMap.get(burial.person_id);
