@@ -35,34 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Helper function to open the sidebar with location details
-    function showLocationInSidebar(locationId) {
+   function showLocationInSidebar(locationId) {
         const location = allData.locations.find(l => l.location_id === locationId);
         if (!location) return;
-        document.getElementById('location-title').textContent = location.location_name;
-        document.getElementById('floorplan-image').src = location.floorplan_image_path || '';
-        const monarchList = document.getElementById('location-monarch-list');
-        monarchList.innerHTML = '';
+
         const peopleMap = new Map(allData.people.map(p => [p.person_id, p]));
+        let sidebarHTML = `<h2>${location.location_name}</h2>`;
+        
+        if (location.floorplan_image_path) {
+            sidebarHTML += `<img id="floorplan-image" src="${location.floorplan_image_path}" alt="Floor plan for ${location.location_name}">`;
+        }
+        
+        sidebarHTML += '<h4>Buried Here:</h4><ul>';
         location.burials.forEach(burial => {
             const person = peopleMap.get(burial.person_id);
-            if (person) monarchList.innerHTML += `<li>${person.name}</li>`;
+            if(person) sidebarHTML += `<li><strong>${person.name}</strong> (${burial.body_part})</li>`;
         });
-        const planContainer = document.getElementById('floorplan-container');
-        planContainer.querySelectorAll('.floorplan-pin').forEach(pin => pin.remove());
-        location.burials.forEach(burial => {
-            if (burial.floorplan_x && burial.floorplan_y) {
-                const pin = document.createElement('div');
-                pin.className = 'floorplan-pin';
-                pin.style.left = `${burial.floorplan_x}px`;
-                pin.style.top = `${burial.floorplan_y}px`;
-                const person = peopleMap.get(burial.person_id);
-                pin.title = person ? `${person.name} - ${burial.sub_location_name || ''}`.trim() : 'Unknown';
-                planContainer.appendChild(pin);
-            }
-        });
-        document.getElementById('sidebar-monarch-content').style.display = 'none';
-        document.getElementById('sidebar-location-content').style.display = 'block';
-        document.getElementById('sidebar').style.width = '450px';
+        sidebarHTML += '</ul>';
+        
+        document.getElementById('sidebar-content').innerHTML = sidebarHTML;
+        document.getElementById('sidebar').style.width = '400px';
+    }
+
+    window.closeSidebar = () => {
+        document.getElementById('sidebar').style.width = '0';
     }
 
     // This function runs AFTER the data has finished loading
@@ -90,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const passesFilter = monarchsAtLocation.length === 0 || monarchsAtLocation.some(monarchInfo => {
                 const houseMatch = !params.has('house') || monarchInfo.house === params.get('house');
                 const countryMatch = !params.has('country') || monarchInfo.country === params.get('country');
-                // ... add other filter checks here if desired ...
                 return houseMatch && countryMatch;
             });
 
@@ -107,6 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const icon = L.divIcon({ className: "my-custom-pin", iconAnchor: [0, 24], html: `<span style="${markerHtmlStyles}"></span>` });
                 const marker = L.marker([location.map_latitude, location.map_longitude], { icon: icon });
 
+                marker.on('click', () => {
+                    showLocationInSidebar(location.location_id);
+                });
+                
                 let tooltipContent = `<b style='font-size: 1.1em;'>${location.location_name}</b><hr style='margin: 4px 0;'>`;
                 location.burials.slice(0, 10).forEach(burial => {
                     const person = peopleMap.get(burial.person_id);
