@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const params = new URLSearchParams(window.location.search);
 
+    // This function will populate the filter dropdowns with data
     function populateFilterDropdowns(data) {
         const houses = new Set();
         const countries = new Set();
@@ -41,27 +42,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadAndProcessData().then(result => {
-        if (!result) {
-            alert("Failed to load map data. Please check the console for errors.");
-            return;
-        }
+        if (!result) return;
         
         const { allData, houseColors } = result;
         populateFilterDropdowns(allData);
 
         let filteredMonarchs = Object.values(allData.monarchs).filter(m => {
+            // Check each filter condition
             const houseMatch = !params.has('house') || m.house === params.get('house');
             const countryMatch = !params.has('country') || m.country === params.get('country');
             let centuryMatch = true;
             if (params.has('century')) {
-                if (!m.reign_1_start) return false;
-                const yearMatch = m.reign_1_start.match(/\d{3,4}/);
-                if (!yearMatch) return false;
-                const year = parseInt(yearMatch[0]);
-                const century = Math.floor(year / 100) + 1;
-                centuryMatch = century.toString() === params.get('century');
+                if (!m.reign_1_start) {
+                    centuryMatch = false;
+                } else {
+                    const yearMatch = String(m.reign_1_start).match(/\d{3,4}/);
+                    if (!yearMatch) {
+                        centuryMatch = false;
+                    } else {
+                        const year = parseInt(yearMatch[0]);
+                        const century = Math.floor(year / 100) + 1;
+                        centuryMatch = century.toString() === params.get('century');
+                    }
+                }
             }
-            return houseMatch && countryMatch && centuryMatch;
+            
+            const passes = houseMatch && countryMatch && centuryMatch;
+
+            // Diagnostic Log: If a monarch fails the filter, print why.
+            if (!passes && !params.has('house') && !params.has('country') && !params.has('century')) {
+                console.log(`FILTERING OUT: ${m.name || 'Unknown Name'}. Data:`, m);
+            }
+
+            return passes;
         });
 
         console.log(`Found ${filteredMonarchs.length} monarchs after filtering.`);
