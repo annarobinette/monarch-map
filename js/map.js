@@ -28,10 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const houseFilter = document.getElementById('house-filter');
         Array.from(houses).sort().forEach(h => houseFilter.innerHTML += `<option value="${h}">${h}</option>`);
-
         const countryFilter = document.getElementById('country-filter');
         Array.from(countries).sort().forEach(c => countryFilter.innerHTML += `<option value="${c}">${c}</option>`);
-        
         const centuryFilter = document.getElementById('century-filter');
         Array.from(centuries).sort((a, b) => a - b).forEach(c => centuryFilter.innerHTML += `<option value="${c}">${c}th Century</option>`);
 
@@ -46,35 +44,28 @@ document.addEventListener('DOMContentLoaded', () => {
         const { allData, houseColors } = result;
         populateFilterDropdowns(allData);
 
-        console.log("--- STARTING MONARCH FILTERING ---");
+        console.log("--- DIAGNOSTIC LOG ---");
+        // Log the entire object for the very first monarch to inspect its keys
+        const firstMonarch = Object.values(allData.monarchs)[0];
+        console.log("Data for the first monarch received by the filter:", firstMonarch);
+        console.log("--- END DIAGNOSTIC LOG ---");
+
 
         let filteredMonarchs = Object.values(allData.monarchs).filter(m => {
-            // NEW DIAGNOSTIC LOG: Log the data for every monarch being checked.
-            console.log(`Checking: ${m.name}`, { house: m.house, country: m.country, reign_start: m.reign_1_start });
-
             const houseMatch = !params.has('house') || m.house === params.get('house');
             const countryMatch = !params.has('country') || m.country === params.get('country');
             let centuryMatch = true;
             if (params.has('century')) {
-                if (!m.reign_1_start) {
-                    centuryMatch = false;
-                } else {
-                    const yearMatch = String(m.reign_1_start).match(/\d{3,4}/);
-                    if (!yearMatch) {
-                        centuryMatch = false;
-                    } else {
-                        const year = parseInt(yearMatch[0]);
-                        const century = Math.floor(year / 100) + 1;
-                        centuryMatch = century.toString() === params.get('century');
-                    }
-                }
+                if (!m.reign_1_start) return false;
+                const yearMatch = String(m.reign_1_start).match(/\d{3,4}/);
+                if (!yearMatch) return false;
+                const year = parseInt(yearMatch[0]);
+                const century = Math.floor(year / 100) + 1;
+                centuryMatch = century.toString() === params.get('century');
             }
-            
-            const passes = houseMatch && countryMatch && centuryMatch;
-            return passes;
+            return houseMatch && countryMatch && centuryMatch;
         });
 
-        console.log(`--- FILTERING COMPLETE ---`);
         console.log(`Found ${filteredMonarchs.length} monarchs after filtering.`);
 
         filteredMonarchs.forEach(monarch => {
@@ -95,12 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
                      iconAnchor: [0, 24],
                      html: `<span style="${markerHtmlStyles}"></span>`
                  });
-
                  const marker = L.marker([locationDetails.map_latitude, locationDetails.map_longitude], {
-                     icon: icon,
-                     riseOnHover: true
+                     icon: icon, riseOnHover: true
                  }).addTo(map);
-
                  marker.bindTooltip(monarch.name);
              }
         });
