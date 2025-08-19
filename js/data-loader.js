@@ -1,34 +1,26 @@
-// js/data-loader.js - Final Corrected Version
+// js/data-loader.js - Definitive Version
 
 async function loadAndProcessData() {
-    // IMPORTANT: Make sure this is your correct Web App URL from the Apps Script deployment.
     const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz_vb0m_NL35-GtYCcvWV47rznpTMq2WgKCZMCoV72gQZQu8F5OudzXBe_78gpd-DgpYQ/exec'; 
 
     try {
         const response = await fetch(WEB_APP_URL);
-        if (!response.ok) {
-            throw new Error(`Network response was not ok: ${response.statusText}`);
-        }
+        if (!response.ok) throw new Error(`Network response was not ok`);
         const rawData = await response.json();
 
-        // Dynamically create the houseColors object
+        if (!rawData.monarchs || rawData.monarchs.length === 0) {
+            throw new Error("Monarchs data is missing or empty in the API response.");
+        }
+
         const houseColors = {};
-        
-        // ▼▼▼ THIS IS THE CORRECTED LINE ▼▼▼
-          rawData.housesAndColours.forEach(house => {
-            // The headers inside the sheet are lowercase, e.g., 'house' and 'colour'
+        (rawData.houses_&_colours || []).forEach(house => {
             if (house.house && house.colour) {
                 houseColors[house.house] = house.colour;
             }
         });
         houseColors['Default'] = '#777777';
 
-        // Process and join all the data into the final structure
-        const allData = {
-            monarchs: {},
-            locations: {}
-        };
-        
+        const allData = { monarchs: {}, locations: {} };
         const peopleMap = new Map(rawData.people.map(p => [p.person_code, p]));
         
         rawData.locations.forEach(loc => {
@@ -40,23 +32,22 @@ async function loadAndProcessData() {
 
         rawData.monarchs.forEach(monarchData => {
             const monarchCode = monarchData.monarch_code;
+            if (!monarchCode) return; // Skip any rows that might be missing a monarch code
+
             const personDetails = peopleMap.get(monarchCode) || {};
             let monarch = { ...personDetails, ...monarchData };
-
             monarch.spouses = [];
             monarch.issue = [];
             monarch.burial_details = rawData.burials.filter(b => b.monarch_code === monarchCode);
             
-            rawData.relationships
+            (rawData.relationships || [])
                 .filter(r => r.person1_code === monarchCode)
                 .forEach(rel => {
                     const spouseDetails = peopleMap.get(rel.person2_code);
-                    if (spouseDetails) {
-                        monarch.spouses.push({ ...spouseDetails, relationship_type: rel.relationship_type });
-                    }
+                    if (spouseDetails) monarch.spouses.push({ ...spouseDetails, relationship_type: rel.relationship_type });
                 });
 
-            rawData.parentage
+            (rawData.parentage || [])
                 .filter(p => p.parent_code === monarchCode)
                 .forEach(p => {
                     const childDetails = peopleMap.get(p.child_code);
@@ -78,6 +69,7 @@ async function loadAndProcessData() {
 
     } catch (error) {
         console.error("Failed to load or process live data from Google Apps Script:", error);
+        alert("Failed to load data. Please check the developer console for details.");
         return null; 
     }
 }
