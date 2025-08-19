@@ -1,4 +1,4 @@
-// js/map.js - Updated to plot all people with burials
+// js/map.js - Updated to plot all people with burials using person_id
 
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([54.5, -2.0], 6);
@@ -13,23 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const { people, monarchs, locations, burials, houseColors } = result;
         
-        // Create lookup maps for fast searching
-        const peopleMap = new Map(people.map(p => [p.person_id, p]));
-        const locationsMap = new Map(locations.map(l => [l.location_id, l]));
-        const monarchMap = new Map(monarchs.map(m => [m.person_id, m]));
+        const peopleMap = new Map(Object.values(people).map(p => [p.person_id, p]));
+        const locationsMap = new Map(Object.values(locations).map(l => [l.location_id, l]));
 
         console.log(`Plotting ${burials.length} total burial records.`);
 
-        // Loop through every BURIAL record
         burials.forEach(burial => {
-            const person = peopleMap.get(burial.person_ID); // 'monarch_code' column in Burials sheet links to person_code
+            // ▼▼▼ CORRECTED these lookups to use lowercase 'person_id' ▼▼▼
+            const person = peopleMap.get(burial.person_id); 
             const location = locationsMap.get(burial.location_id);
-            const monarchInfo = monarchMap.get(burial.Person_ID);
 
             if (person && location && location.map_latitude && location.map_longitude && !isNaN(parseFloat(location.map_latitude))) {
                 
-                // If the person is a monarch, use their house; otherwise, use Default.
-                const house = monarchInfo ? monarchInfo.house : 'Default';
+                const house = person.isMonarch ? person.house : 'Default';
                 const color = houseColors[house] || houseColors['Default'];
 
                 const markerHtmlStyles = `
