@@ -2,17 +2,17 @@
 
 /* --- 1. Global Styles & Font --- */
 :root {
-    --background-dark: #1a1a1a;
+    --background: #ffffff;
     --panel-dark: #242424;
-    --font-light: #e8e8e8;
+    --font-main: #000000;
     --accent-gold: #d4af37;
-    --border-color: #444;
+    --border-color: #000000;
 }
 
 body {
     font-family: 'Barlow', sans-serif;
-    background-color: var(--background-dark);
-    color: var(--font-light);
+    background-color: var(--background);
+    color: var(--font-main);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -41,8 +41,7 @@ a:hover {
 .leaflet-tooltip {
     background-color: var(--panel-dark);
     border: 1px solid var(--border-color);
-    color: var(--font-light);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    color: var(--font-main);
 }
 
 .main-panel {
@@ -71,7 +70,7 @@ a:hover {
 }
 
 .main-panel .nav-links a {
-    color: var(--font-light);
+    color: var(--font-main);
     margin-right: 20px;
     font-size: 1.1em;
     font-weight: 600;
@@ -92,7 +91,6 @@ a:hover {
     overflow-x: hidden;
     transition: 0.5s;
     border-right: 1px solid var(--border-color);
-    box-shadow: 3px 0 15px rgba(0,0,0,0.5);
 }
 
 #sidebar-content {
@@ -176,14 +174,15 @@ a:hover {
 
 .filter-controls {
     padding: 10px 20px;
-    background-color: var(--background-dark);
+    background-color: var(--background);
 }
 .filter-controls select {
     width: 100%;
     padding: 8px;
     background-color: var(--panel-dark);
-    color: var(--font-light);
+    color: var(--font-main);
     border: 1px solid var(--border-color);
     border-radius: 4px;
     margin-bottom: 10px;
 }
+
