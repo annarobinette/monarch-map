@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where Monarchs Lie</title>
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
@@ -40,20 +44,20 @@
 
     <div id="map"></div>
 
+    <div class="main-panel">
+        <h1>THE MONARCH MAP</h1>
+        <p>An interactive guide to the legacy of the crown</p>
+        <nav class="nav-links">
+            <a href="index.html">MAP</a>
+            <a href="monarchs.html">MONARCHS</a>
+            <a href="locations.html">LOCATIONS</a>
+        </nav>
+        </div>
+
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
-        
-        <div id="sidebar-monarch-content"></div>
-
-        <div id="sidebar-location-content" style="display: none;">
-            <h2 id="location-title"></h2>
-            <h4>Monarchs buried here:</h4>
-            <ul id="location-monarch-list"></ul>
-            <h4>Floor Plan</h4>
-            <div id="floorplan-container">
-                <img id="floorplan-image" src="" alt="Floor plan">
-                </div>
-        </div>
+        <div id="sidebar-content">
+            </div>
     </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
@@ -64,6 +68,7 @@
     
 </body>
 </html>
+
 
 
 
