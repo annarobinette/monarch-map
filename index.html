@@ -9,66 +9,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
-    <header>
-    <nav class="main-nav">
-        <div class="nav-logo">
-            <a href="index.html">Where Monarchs Lie</a>
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Map</a>
-            <a href="monarchs.html">Monarchs</a>
-            <a href="locations.html">Locations</a>
-        </div>
-    </nav>
-    <div class="filter-bar">
-        <span>Filter by:</span>
-        <select id="house-filter">
-            <option value="">All Houses</option>
-            </select>
-        <select id="country-filter">
-            <option value="">All Countries</option>
-            </select>
-        <select id="century-filter">
-            <option value="">All Centuries</option>
-            </select>
-        <button id="clear-filters">Clear Filters</button>
-    </div>
-</header>
 <body>
 
-    <div id="map"></div>
+    <header class="site-header">
+        <div class="header-bar">
+            <a href="index.html" class="logo">Where Monarchs Lie</a>
+            <nav class="main-nav">
+                <a href="index.html">Map</a>
+                <a href="monarchs.html">Monarchs</a>
+                <a href="locations.html">Locations</a>
+            </nav>
+        </div>
+        <div class="filter-bar">
+            <span class="filter-label">Filter</span>
+            <select id="house-filter"><option value="">All Houses</option></select>
+            <select id="country-filter"><option value="">All Countries</option></select>
+            <select id="century-filter"><option value="">All Centuries</option></select>
+            <button id="clear-filters" class="clear-btn">Clear</button>
+        </div>
+    </header>
 
-    <div class="main-panel">
-        <h1>THE MONARCH MAP</h1>
-        <p>An interactive guide to the legacy of the crown</p>
-        <nav class="nav-links">
-            <a href="index.html">MAP</a>
-            <a href="monarchs.html">MONARCHS</a>
-            <a href="locations.html">LOCATIONS</a>
-        </nav>
+    <main class="map-page">
+        <div id="map"></div>
+        <p id="map-status" class="map-status"></p>
+
+        <div class="map-intro">
+            <h1>THE MONARCH MAP</h1>
+            <p>An interactive guide to the legacy of the crown</p>
         </div>
 
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
-        <div id="sidebar-content">
-            </div>
-    </div>
+        <aside id="sidebar" class="sidebar">
+            <button class="close-btn" onclick="closeSidebar()" aria-label="Close">&times;</button>
+            <div id="sidebar-content"></div>
+        </aside>
+    </main>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
-    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
     <script src="js/data-loader.js"></script>
-<script src="js/app.js"></script>
-<script src="js/map.js"></script>
-    
+    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-

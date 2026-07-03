@@ -4,44 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monarchs | Where Monarchs Lie</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <header class="page-header">
-        <nav class="nav-links">
-            <a href="index.html">MAP</a>
-            <a href="monarchs.html">MONARCHS</a>
-            <a href="locations.html">LOCATIONS</a>
-        </nav>
-        <h1>MONARCHS</h1>
+
+    <header class="site-header">
+        <div class="header-bar">
+            <a href="index.html" class="logo">Where Monarchs Lie</a>
+            <nav class="main-nav">
+                <a href="index.html">Map</a>
+                <a href="monarchs.html">Monarchs</a>
+                <a href="locations.html">Locations</a>
+            </nav>
+        </div>
+        <div class="filter-bar">
+            <span class="filter-label">Filter</span>
+            <select id="house-filter"><option value="">All Houses</option></select>
+            <select id="country-filter"><option value="">All Countries</option></select>
+            <select id="century-filter"><option value="">All Centuries</option></select>
+            <button id="clear-filters" class="clear-btn">Clear</button>
+        </div>
     </header>
-    
 
     <main class="split-layout">
         <div class="list-pane">
-            <div class="filter-controls">
-                <select id="house-filter"><option value="">Filter by House</option></select>
-                </div>
-            <div id="list-container">
-                </div>
+            <h2>Monarchs</h2>
+            <div id="list-container"></div>
         </div>
         <div class="detail-pane">
-            <div id="detail-pane-content">
-                <h2>Hover over a monarch to see their details.</h2>
+            <div id="detail-pane-content" class="detail-pane-empty">
+                <h2>Select a monarch</h2>
+                <p class="muted">Hover over a name on the left to see their details.</p>
             </div>
         </div>
     </main>
 
-<script src="js/data-loader.js"></script>
-<script src="js/app.js"></script>
-<script src="js/data-pages.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/data-pages.js"></script>
 </body>
-    
 </html>
