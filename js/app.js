@@ -53,7 +53,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
     highlightCurrentNavLink();
     updateNavLinksWithFilters();
+    initAccountWidget();
 });
+
+// Shared sign-in widget: magic-link auth, display name capture, sign-out.
+async function initAccountWidget() {
+    const widget = document.getElementById('account-widget');
+    if (!widget || typeof supa === 'undefined') return;
+
+    await supa.handleAuthRedirect();
+
+    async function render() {
+        const user = supa.getUser();
+        if (!user) {
+            widget.innerHTML = `
+                <form id="signin-form" class="signin-form">
+                    <input type="email" id="signin-email" placeholder="you@email.com" required>
+                    <button type="submit">Sign in</button>
+                </form>
+            `;
+            document.getElementById('signin-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const email = document.getElementById('signin-email').value;
+                widget.innerHTML = '<span class="account-note">Sending link&hellip;</span>';
+                try {
+                    await supa.sendMagicLink(email);
+                    widget.innerHTML = '<span class="account-note">Check your email for a sign-in link.</span>';
+                } catch {
+                    widget.innerHTML = '<span class="account-note">Could not send link. Try again.</span>';
+                }
+            });
+            return;
+        }
+
+        let profiles = [];
+        try {
+            profiles = await supa.select('profiles', `select=display_name&user_id=eq.${user.id}`);
+        } catch { /* ignore, treated as no profile yet */ }
+
+        if (!profiles.length) {
+            widget.innerHTML = `
+                <form id="profile-form" class="signin-form">
+                    <input type="text" id="profile-name" placeholder="Your name" required>
+                    <button type="submit">Save</button>
+                </form>
+            `;
+            document.getElementById('profile-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const display_name = document.getElementById('profile-name').value.trim();
+                if (!display_name) return;
+                await supa.upsert('profiles', [{ user_id: user.id, display_name }], 'user_id');
+                render();
+            });
+            return;
+        }
+
+        widget.innerHTML = `
+            <span class="account-note">Hi, ${profiles[0].display_name}</span>
+            <button id="sign-out-btn" class="link-btn">Sign out</button>
+        `;
+        document.getElementById('sign-out-btn').addEventListener('click', () => {
+            supa.signOut();
+            render();
+        });
+    }
+
+    render();
+}
 
 // Populates the house/country/century <select> options from a list of monarchs.
 // Shared by the map page and the monarchs list page.
