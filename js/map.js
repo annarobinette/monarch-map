@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const residentsHtml = residents.length
             ? '<ul class="sidebar-list">' + residents.map(r =>
-                `<li><a href="monarchs.html" class="person-link">${r.person.name}</a>${r.burial.body_part ? ` <span class="muted">&middot; ${r.burial.body_part}</span>` : ''}</li>`
+                `<li><a href="monarchs.html?person=${encodeURIComponent(r.person.person_id)}" class="person-link">${r.person.name}</a>${r.burial.body_part ? ` <span class="muted">&middot; ${r.burial.body_part}</span>` : ''}</li>`
               ).join('') + '</ul>'
             : '<p class="muted">No burials on record.</p>';
 

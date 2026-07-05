@@ -152,7 +152,15 @@ window.populateFilterDropdowns = function populateFilterDropdowns(monarchsArray)
         countryFilter.value = params.get('country') || '';
     }
     if (centuryFilter) {
-        Array.from(centuries).sort((a, b) => a - b).forEach(c => centuryFilter.insertAdjacentHTML('beforeend', `<option value="${c}">${c}th century</option>`));
+        Array.from(centuries).sort((a, b) => a - b).forEach(c => centuryFilter.insertAdjacentHTML('beforeend', `<option value="${c}">${ordinal(c)} century</option>`));
         centuryFilter.value = params.get('century') || '';
     }
 };
+
+function ordinal(n) {
+    const j = n % 10, k = n % 100;
+    if (j === 1 && k !== 11) return `${n}st`;
+    if (j === 2 && k !== 12) return `${n}nd`;
+    if (j === 3 && k !== 13) return `${n}rd`;
+    return `${n}th`;
+}

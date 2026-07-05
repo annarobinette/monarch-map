@@ -28,10 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPage === 'monarchs.html') {
             window.populateFilterDropdowns(allData.monarchs);
             renderMonarchs(allData.monarchs);
+            const targetId = params.get('person');
+            if (targetId && peopleMap.has(targetId)) {
+                renderDetail(targetId);
+                const targetItem = listContainer.querySelector(`.list-item[data-person-id="${CSS.escape(targetId)}"]`);
+                if (targetItem) {
+                    document.querySelectorAll('.list-item.active').forEach(item => item.classList.remove('active'));
+                    targetItem.classList.add('active');
+                    targetItem.scrollIntoView({ block: 'center' });
+                }
+            }
         } else if (currentPage === 'locations.html') {
             renderLocations(allData.locations);
         }
     });
+
+    function personLink(personId, name) {
+        return peopleMap.has(personId) ? `<a href="monarchs.html?person=${encodeURIComponent(personId)}">${name}</a>` : name;
+    }
 
     listContainer.addEventListener('mouseover', (event) => {
         const listItem = event.target.closest('.list-item');
@@ -52,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!data) return;
 
         const spousesHtml = (data.spouses || []).length
-            ? '<ul>' + data.spouses.map(s => `<li>${s.name}${s.relationship_type ? ` <span class="muted">(${s.relationship_type})</span>` : ''}</li>`).join('') + '</ul>'
+            ? '<ul>' + data.spouses.map(s => `<li>${personLink(s.person_id, s.name)}${s.relationship_type ? ` <span class="muted">(${s.relationship_type})</span>` : ''}</li>`).join('') + '</ul>'
             : '<p class="muted">None recorded.</p>';
         const issueHtml = (data.issue || []).length
-            ? '<ul>' + data.issue.map(i => `<li>${i.name}</li>`).join('') + '</ul>'
+            ? '<ul>' + data.issue.map(i => `<li>${personLink(i.code, i.name)}</li>`).join('') + '</ul>'
             : '<p class="muted">None recorded.</p>';
 
         detailPane.innerHTML = `

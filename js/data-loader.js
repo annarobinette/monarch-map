@@ -26,7 +26,7 @@ async function loadAndProcessData() {
             const consort = peopleByIdRaw.get(r.consort_id);
             if (!consort) return;
             const list = spousesByMonarch.get(r.monarch_id) || [];
-            list.push({ name: consort.name, relationship_type: r.relationship_role });
+            list.push({ name: consort.name, person_id: r.consort_id, relationship_type: r.relationship_role });
             spousesByMonarch.set(r.monarch_id, list);
         });
 

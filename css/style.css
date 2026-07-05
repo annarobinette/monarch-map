@@ -208,29 +208,6 @@ a {
 
 .map-status.visible { display: block; }
 
-.map-intro {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    z-index: 1000;
-    background-color: var(--paper);
-    border-radius: 14px;
-    padding: 20px 26px;
-    max-width: 280px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
-
-.map-intro h1 {
-    font-size: 1.6rem;
-    letter-spacing: 0.01em;
-    line-height: 1.1;
-}
-
-.map-intro p {
-    margin: 6px 0 0 0;
-    color: var(--muted);
-}
-
 .leaflet-tooltip {
     background-color: var(--ink);
     border: none;
@@ -395,6 +372,43 @@ a {
 .page-intro { margin-bottom: 40px; }
 .page-intro h1 { font-size: 2.2rem; }
 .page-intro p { max-width: 60ch; }
+.page-intro a { color: var(--ink); text-decoration: underline; }
+
+/* --- Badge case (My Badges page) --- */
+.badge-case {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.badge-family {
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.badge-family h3 {
+    font-size: 0.95rem;
+    margin: 4px 0 0;
+}
+
+.medal-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.medal {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.medal.locked {
+    filter: grayscale(1);
+    opacity: 0.3;
+}
 
 .challenge-family {
     margin-bottom: 48px;
@@ -511,6 +525,5 @@ a {
     .split-layout { flex-direction: column; height: auto; }
     .list-pane { width: 100%; height: auto; max-height: 40vh; }
     .detail-pane { padding: 28px 20px; }
-    .map-intro { left: 12px; right: 12px; max-width: none; }
     .challenges-page { padding: 28px 18px 80px; }
 }
