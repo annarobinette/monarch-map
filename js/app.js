@@ -157,6 +157,67 @@ window.populateFilterDropdowns = function populateFilterDropdowns(monarchsArray)
     }
 };
 
+// Builds an inline style for a house tag using that house's pin colour,
+// picking black or white text for the best contrast against it.
+window.houseTagStyle = function houseTagStyle(colour) {
+    if (!colour) return '';
+    const hex = colour.replace('#', '');
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    const textColor = luminance > 0.55 ? '#14161a' : '#ffffff';
+    return `background-color:${colour};color:${textColor};`;
+};
+
+// Renders an "I've visited" tracker into `container` for a given location,
+// showing who else has visited and letting the signed-in user toggle their own.
+// Shared by the map sidebar and the Locations detail pane.
+window.renderVisitTracker = async function renderVisitTracker(container, locationId) {
+    if (typeof supa === 'undefined') return;
+    container.innerHTML = '<p class="muted">Loading visits&hellip;</p>';
+
+    try {
+        const [visits, profiles] = await Promise.all([
+            supa.select('location_visits', `select=user_id&location_id=eq.${encodeURIComponent(locationId)}`),
+            supa.select('profiles', 'select=user_id,display_name')
+        ]);
+        const profileMap = new Map(profiles.map(p => [p.user_id, p.display_name]));
+        const user = supa.getUser();
+        const iVisited = !!(user && visits.some(v => v.user_id === user.id));
+
+        const visitedHtml = visits.length
+            ? visits.map(v => `<span class="completer">${profileMap.get(v.user_id) || 'A visitor'} &#10003;</span>`).join('')
+            : '<span class="completer pending">No one yet</span>';
+
+        const toggleHtml = user
+            ? `<button class="tier-toggle visit-toggle" data-done="${iVisited}">${iVisited ? 'Mark not visited' : "I&rsquo;ve visited"}</button>`
+            : '<p class="muted signin-hint">Sign in above to track your visits.</p>';
+
+        container.innerHTML = `
+            <h4>Visited by</h4>
+            <div class="tier-progress">${visitedHtml}</div>
+            ${toggleHtml}
+        `;
+
+        const btn = container.querySelector('.visit-toggle');
+        if (btn) {
+            btn.addEventListener('click', async () => {
+                const done = btn.dataset.done === 'true';
+                btn.disabled = true;
+                if (done) {
+                    await supa.remove('location_visits', `location_id=eq.${encodeURIComponent(locationId)}&user_id=eq.${user.id}`);
+                } else {
+                    await supa.upsert('location_visits', [{ location_id: locationId, user_id: user.id }], 'location_id,user_id');
+                }
+                renderVisitTracker(container, locationId);
+            });
+        }
+    } catch {
+        container.innerHTML = '<p class="muted">Could not load visit data.</p>';
+    }
+};
+
 function ordinal(n) {
     const j = n % 10, k = n % 100;
     if (j === 1 && k !== 11) return `${n}st`;

@@ -13,6 +13,41 @@
 
 * { box-sizing: border-box; }
 
+/* --- Scrollbars --- */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--lime-dark) var(--panel);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--panel);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--lime-dark);
+    border-radius: 20px;
+    border: 2px solid var(--panel);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ink);
+}
+
+.sidebar::-webkit-scrollbar-track,
+.list-pane::-webkit-scrollbar-track {
+    background: var(--paper);
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.list-pane::-webkit-scrollbar-thumb {
+    border-color: var(--paper);
+}
+
 body {
     font-family: 'Barlow', sans-serif;
     background-color: var(--paper);
@@ -32,6 +67,20 @@ a {
 }
 
 .muted { color: var(--muted); }
+
+/* Inline content links (resident names, spouse/issue, location cross-links)
+   need a visible affordance - nav links get their own bolder treatment. */
+#sidebar-content a,
+#detail-pane-content a {
+    text-decoration: underline;
+    text-decoration-color: var(--lime-dark);
+    text-underline-offset: 2px;
+}
+
+#sidebar-content a:hover,
+#detail-pane-content a:hover {
+    color: var(--lime-dark);
+}
 
 /* --- 2. Header & Nav --- */
 .site-header {
@@ -267,6 +316,14 @@ a {
     display: block;
 }
 
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.sidebar-list li { padding: 4px 0; }
+
 /* --- 5. Tags --- */
 .tag-row {
     display: flex;
@@ -305,6 +362,41 @@ a {
     padding: 20px 24px 8px;
     margin: 0;
 }
+
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 24px 14px;
+}
+
+.sort-controls select {
+    flex-grow: 1;
+    border: none;
+    border-bottom: 2px solid var(--border);
+    background: transparent;
+    font-family: inherit;
+    font-size: 0.85rem;
+    color: var(--ink);
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.sort-controls select:focus { outline: none; border-bottom-color: var(--lime-dark); }
+
+.sort-dir-btn {
+    border: 1px solid var(--border);
+    background: var(--paper);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sort-dir-btn:hover { border-color: var(--lime-dark); background: rgba(183, 214, 23, 0.15); }
 
 .list-loading {
     padding: 0 24px;

@@ -32,8 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             .map(b => ({ burial: b, person: peopleMap.get(b.person_id) }))
             .filter(r => r.person);
 
+        const houseColors = allData.houseColors || {};
         const tagsHtml = Array.from(new Set(residents.map(r => r.person.house).filter(Boolean)))
-            .map(h => `<span class="tag">${h}</span>`).join('');
+            .map(h => `<span class="tag" style="${window.houseTagStyle(houseColors[h] || houseColors['Default'])}">${h}</span>`).join('');
 
         const imageHtml = location.floorplan_image_path
             ? `<img class="sidebar-image" src="${location.floorplan_image_path}" alt="${location.location_name}" onerror="this.remove()">`
@@ -52,7 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="tag-row">${tagsHtml}</div>
             <h4>Buried here</h4>
             ${residentsHtml}
+            <div id="visit-tracker"></div>
         `;
+        window.renderVisitTracker(document.getElementById('visit-tracker'), locationId);
         document.getElementById('sidebar').classList.add('open');
     }
 

@@ -25,11 +25,26 @@
             </nav>
             <div id="account-widget" class="account-widget"></div>
         </div>
+        <div class="filter-bar">
+            <span class="filter-label">Filter</span>
+            <select id="house-filter"><option value="">All Houses</option></select>
+            <select id="country-filter"><option value="">All Countries</option></select>
+            <select id="century-filter"><option value="">All Centuries</option></select>
+            <button id="clear-filters" class="clear-btn">Clear</button>
+        </div>
     </header>
 
     <main class="split-layout">
         <div class="list-pane">
             <h2>Locations</h2>
+            <div class="sort-controls">
+                <select id="sort-field">
+                    <option value="location_name">Name</option>
+                    <option value="city">City</option>
+                    <option value="burial_count">Number of burials</option>
+                </select>
+                <button id="sort-direction" class="sort-dir-btn" data-dir="asc">&uarr; Asc</button>
+            </div>
             <div id="list-container"></div>
         </div>
         <div class="detail-pane">
