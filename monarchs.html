@@ -37,6 +37,15 @@
     <main class="split-layout">
         <div class="list-pane">
             <h2>Monarchs</h2>
+            <div class="sort-controls">
+                <select id="sort-field">
+                    <option value="reign_1_start">Start of reign</option>
+                    <option value="reign_1_end">End of reign</option>
+                    <option value="birth_date">Date of birth</option>
+                    <option value="death_date">Date of death</option>
+                </select>
+                <button id="sort-direction" class="sort-dir-btn" data-dir="asc">&uarr; Asc</button>
+            </div>
             <div id="list-container"></div>
         </div>
         <div class="detail-pane">

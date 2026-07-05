@@ -13,6 +13,31 @@ document.addEventListener('DOMContentLoaded', () => {
     let allData = {};
     let peopleMap = new Map();
     let locationsMap = new Map();
+    const currentSort = { field: 'reign_1_start', dir: 'asc' };
+
+    const sortField = document.getElementById('sort-field');
+    const sortDirBtn = document.getElementById('sort-direction');
+    if (sortField) {
+        sortField.addEventListener('change', () => {
+            currentSort.field = sortField.value;
+            renderMonarchs(allData.monarchs);
+        });
+    }
+    if (sortDirBtn) {
+        sortDirBtn.addEventListener('click', () => {
+            currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+            sortDirBtn.textContent = currentSort.dir === 'asc' ? '↑ Asc' : '↓ Desc';
+            sortDirBtn.dataset.dir = currentSort.dir;
+            renderMonarchs(allData.monarchs);
+        });
+    }
+
+    function sortYear(monarch, field) {
+        const raw = monarch[field];
+        if (!raw) return null;
+        const match = String(raw).match(/\d{3,4}/);
+        return match ? parseInt(match[0], 10) : null;
+    }
 
     listContainer.innerHTML = '<p class="muted list-loading">Loading&hellip;</p>';
 
@@ -72,10 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
             ? '<ul>' + data.issue.map(i => `<li>${personLink(i.code, i.name)}</li>`).join('') + '</ul>'
             : '<p class="muted">None recorded.</p>';
 
+        const houseColors = allData.houseColors || {};
+        const houseTag = data.house
+            ? `<span class="tag" style="${window.houseTagStyle(houseColors[data.house] || houseColors['Default'])}">${data.house}</span>`
+            : '';
+
         detailPane.innerHTML = `
             <h2>${data.name}</h2>
             <div class="tag-row">
-                ${data.house ? `<span class="tag">${data.house}</span>` : ''}
+                ${houseTag}
                 ${data.country ? `<span class="tag">${data.country}</span>` : ''}
             </div>
             ${data.title ? `<p class="detail-subtitle">${data.title}</p>` : ''}
@@ -122,6 +152,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 centuryMatch = century.toString() === params.get('century');
             }
             return houseMatch && countryMatch && centuryMatch;
+        });
+
+        filtered.sort((a, b) => {
+            const ya = sortYear(a, currentSort.field);
+            const yb = sortYear(b, currentSort.field);
+            if (ya === null && yb === null) return 0;
+            if (ya === null) return 1;
+            if (yb === null) return -1;
+            return currentSort.dir === 'asc' ? ya - yb : yb - ya;
         });
 
         listContainer.innerHTML = '';

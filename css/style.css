@@ -267,6 +267,14 @@ a {
     display: block;
 }
 
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.sidebar-list li { padding: 4px 0; }
+
 /* --- 5. Tags --- */
 .tag-row {
     display: flex;
@@ -305,6 +313,41 @@ a {
     padding: 20px 24px 8px;
     margin: 0;
 }
+
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 24px 14px;
+}
+
+.sort-controls select {
+    flex-grow: 1;
+    border: none;
+    border-bottom: 2px solid var(--border);
+    background: transparent;
+    font-family: inherit;
+    font-size: 0.85rem;
+    color: var(--ink);
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.sort-controls select:focus { outline: none; border-bottom-color: var(--lime-dark); }
+
+.sort-dir-btn {
+    border: 1px solid var(--border);
+    background: var(--paper);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sort-dir-btn:hover { border-color: var(--lime-dark); background: rgba(183, 214, 23, 0.15); }
 
 .list-loading {
     padding: 0 24px;

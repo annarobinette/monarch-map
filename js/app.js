@@ -157,6 +157,19 @@ window.populateFilterDropdowns = function populateFilterDropdowns(monarchsArray)
     }
 };
 
+// Builds an inline style for a house tag using that house's pin colour,
+// picking black or white text for the best contrast against it.
+window.houseTagStyle = function houseTagStyle(colour) {
+    if (!colour) return '';
+    const hex = colour.replace('#', '');
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    const textColor = luminance > 0.55 ? '#14161a' : '#ffffff';
+    return `background-color:${colour};color:${textColor};`;
+};
+
 function ordinal(n) {
     const j = n % 10, k = n % 100;
     if (j === 1 && k !== 11) return `${n}st`;
