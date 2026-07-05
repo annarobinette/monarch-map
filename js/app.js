@@ -79,8 +79,8 @@ async function initAccountWidget() {
                 try {
                     await supa.sendMagicLink(email);
                     widget.innerHTML = '<span class="account-note">Check your email for a sign-in link.</span>';
-                } catch {
-                    widget.innerHTML = '<span class="account-note">Could not send link. Try again.</span>';
+                } catch (err) {
+                    widget.innerHTML = `<span class="account-note">${err.message || 'Could not send link. Try again.'}</span>`;
                 }
             });
             return;

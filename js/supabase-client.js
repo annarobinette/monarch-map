@@ -80,7 +80,14 @@ const supa = (() => {
             headers: { apikey: ANON_KEY, 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, create_user: true, options: { emailRedirectTo: window.location.href.split('#')[0] } })
         });
-        if (!res.ok) throw new Error('Could not send sign-in email.');
+        if (!res.ok) {
+            let message = `Could not send sign-in email (HTTP ${res.status}).`;
+            try {
+                const data = await res.json();
+                message = data.msg || data.error_description || data.error || data.message || message;
+            } catch { /* body wasn't JSON, keep the generic message */ }
+            throw new Error(message);
+        }
     }
 
     function signOut() {
