@@ -53,7 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="tag-row">${tagsHtml}</div>
             <h4>Buried here</h4>
             ${residentsHtml}
+            <div id="visit-tracker"></div>
         `;
+        window.renderVisitTracker(document.getElementById('visit-tracker'), locationId);
         document.getElementById('sidebar').classList.add('open');
     }
 

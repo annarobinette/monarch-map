@@ -21,24 +21,6 @@ async function loadAndProcessData() {
         const peopleByIdRaw = new Map(people.map(p => [p.person_id, p]));
         const monarchIds = new Set(monarchs.map(m => m.person_id));
 
-        const spousesByMonarch = new Map();
-        relationships.forEach(r => {
-            const consort = peopleByIdRaw.get(r.consort_id);
-            if (!consort) return;
-            const list = spousesByMonarch.get(r.monarch_id) || [];
-            list.push({ name: consort.name, person_id: r.consort_id, relationship_type: r.relationship_role });
-            spousesByMonarch.set(r.monarch_id, list);
-        });
-
-        const issueByParent = new Map();
-        parentage.forEach(pg => {
-            const child = peopleByIdRaw.get(pg.child_id);
-            if (!child) return;
-            const list = issueByParent.get(pg.parent_id) || [];
-            list.push({ name: child.name, code: pg.child_id });
-            issueByParent.set(pg.parent_id, list);
-        });
-
         const locationsById = new Map(locations.map(l => [l.location_id, l]));
         const burialsByPerson = new Map();
         burials.forEach(b => {
@@ -54,6 +36,29 @@ async function loadAndProcessData() {
         }
 
         const monarchsByPersonId = new Map(monarchs.map(m => [m.person_id, m]));
+
+        const burialLocationByPerson = new Map();
+        burials.forEach(b => {
+            if (!burialLocationByPerson.has(b.person_id)) burialLocationByPerson.set(b.person_id, b.location_id);
+        });
+
+        const spousesByMonarch = new Map();
+        relationships.forEach(r => {
+            const consort = peopleByIdRaw.get(r.consort_id);
+            if (!consort) return;
+            const list = spousesByMonarch.get(r.monarch_id) || [];
+            list.push({ name: consort.name, person_id: r.consort_id, relationship_type: r.relationship_role, location_id: burialLocationByPerson.get(r.consort_id) || null });
+            spousesByMonarch.set(r.monarch_id, list);
+        });
+
+        const issueByParent = new Map();
+        parentage.forEach(pg => {
+            const child = peopleByIdRaw.get(pg.child_id);
+            if (!child) return;
+            const list = issueByParent.get(pg.parent_id) || [];
+            list.push({ name: child.name, code: pg.child_id, location_id: burialLocationByPerson.get(pg.child_id) || null });
+            issueByParent.set(pg.parent_id, list);
+        });
 
         const peopleOut = monarchs.map(m => {
             const person = peopleByIdRaw.get(m.person_id) || {};
